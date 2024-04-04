@@ -42,9 +42,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "82f3f2a32432f86a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -172,8 +182,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b4cc4abeb85696c",
+  "active": "82f3f2a32432f86a",
   "lastOpenFiles": [
+    "test.txt",
     "Linux/Linux command & Bash.md",
     "Linux/Linux.md",
     "Git/Git.md",
