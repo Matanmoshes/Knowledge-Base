@@ -59,6 +59,7 @@ Bash (Bourne Again SHell) is a widely-used shell and command language in Unix an
     - `nohup [command] &`: Runs a command immune to hangups, with output to a non-tty.
 
 
+---
 
 Certainly! Here are some common Bash commands along with examples that you can try in the shell:
 
@@ -176,6 +177,7 @@ Certainly! Here are some common Bash commands along with examples that you can t
 
 Remember that these examples should be adjusted according to your specific needs and the actual names of files and directories on your system. Some commands might require superuser privileges and should be used with care to avoid unintended effects.
 
+---
 # Bash Script
 
 Bash scripting provides a powerful way to automate tasks in Linux. Here's an overview of commands and constructs you can use in a Bash script, particularly for taking input from users, working with variables, and more
@@ -226,7 +228,7 @@ Bash scripting provides a powerful way to automate tasks in Linux. Here's an ove
      fi
      ```
 
-6. **Case Statements**:
+6. **<span style="font-weight:bold; color:#ff0000">Case Statements</span>:**
    - Execute different blocks of code based on a specific value.
    - Example:
      ```bash
@@ -238,7 +240,7 @@ Bash scripting provides a powerful way to automate tasks in Linux. Here's an ove
      esac
      ```
 
-7. **Loops (for, while, until)**:
+7. **<span style="font-weight:bold; color:#ff0000">Loops (for, while, until)</span>:**
    - Repeat a series of commands.
    - For Loop Example:
      ```bash
@@ -263,8 +265,8 @@ Bash scripting provides a powerful way to automate tasks in Linux. Here's an ove
      done
      ```
 
-8. **Functions**:
-   - Define reusable code blocks.
+8. **<span style="font-weight:bold; color:#ff0000">Functions</span>:**
+   - Define reusable code blocks.******
    - Example:
      ```bash
      greet() {
@@ -307,7 +309,6 @@ Bash scripting provides a powerful way to automate tasks in Linux. Here's an ove
 
 
 
-Sure, here are more concepts and examples for Bash scripting:
 
 1. **Array Variables**:
    - Bash supports one-dimensional indexed and associative arrays.
@@ -454,6 +455,7 @@ These additional concepts and examples can greatly enhance the functionality and
 
 In Bash scripting, `$#` is a special variable that represents the number of positional arguments (parameters) passed to a script or a function. Positional arguments are typically used to provide input data or options to a script.
 
+---
 ### Understanding `$#`:
 [$#]
 - When you run a Bash script, you can pass arguments to it, much like passing arguments to a function in programming languages.

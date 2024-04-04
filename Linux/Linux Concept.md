@@ -1,6 +1,6 @@
 # important topics
 ## Linux File System
-[Linux file system]
+[linux file system]
 
 Linux, like other Unix-like operating systems, uses a hierarchical directory structure. This structure is key for understanding how the system organizes files and directories. Here's an overview of some of the most important directories in Linux:
 
@@ -90,20 +90,28 @@ Each directory serves a specific purpose, ensuring an organized and functional s
 =======================================================================
 
 ## File System
-[Virtual File System]
+### Virtual File System
+[virtual file system]
 The Virtual File System (VFS) is an abstraction layer in an operating system that provides a uniform interface to different file systems. It allows applications to access various file systems (like ext4, NTFS, NFS) using the same system calls, regardless of their specific implementation. VFS simplifies file operations for applications, ensuring compatibility and flexibility in handling files stored on different types of file systems.
 
-[Journaling]
+---
+### Journaling
+[journaling]
 Journaling in file systems is a technique for protecting data integrity. It involves recording changes to a journal before they're actually made to the file system. If a crash or power failure occurs, this journal helps in quickly restoring the system to a consistent state, reducing the risk of data corruption. Journaling is essential for maintaining data reliability, especially in systems where unexpected shutdowns can happen. It's used in file systems like ext3/ext4, NTFS, and HFS+.
 
-[Block storage]
+---
+### Block storage
+[block storage]
 Block storage is a type of data storage where data is stored in fixed-size blocks, each with a unique address. Common in storage-area networks (SANs) and cloud storage, it offers high performance by allowing direct and individual access to each block. Ideal for databases and virtualized environments, block storage lacks metadata, providing only raw data storage without contextual information. Its key advantage is speed and flexibility, though it can be more complex to manage compared to file-based storage.
 
+---
+### inode
 [inode]
 An inode in UNIX-like file systems is a data structure that stores important information about a file or directory, such as size, permissions, ownership, timestamps, and pointers to data blocks. Each file or directory has a unique inode, which contains metadata but not the file name or content. Inodes play a key role in file management, allowing the system to locate and access files efficiently.
 
-![[Pasted image 20240403202509.png]]
+---
 
+### Partitioning
 [Partitioning]
 Partitioning is the process of dividing a hard drive or storage device into distinct sections, known as partitions, which are managed as separate logical units. This allows for efficient organization of data, installation of multiple operating systems on a single device, and can improve system performance. Each partition can have a different file system and be used for different purposes, such as separating system files from user data. Partitioning is a key aspect of managing and optimizing storage in computing.
 
@@ -113,7 +121,7 @@ Partitioning is the process of dividing a hard drive or storage device into dist
    - **Logical Partition**: Inside an extended partition, you can create multiple logical partitions, each acting like a separate disk.
 
 
-
+---
 ## Users in Linux
 ### Users
 [users]
@@ -140,6 +148,8 @@ dan:x:1001:1001:Dan Smith,,,:/home/dan:/bin/bash
 7. **Login Shell (`/bin/bash`)**: This field specifies the command interpreter or shell that is run when the user logs into their account. In this case, it's `/bin/bash`, the Bourne-Again Shell, a common choice on Linux systems.
 
 Overall, the `/etc/passwd` file is crucial for managing user accounts in a Linux system, giving a quick and comprehensive view of each user's basic configuration and settings.
+
+---
 
 1. **Types of Users**:
    - **Root User**: The superuser with complete control over the system. It has UID 0 and can perform any action, including those restricted for other users.
@@ -203,6 +213,7 @@ Overall, the `/etc/passwd` file is crucial for managing user accounts in a Linux
 
 These commands are essential for user management in Linux, allowing administrators to control user access, modify user properties, and maintain security and organization within the system. Remember that some of these commands (like `useradd`, `userdel`, and `usermod`) typically require superuser privileges, so they are often used with `sudo`.
 
+---
 ### Groups
 [Groups]
 
@@ -279,6 +290,7 @@ Sure, here are some common commands used for managing groups in Linux:
 
 These commands are typically run with superuser privileges (using `sudo`), especially for adding, modifying, or deleting groups, to ensure proper permissions are maintained.
 
+---
 
 ## File Permutations
 [File Permutations]
@@ -306,6 +318,8 @@ Consider a file with the following permissions:
 - `-rwx` for the user: The owner can read, write, and execute.
 - `r-x` for the group: Group members can read and execute, but not write.
 - `r--` for others: Others can only read.
+
+---
 
 [chmod]
 #### Changing Permissions:
@@ -338,6 +352,9 @@ ls -l [filename]
 ```
 
 Understanding and correctly setting file permissions is crucial for security and proper functioning in a Linux environment.
+
+---
+### chown
 
 [chown]
 `chown`, short for "change owner", is a command in Linux used to change the ownership of files and directories. It allows you to set or modify the owner and the group that owns a file or directory.
@@ -377,10 +394,13 @@ Understanding and correctly setting file permissions is crucial for security and
 
 This command is crucial in Linux for managing file and directory ownership, which is an important aspect of system security and organization.
 
+---
 ## Environment Variables
 [environment variable]
 
 Environment variables in Linux are key-value pairs that provide context and configuration settings for the operating system and for applications running on it. They store data that is used by the shell and other programs to determine the functioning of various processes.
+
+---
 
 #### Key Characteristics:
 
@@ -423,6 +443,8 @@ Environment variables in Linux are key-value pairs that provide context and conf
 1. **System-Wide Influence**: They affect the behavior and operation of scripts and programs. For instance, they can dictate the search paths for executable files or define network settings.
 
 2. **User-Specific and System-Wide Settings**: Some environment variables are global (affecting all users), while others can be set specifically for individual user sessions.
+
+---
 
 #### Common Examples:
 
@@ -483,7 +505,7 @@ Environment variables in Linux are used to pass information to processes that ar
 irs that define specific aspects of the system's environment, such as file locations, user data, and system settings.
 
 
-
+---
 # Text Editor vim
 [vi]  [vim]
 Certainly! Here are some commonly used Vim commands, organized by their mode of operation:
@@ -539,6 +561,9 @@ Certainly! Here are some commonly used Vim commands, organized by their mode of 
    - Execute command: `:[command]` (e.g., `:!ls` to list directory contents)
 
 Remember, Vim modes are an essential aspect of its operation. Normal mode is for navigating and manipulating text, Insert mode is for typing text, and Visual mode is for selecting blocks of text. Mastery of Vim commands greatly enhances editing efficiency.
+
+
+---
 
 
 
