@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux command & Bash.md",
+                "file": "Linux/Linux Concept.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux command & Bash.md",
+                "file": "Linux/Linux Concept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux command & Bash.md",
+                "file": "Linux/Linux Concept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux command & Bash.md"
+                "file": "Linux/Linux Concept.md"
               }
             }
           }
@@ -175,9 +175,10 @@
   },
   "active": "c9376efed6499907",
   "lastOpenFiles": [
-    "Linux/Linux Concept.md",
-    "Linux/Linux command & Bash.md",
     "Git/Git.md",
+    "Linux/Linux Concept.md",
+    "Pasted image 20240404172118.png",
+    "Linux/Linux command & Bash.md",
     "Linux/Linux.md",
     "test.txt",
     "Git",
