@@ -130,7 +130,30 @@ Partitioning is the process of dividing a hard drive or storage device into dist
 
 
 ---
+## CPU Core
 
+A core is an individual processing unit within the CPU that can work
+on a task. A CPU can have multiple cores, allowing it to perform
+multiple processes or threads simultaneously, which is known as
+
+multi-core processing.
+
+---
+### Process
+
+A process is an instance of a computer program that is being
+executed. It contains the program code and its activity. Depending
+on the operating system, a process may be made up of multiple
+threads of execution that execute instructions concurrently.
+
+---
+
+### Thread
+
+A thread is the smallest sequence of programmed instructions that can be managed independently by a scheduler. It is a component of a process that can execute independently, particularly in multi-threaded applications, allowing for parallel execution within a single process.
+
+
+---
 # Users & Groups in Linux
 ## Users
 [users]
@@ -562,7 +585,7 @@ irs that define specific aspects of the system's environment, such as file locat
 
 ---
 
-# Linux Process
+# <span style="color:#9263b6">Linux Process</span>
 [linux process]
 >[!info]
 A process in Linux is an instance of a running program. When you start an application or execute a command, the Linux operating system creates a process for it. Each process has a unique Process ID (PID).
@@ -652,6 +675,12 @@ The `ps` command in Linux has several options that change what information is di
     $ ps -C command_name
     ```
 
+11.  **`ps -p [PID]`:**
+    This command shows the parents process of a process
+       ```bash
+    $ ps -p 77860
+    ```
+
 Each variation provides different levels of detail or formats the output in different ways, making `ps` a versatile tool for process management and monitoring.
 
 
@@ -707,3 +736,260 @@ Here are some basic commands related to processes in the shell:
 These commands are fundamental for managing and interacting with processes in Linux. They allow you to monitor, control, and terminate processes as needed.
 
 ---
+## <span style="color:#9263b6">Process Termination
+</span>
+### <span style="color:#ffc000">Normal Termination</span>
+1. **How it Occurs:**
+   - Completing its execution naturally.
+   - Explicitly calling an exit function, like `exit()` in C.
+
+2. **Exit Status:**
+   - The process returns an exit status to its parent process.
+   - A standard convention is to return `0` to indicate success.
+   - Non-zero values indicate different types of errors.
+
+3. **Resource Handling:**
+   - The process can perform clean-up operations before termination.
+   - It might close files, free memory, or write final output.
+
+4. **Example:**
+   ```c
+   int main() {
+       // Code execution
+       exit(0); // Successful completion
+   }
+   ```
+
+### <span style="color:#ffc000">Abnormal Termination</span>
+1. **How it Occurs:**
+   - Due to external interruptions like signals (e.g., `SIGKILL`, `SIGTERM`).
+   - Caused by errors during execution, such as segmentation faults.
+
+2. **Exit Status:**
+   - The process is forced to terminate, often without a meaningful exit status.
+   - The parent process receives a signal-specific exit code.
+
+3. **Resource Handling:**
+   - The process might not release resources properly, potentially leaving files or sockets open, or memory allocated.
+   - Can lead to issues like memory leaks or locked files.
+
+4. **Example:**
+   - A process receiving a `kill -9 [PID]` command is forcibly terminated.
+   - A C program encountering a segmentation fault due to invalid memory access.
+>[!info]
+In both cases, the operating system's kernel handles the termination process, ensuring that system resources are reclaimed. However, in abnormal termination, the lack of cleanup can lead to fragmented resources or inconsistent states, which is why graceful shutdowns and error handling within programs are important.
+
+---
+
+## <span style="color:#9263b6">Signal handling</span>
+
+Signal handling in Linux and Unix-like operating systems is a way to manage inter-process communication and control. Signals are a form of limited message-sending system, primarily used to notify a process that a particular event has occurred.
+
+### <span style="color:#ffc000">Key Points of Signal Handling</span>:
+
+1. **What Are Signals?**
+   - Signals are notifications sent to a process to prompt a predetermined action, like termination or interruption.
+
+2. **Common Signals:**
+   - `SIGTERM` (signal 15): Requests a process to terminate gracefully.
+   - `SIGKILL` (signal 9): Forces a process to terminate immediately.
+   - `SIGINT` (signal 2): Sent from the keyboard, usually the Ctrl+C command, to interrupt a process.
+   - `SIGSTOP` (signal 17): Pauses a process.
+   - `SIGHUP` (signal 1): Hang up; often used to reload configurations.
+
+3. **Handling Signals:**
+   In Bash scripting, you can handle signals using the `trap` command. It allows you to specify a script or a command to execute when a particular signal is received. Here's an example of how you might use signal handling in a Bash script:
+
+```bash
+#!/bin/bash
+
+# Define a signal handler
+handle_sigint() {
+    echo "Interrupt signal (SIGINT) received. Exiting."
+    exit 0
+}
+
+# Assign the handler to SIGINT (Ctrl+C)
+trap handle_sigint SIGINT
+
+echo "Script running... (press Ctrl+C to stop)"
+
+# Infinite loop to keep the script running
+while true; do
+    sleep 1
+done
+```
+
+In this script:
+- The function `handle_sigint` is defined to handle the SIGINT signal (usually triggered by pressing Ctrl+C).
+- The `trap` command then assigns this function to the SIGINT signal.
+- The script enters an infinite loop, which keeps it running until you interrupt it with Ctrl+C.
+- When you do interrupt, the `handle_sigint` function gets called, printing a message and exiting the script gracefully.
+
+This technique is widely used in scripts that require cleanup or specific actions to be taken when they are interrupted or terminated.
+
+---
+## <span style="color:#9263b6">Niceness</span>
+
+Niceness in Linux is a way to influence the scheduling priority of processes. It's used to indicate how "nice" a process should be to other processes on the system. Here’s a closer look:
+
+### <span style="color:#ffc000">Understanding Niceness</span>
+
+1. **What It Is:**
+   - A niceness (or "nice") value is a number from -20 (highest priority) to 19 (lowest priority). A process with a high nice value is more "polite," meaning it's less demanding on CPU time.
+
+2. **Default Niceness:**
+   - By default, processes usually start with a niceness of 0.
+
+### <span style="color:#ffc000">Using</span> `top` <span style="color:#ffc000">to View Niceness
+</span>
+- The `top` command shows real-time system statistics including CPU usage, memory usage, and process information.
+- It also displays the nice value of each process.
+
+### <span style="color:#ffc000">Adjusting Niceness</span>
+
+1. **Setting Niceness with `nice`:**
+   - When starting a new process, you can set its initial nice value using `nice`.
+   - Example: Start a command with a niceness of 10.
+     ```bash
+     $ nice -n 10 <command>
+     ```
+
+2. **Modifying Niceness with `renice`:**
+   - To change the nice value of an existing process, use `renice`.
+   - Example: Change the niceness of a running process.
+     ```bash
+     $ renice 10 -p <processID>
+     ```
+
+3. **Viewing Niceness with `ps`:**
+   - Use `ps -eo pid,ppid,ni,comm` to view process IDs, parent process IDs, nice values, and command names.
+
+>[!Tip] Points to Remember
+>
+>- Regular users can only increase the niceness (make processes less priority).
+>- Only the root user (or using `sudo`) can set a negative niceness (increase priority).
+>- Adjusting niceness is a way to manage CPU time allocation among processes, especially >useful in environments with multiple important tasks running concurrently.
+
+---
+## <span style="color:#9263b6">Process states</span>
+[process states]
+In Linux, process states indicate the current condition of a process:
+
+1. **R (Running or Runnable):** The process is actively running or ready to run.
+
+2. **S (Interruptible Sleep):** The process is sleeping, waiting for some condition to be met or event to occur.
+
+3. **D (Uninterruptible Sleep):** The process is in deep sleep, usually waiting for I/O operations. It cannot be interrupted.
+
+4. **Z (Zombie):** A process that has completed but is still in the process table waiting for its parent to retrieve its exit status.
+
+5. **T (Stopped):** The process is paused or suspended, typically by a user or system debugger.
+### <span style="color:#ffc000">Example:</span>
+
+1. **Listing Processes with States:**
+   - The following command lists processes with their states.
+     ```bash
+     $ ps -aux
+     ```
+   - Look for the `STAT` column in the output. This column shows the state of each process (R, S, D, Z, T).
+
+2. **Understanding the Output:**
+   - For instance, the output might include lines like these:
+     ```
+     USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+     root         1  0.0  0.1 185044  5872 ?        Ss   Mar07   2:03 /sbin/init
+     jane      1234  0.0  0.1 113660  1120 pts/0    R+   10:02   0:00 ps -aux
+     ```
+   - Here, the `init` process (PID 1) is in an interruptible sleep state (`S`), while the `ps -aux` command itself (PID 1234) is running (`R`).
+
+3. **Creating a Dummy Process:**
+   - To demonstrate a stopped (T) state, you can create a dummy background process and then stop it:
+     ```bash
+     $ sleep 300 &
+     $ kill -STOP [PID of sleep]
+     ```
+
+4. **Checking Process States Again:**
+   - Run `ps` again to see the state of the `sleep` process.
+     ```bash
+     $ ps -aux | grep sleep
+     ```
+   - The `sleep` process should now show a `T` state, indicating it's stopped.
+
+---
+## `/proc` <span style="color:#9263b6">for Process Information</span>
+
+>[!info]
+The `/proc` filesystem in Linux is a special pseudo-filesystem that provides a window into the kernel's view of the system. It doesn't contain real files but rather virtual files that provide an interface to internal data structures in the kernel. It's used primarily for obtaining information about the system and its processes.
+
+Each process on a Linux system has a directory in `/proc` with its process ID (PID) as the directory name. For instance, the directory `/proc/1234` contains information about the process with PID 1234. One of the key files in this directory is `status`.
+
+- **<span style="color:#d68a8a">Viewing Process Status</span>:**
+  To view detailed status information about a specific process, you use the `cat` command followed by the path to the `status` file in the `/proc` directory. For example:
+  ```bash
+  $ cat /proc/<ProcessID>/status
+  ```
+  Replace `<ProcessID>` with the actual PID of the process you're interested in.
+
+- **Content of `/proc/<ProcessID>/status`:**
+  The `status` file contains various details about the process, including:
+  - The process ID (PID)
+  - Parent Process ID (PPID)
+  - Process state (R, S, D, etc.)
+  - Memory usage
+  - UID and GID
+  - Thread count
+  - And more
+
+- **Example:**
+  ```bash
+  $ cat /proc/1/status
+  ```
+  This would display the status of the process with PID 1, which is typically the init process.
+---
+
+## <span style="color:#9263b6">Jobs</span>
+[jobs]
+
+Job control in Linux shell allows you to manage multiple tasks (jobs) from a single terminal session, enabling you to run processes in the background, bring them to the foreground, and suspend or terminate them. Here's a brief explanation of the key concepts:
+
+1. **<span style="color:#ffc000">Running a Job in the Background:</span>**
+   - Use an ampersand (`&`) at the end of a command to run it in the background.
+     ```bash
+     $ command &
+     ```
+   - This allows the shell to immediately return to the prompt, ready for new commands while the job runs in the background.
+
+2. **<span style="color:#ffc000">Listing All Jobs:</span>**
+   - The `jobs` command lists all jobs in the current session.
+     ```bash
+     $ jobs
+     ```
+
+3. **<span style="color:#ffc000">Suspending a Job:</span>**
+   - Press `Ctrl+Z` to suspend (stop) the currently running foreground job, putting it into the background in a stopped state.
+
+4. **<span style="color:#ffc000">Running a Job in the Background:</span>**
+   - To continue a stopped job in the background, use the `bg` command.
+     ```bash
+     $ bg %job_spec
+     ```
+   - `%job_spec` refers to the job specification, usually a number found next to the job in the `jobs` output.
+
+5. **<span style="color:#ffc000">Bringing a Job to the Foreground:</span>**
+   - The `fg` command brings a background job into the foreground.
+     ```bash
+     $ fg %1
+     ```
+   - `%1` would bring the first job listed in `jobs` to the foreground.
+
+6. **<span style="color:#ffc000">Killing a Job:</span>**
+   - You can kill a job using `kill` with a job specification.
+     ```bash
+     $ kill %1
+     ```
+   - `%1` refers to the job you want to terminate.
+
+---
+
