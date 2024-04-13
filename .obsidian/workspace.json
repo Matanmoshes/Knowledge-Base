@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c9376efed6499907",
+            "id": "82f3f2a32432f86a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,18 +20,31 @@
             }
           },
           {
-            "id": "82f3f2a32432f86a",
+            "id": "df730d839cf32330",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux command & Bash.md",
+                "file": "Installation/Installation Instructions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23a14a87d34ce10b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Powershell/Powershell.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#----------------------------------------",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux Concept.md",
+                "file": "Powershell/Powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux Concept.md",
+                "file": "Powershell/Powershell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux Concept.md"
+                "file": "Powershell/Powershell.md"
               }
             }
           }
@@ -146,8 +160,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,17 +174,21 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "c9376efed6499907",
+  "active": "23a14a87d34ce10b",
   "lastOpenFiles": [
+    "Linux/Linux Concept.md",
+    "Powershell/Powershell.md",
+    "Installation/Installation Instructions.md",
+    "Powershell",
+    "Linux/Linux command & Bash.md",
+    "Installation",
     "Pasted image 20240406185756.png",
     "Pasted image 20240406185153.png",
     "Pasted image 20240406185040.png",
     "Pasted image 20240406183630.png",
     "Pasted image 20240404172118.png",
-    "Linux/Linux command & Bash.md",
     "Linux/Linux.md",
     "Git/Git.md",
-    "Linux/Linux Concept.md",
     "linux process.md",
     "test.txt",
     "Git",

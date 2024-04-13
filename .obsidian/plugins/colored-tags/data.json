@@ -9,6 +9,18 @@
   "accessibility": {
     "highTextContrast": false
   },
-  "knownTags": {},
+  "knownTags": {
+    "https": 1,
+    "____________________________________________________________": 2,
+    "----------------------------------------": 3,
+    "find": 4,
+    "sort": 5,
+    "strong": 6,
+    "convert": 7,
+    "quotes": 8,
+    "constant": 9,
+    "environment": 10,
+    "putting": 11
+  },
   "_version": 3
 }

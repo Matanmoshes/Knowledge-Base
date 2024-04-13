@@ -1261,24 +1261,31 @@ OpenSSL is an open-source software library that provides tools for secure commun
 
 ---
 
-The OpenSSL command you provided is used to create a self-signed SSL certificate. Let's break down what each part of the command does:
+This OpenSSL command generates a new self-signed SSL certificate along with a new private key. Let's break down what each part of the command does:
 
 ```bash
-openssl req -new -x509 -days 365 -key private_key.pem -out certificate.crt
+openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt -days 365
 ```
 
-1. **`openssl`**: This is the command-line tool for using the various cryptography functions of OpenSSL's crypto library.
+1. **`openssl`**: The command-line tool for using the different cryptographic functions of OpenSSL's crypto library.
 
-2. **`req`**: This subcommand specifies that you want to use X.509 certificate signing request (CSR) management. The `req` command primarily creates and processes CSR files; however, it can also create self-signed certificates.
+2. **`req`**: This subcommand specifies that you're using X.509 Certificate Signing Request (CSR) management. Here it's being used to generate a self-signed certificate.
 
-3. **`-new`**: This option indicates that you're creating a new certificate request.
+3. **`-x509`**: This tells OpenSSL to create a self-signed certificate instead of a CSR.
 
-4. **`-x509`**: This is a critical option. It tells OpenSSL to create a self-signed certificate instead of generating a CSR. The X.509 is a standard defining the format of public key certificates.
+4. **`-newkey rsa:4096`**: 
+   - `-newkey`: This option indicates that you are generating a new private key alongside the certificate.
+   - `rsa:4096`: Specifies the type of key (RSA) and the bit length (4096 bits). 4096 bits is a good choice for strong encryption as of my last update.
 
-5. **`-days 365`**: This specifies the validity period of the certificate. In this case, the certificate will be valid for 365 days from the date of creation.
+5. **`-keyout server.key`**: 
+   - Specifies the file to which the newly created private key will be saved (`server.key` in this case).
 
-6. **`-key private_key.pem`**: This option specifies the private key to use when creating the certificate. The private key is used to sign the certificate. `private_key.pem` is the file containing the private key. If this file does not exist or is not specified, OpenSSL will generate a new private key.
+6. **`-out server.crt`**: 
+   - Directs OpenSSL to write the generated certificate to `server.crt`.
 
-7. **`-out certificate.crt`**: This directs OpenSSL to output the created certificate into a file named `certificate.crt`. This file is the self-signed certificate.
+7. **`-days 365`**: 
+   - Sets the validity of the certificate to 365 days. After this period, the certificate will expire and need to be renewed.
 
-The result of running this command is a self-signed X.509 SSL certificate, valid for one year, that can be used for various purposes, such as setting up a testing environment for HTTPS on a web server. Self-signed certificates are not verified by a Certificate Authority (CA), so while they provide encryption, they do not provide the assurance of authenticity that a CA-signed certificate does. As a result, they're typically not used in production environments but are useful for testing, development, or internal applications.
+When you execute this command, OpenSSL will ask you a series of questions (like country name, organization, common name - which typically is the domain name for SSL certificates, etc.) to include this information in the certificate. Once the process is complete, you will have two files: `server.key` (the private key) and `server.crt` (the self-signed certificate). 
+
+This command is commonly used for creating certificates for testing purposes or internal servers where the drawbacks of a self-signed certificate (mainly, lack of trust by clients outside of your control) are not an issue.
