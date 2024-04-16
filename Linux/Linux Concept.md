@@ -1289,3 +1289,251 @@ openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt -days 365
 When you execute this command, OpenSSL will ask you a series of questions (like country name, organization, common name - which typically is the domain name for SSL certificates, etc.) to include this information in the certificate. Once the process is complete, you will have two files: `server.key` (the private key) and `server.crt` (the self-signed certificate). 
 
 This command is commonly used for creating certificates for testing purposes or internal servers where the drawbacks of a self-signed certificate (mainly, lack of trust by clients outside of your control) are not an issue.
+
+# cut Command
+
+The `cut` command in Bash is used to extract sections of lines from a file or input received from a pipeline. It selects portions of each line from a file and outputs these portions to the standard output. The `cut` command is particularly useful for extracting columns of text from structured files such as CSV or delimited log files.
+
+### Key Options of `cut`:
+- `-d` (delimiter): Specifies a delimiter that separates fields; the default delimiter is the tab character.
+- `-f` (fields): Identifies which fields to extract, can be a single number, a comma-separated list, or a range (e.g., 1,3,5 or 1-5).
+- `-c` (characters): Specifies character positions.
+
+### Example Usage of `cut`:
+
+**Scenario**: Consider a CSV file named `data.csv` with the following content:
+
+```
+name,age,gender
+Alice,30,Female
+Bob,22,Male
+Charlie,25,Male
+```
+
+**Task**: Extract the names and ages from this CSV file.
+
+Here's a Bash script that uses `cut` to perform this task:
+
+```bash
+#!/bin/bash
+
+input_file="data.csv"
+output_file="extracted_data.csv"
+
+# Using cut to extract the first and second columns (name and age)
+cut -d ',' -f 1,2 "$input_file" > "$output_file"
+
+# Display the output
+cat "$output_file"
+```
+
+This script sets up variables for the input and output files. It uses `cut` with `-d ','` to specify the comma as a field delimiter and `-f 1,2` to select the first and second fields (name and age). The output is redirected to `extracted_data.csv`, and then the `cat` command displays the content of this output file. 
+
+This example demonstrates how `cut` can be an efficient tool for parsing and manipulating data in shell scripting.
+
+---
+
+# paste Command
+
+The `paste` command in Bash is used to merge lines of files horizontally, effectively combining multiple files or streams side-by-side. This command is particularly useful for collating data from separate sources into a single file.
+
+### Key Features of `paste`:
+- **Serial merging**: By default, `paste` merges the corresponding lines of the input files. If the files have different numbers of lines, the output will extend as far as the longest file, with missing fields filled with blanks for shorter files.
+- **Delimiters**: The `-d` option allows specifying a delimiter set to separate merged lines (default is a tab).
+- **Single-file handling**: With a single input, `paste` can be used to format its output differently, like converting a vertical list into a horizontal one.
+
+### Example Usage of `paste`:
+
+**Scenario**: Suppose you have two files, `names.txt` and `ages.txt`, with corresponding data that you want to merge into a single file.
+
+`names.txt` contains:
+```
+Alice
+Bob
+Charlie
+```
+
+`ages.txt` contains:
+```
+30
+22
+25
+```
+
+**Task**: Merge these two files so that each name is next to its corresponding age.
+
+Here's a Bash script that uses `paste` to perform this task:
+
+```bash
+#!/bin/bash
+
+# File names
+names_file="names.txt"
+ages_file="ages.txt"
+output_file="combined.txt"
+
+# Merge files with a comma as a delimiter
+paste -d ',' "$names_file" "$ages_file" > "$output_file"
+
+# Display the output
+cat "$output_file"
+```
+
+This script specifies a comma as the delimiter with the `-d ','` option, merging `names.txt` and `ages.txt` line by line. The output will look like this:
+
+```
+Alice,30
+Bob,22
+Charlie,25
+```
+
+The merged data is then redirected to `combined.txt`, and `cat` is used to display the result. This use of `paste` demonstrates its utility in data processing tasks where files with related data need to be aligned side by side.
+
+---
+
+# join command
+
+The `join` command in Bash is used to combine two files based on a common field. It's particularly useful when you want to merge data from two files where lines share a common element, usually denoted as a key.
+
+### Key Features of `join`:
+- **Field specification**: You can specify which field in each file should be used as the join key with the `-1` and `-2` options, where the numbers indicate the first or second file, respectively.
+- **Delimiter specification**: The `-t` option allows you to set a delimiter for fields within lines, such as a comma, space, or tab.
+- **Output format customization**: You can decide which fields to output with the `-o` option, specifying fields from each file.
+
+### Example Usage of `join`:
+
+**Scenario**: Assume you have two files, `employees.txt` and `departments.txt`. `employees.txt` lists employee IDs and their names, and `departments.txt` lists employee IDs and their respective departments.
+
+`employees.txt`:
+```
+1 Alice
+2 Bob
+3 Charlie
+```
+
+`departments.txt`:
+```
+1 Accounting
+2 Marketing
+3 Engineering
+```
+
+**Task**: Merge these files to list each employee's name alongside their department.
+
+Here's a Bash script that uses the `join` command to accomplish this:
+
+```bash
+#!/bin/bash
+
+# File names
+employees_file="employees.txt"
+departments_file="departments.txt"
+output_file="joined_data.txt"
+
+# Join files on the first field of each, which is the employee ID
+join -t ' ' -1 1 -2 1 "$employees_file" "$departments_file" > "$output_file"
+
+# Display the output
+cat "$output_file"
+```
+
+This script merges `employees.txt` and `departments.txt` on the first field of each file (employee ID) using space (' ') as the delimiter. The joined data looks like this:
+
+```
+1 Alice Accounting
+2 Bob Marketing
+3 Charlie Engineering
+```
+
+The result is redirected to `joined_data.txt`, and `cat` is used to display the contents. This example shows how `join` is effective for combining related records from two structured text files based on a shared key.
+
+---
+
+# split command
+
+The `split` command in Bash is used to split a large file into smaller files. It's commonly used to manage large datasets by dividing them into manageable pieces or to split files for easier distribution and storage.
+
+### Key Features of `split`:
+- **Size-based splitting**: You can split files based on the size of the output files (e.g., lines, bytes).
+- **Suffix size**: You can specify the length of the suffixes for the output files with the `-a` option.
+- **Custom prefixes**: Instead of using the default `x` prefix for output files, you can specify a prefix using the `--additional-suffix` option or simply by placing the desired prefix directly after the split command.
+- **Line count**: The `-l` option allows you to specify the number of lines each split file should contain.
+
+### Example Usage of `split`:
+
+**Scenario**: Suppose you have a large text file named `data.txt` that you want to split into smaller files. Each file should contain no more than 100 lines.
+
+Here's a Bash script that uses the `split` command to perform this task:
+
+```bash
+#!/bin/bash
+
+# Input and parameters
+input_file="data.txt"
+lines_per_file=100
+prefix="data_part_"
+
+# Split the file
+split -l "$lines_per_file" "$input_file" "$prefix"
+
+# Show the created files
+ls -l "${prefix}"*
+```
+
+This script splits `data.txt` into multiple smaller files, each containing up to 100 lines. The split files are named starting with `data_part_` followed by a sequential suffix (e.g., `data_part_aa`, `data_part_ab`, etc.). The `ls -l` command at the end lists the details of the files created by the `split` command to confirm the operation.
+
+This example demonstrates the straightforward application of `split` for dividing large files into smaller, more manageable segments based on line count, which is especially useful for processing large datasets in parts or distributing them for parallel processing.
+
+---
+
+# sed Command
+
+The `sed` command in Bash, short for "stream editor," is used for performing text transformations on an input stream (a file or input from a pipeline). It's an extremely powerful tool for text processing, especially useful for editing files programmatically without opening them.
+
+### Key Features of `sed`:
+- **In-place editing**: Using the `-i` option, you can modify files in place (i.e., change the original file).
+- **Regular expressions**: `sed` supports extensive use of regular expressions, allowing for complex pattern matching and substitution.
+- **Scripting**: Multiple `sed` commands can be combined into a script to perform a series of actions on text data.
+
+### Example Usage of `sed`:
+
+**Scenario**: Imagine you have a file named `example.txt` with the following content:
+
+```
+Hello World
+Hello Bash
+Hello sed
+```
+
+**Task**: Replace "Hello" with "Hi" in the file.
+
+Here’s how you could write a Bash script using `sed` to accomplish this:
+
+```bash
+#!/bin/bash
+
+# File name
+file_name="example.txt"
+
+# Use sed to replace 'Hello' with 'Hi'
+sed -i 's/Hello/Hi/g' "$file_name"
+
+# Display the updated file content
+cat "$file_name"
+```
+
+This script uses `sed` with the `-i` option for in-place editing, meaning it will directly modify `example.txt`. The `s/Hello/Hi/g` part of the command is a substitution command in `sed`:
+- `s`: Specifies the substitution operation.
+- `Hello`: The pattern to search for.
+- `Hi`: The replacement string.
+- `g`: A flag to perform a global replacement (i.e., replace all occurrences in a line, not just the first one).
+
+After running this script, the content of `example.txt` would be:
+
+```
+Hi World
+Hi Bash
+Hi sed
+```
+
+This example shows how `sed` can be used for simple text replacements, which is a common task in text processing and automation scripts.
