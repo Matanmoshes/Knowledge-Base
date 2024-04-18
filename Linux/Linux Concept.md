@@ -58,7 +58,6 @@ Remember, Vim modes are an essential aspect of its operation. Normal mode is for
 ---
 
 
-
 # Linux File System
 [linux file system]
 
@@ -97,6 +96,8 @@ In Linux, a Unix-like operating system, the file system is organized hierarchica
 
 
 
+
+---
 # File System
 ### Virtual File System
 [virtual file system]
@@ -154,7 +155,11 @@ A thread is the smallest sequence of programmed instructions that can be managed
 
 
 ---
+
+---
 # Users & Groups in Linux
+
+---
 ## Users
 [users]
 
@@ -370,6 +375,8 @@ These commands are typically run with superuser privileges (using `sudo`), espec
 ---
 
 
+
+---
 # File Permutations
 [file permutations]
 >[!Success]
@@ -474,6 +481,8 @@ Understanding and correctly setting file permissions is crucial for security and
 
 ---
 
+
+---
 # Environment Variables
 [environment variable]
 
@@ -585,8 +594,11 @@ irs that define specific aspects of the system's environment, such as file locat
 
 ---
 
+
+---
 # <span style="color:#9263b6">Linux Process</span>
 [linux process]
+
 >[!info]
 A process in Linux is an instance of a running program. When you start an application or execute a command, the Linux operating system creates a process for it. Each process has a unique Process ID (PID).
 
@@ -994,6 +1006,8 @@ Job control in Linux shell allows you to manage multiple tasks (jobs) from a sin
 ---
 
 
+
+---
 # <span style="color:#9263b6">Certification & Encryption</span>
 
 In the context of data security, "encryption" refers to the process of converting plain text or data into a coded form (ciphertext) to prevent unauthorized access. There are various types of encryption methods used, each with its unique characteristics and use cases. Here's an overview of some common encryption types:
@@ -1290,250 +1304,424 @@ When you execute this command, OpenSSL will ask you a series of questions (like 
 
 This command is commonly used for creating certificates for testing purposes or internal servers where the drawbacks of a self-signed certificate (mainly, lack of trust by clients outside of your control) are not an issue.
 
-# cut Command
-
-The `cut` command in Bash is used to extract sections of lines from a file or input received from a pipeline. It selects portions of each line from a file and outputs these portions to the standard output. The `cut` command is particularly useful for extracting columns of text from structured files such as CSV or delimited log files.
-
-### Key Options of `cut`:
-- `-d` (delimiter): Specifies a delimiter that separates fields; the default delimiter is the tab character.
-- `-f` (fields): Identifies which fields to extract, can be a single number, a comma-separated list, or a range (e.g., 1,3,5 or 1-5).
-- `-c` (characters): Specifies character positions.
-
-### Example Usage of `cut`:
-
-**Scenario**: Consider a CSV file named `data.csv` with the following content:
-
-```
-name,age,gender
-Alice,30,Female
-Bob,22,Male
-Charlie,25,Male
-```
-
-**Task**: Extract the names and ages from this CSV file.
-
-Here's a Bash script that uses `cut` to perform this task:
-
-```bash
-#!/bin/bash
-
-input_file="data.csv"
-output_file="extracted_data.csv"
-
-# Using cut to extract the first and second columns (name and age)
-cut -d ',' -f 1,2 "$input_file" > "$output_file"
-
-# Display the output
-cat "$output_file"
-```
-
-This script sets up variables for the input and output files. It uses `cut` with `-d ','` to specify the comma as a field delimiter and `-f 1,2` to select the first and second fields (name and age). The output is redirected to `extracted_data.csv`, and then the `cat` command displays the content of this output file. 
-
-This example demonstrates how `cut` can be an efficient tool for parsing and manipulating data in shell scripting.
 
 ---
 
-# paste Command
 
-The `paste` command in Bash is used to merge lines of files horizontally, effectively combining multiple files or streams side-by-side. This command is particularly useful for collating data from separate sources into a single file.
 
-### Key Features of `paste`:
-- **Serial merging**: By default, `paste` merges the corresponding lines of the input files. If the files have different numbers of lines, the output will extend as far as the longest file, with missing fields filled with blanks for shorter files.
-- **Delimiters**: The `-d` option allows specifying a delimiter set to separate merged lines (default is a tab).
-- **Single-file handling**: With a single input, `paste` can be used to format its output differently, like converting a vertical list into a horizontal one.
 
-### Example Usage of `paste`:
 
-**Scenario**: Suppose you have two files, `names.txt` and `ages.txt`, with corresponding data that you want to merge into a single file.
+# Packages 
+## gzip
+[gzip]
 
-`names.txt` contains:
-```
-Alice
-Bob
-Charlie
-```
+`gzip` (GNU zip) is a file compression utility in Linux and other Unix-like operating systems. It's commonly used to reduce the size of files, making them easier to store or transmit. `gzip` typically operates on single files and appends a `.gz` extension to the compressed files. It uses the DEFLATE algorithm for compression.
 
-`ages.txt` contains:
-```
-30
-22
-25
-```
-
-**Task**: Merge these two files so that each name is next to its corresponding age.
-
-Here's a Bash script that uses `paste` to perform this task:
+### Basic Usage
+Here's how you can use `gzip` in its most basic form:
 
 ```bash
-#!/bin/bash
-
-# File names
-names_file="names.txt"
-ages_file="ages.txt"
-output_file="combined.txt"
-
-# Merge files with a comma as a delimiter
-paste -d ',' "$names_file" "$ages_file" > "$output_file"
-
-# Display the output
-cat "$output_file"
+gzip filename
 ```
 
-This script specifies a comma as the delimiter with the `-d ','` option, merging `names.txt` and `ages.txt` line by line. The output will look like this:
+This command will compress the file named `filename` and replace it with `filename.gz` in the same directory.
 
-```
-Alice,30
-Bob,22
-Charlie,25
+### Common Options
+- `-d`: Decompress a file
+- `-k`: Keep the input files (does not delete the original file after compression or decompression)
+- `-l`: List information about a compressed file
+- `-r`: Recursively compress files in a directory
+- `-1` to `-9`: Set the compression level (`-1` for fastest compression and `-9` for best compression)
+
+### Examples
+
+**Compressing a file while keeping the original:**
+```bash
+gzip -k filename
 ```
 
-The merged data is then redirected to `combined.txt`, and `cat` is used to display the result. This use of `paste` demonstrates its utility in data processing tasks where files with related data need to be aligned side by side.
+**Decompressing a file:**
+```bash
+gzip -d filename.gz
+```
+
+**Compressing all files in a directory recursively:**
+```bash
+gzip -r directory_name
+```
+
+**Checking compressed file details:**
+```bash
+gzip -l filename.gz
+```
+
+**Return to normal file 
+```bash
+gunzip filename.gz
+```
+
+`gzip` is widely used in scripts and pipelines in Linux systems for handling logs, backups, and any other scenarios where saving space is beneficial. If you need to compress multiple files into a single archive, you might typically pair `gzip` with `tar`, as `gzip` itself does not handle multiple files.
+
+![[Pasted image 20240417201937.png]]
+
 
 ---
 
-# join command
 
-The `join` command in Bash is used to combine two files based on a common field. It's particularly useful when you want to merge data from two files where lines share a common element, usually denoted as a key.
+## tar
+[tar]
 
-### Key Features of `join`:
-- **Field specification**: You can specify which field in each file should be used as the join key with the `-1` and `-2` options, where the numbers indicate the first or second file, respectively.
-- **Delimiter specification**: The `-t` option allows you to set a delimiter for fields within lines, such as a comma, space, or tab.
-- **Output format customization**: You can decide which fields to output with the `-o` option, specifying fields from each file.
+The `tar` command in Linux is a powerful tool used for collecting multiple files into a single archive file, often referred to as a tarball. The name "tar" stands for "tape archive," reflecting its original purpose for writing data to sequential I/O devices without a file system. While `tar` can handle file compression through its own options, it is commonly used with external compression tools like `gzip`, `bzip2`, or `xz` to reduce the size of the archive.
 
-### Example Usage of `join`:
+### Basic Usage
+Here’s how you can use `tar` to create, extract, and manage tarball files:
 
-**Scenario**: Assume you have two files, `employees.txt` and `departments.txt`. `employees.txt` lists employee IDs and their names, and `departments.txt` lists employee IDs and their respective departments.
-
-`employees.txt`:
-```
-1 Alice
-2 Bob
-3 Charlie
-```
-
-`departments.txt`:
-```
-1 Accounting
-2 Marketing
-3 Engineering
-```
-
-**Task**: Merge these files to list each employee's name alongside their department.
-
-Here's a Bash script that uses the `join` command to accomplish this:
-
+**Creating an archive:**
 ```bash
-#!/bin/bash
+tar -cvf archive_name.tar directory_or_files
+```
+- `-c`: Create a new archive.
+- `-v`: Verbosely list files processed (optional).
+- `-f`: Use the following argument as the filename of the archive.
 
-# File names
-employees_file="employees.txt"
-departments_file="departments.txt"
-output_file="joined_data.txt"
+**Extracting an archive:**
+```bash
+tar -xvf archive_name.tar
+```
+- `-x`: Extract files from an archive.
+- `-v`: Verbosely list files processed (optional).
+- `-f`: Use the following argument as the filename of the archive.
 
-# Join files on the first field of each, which is the employee ID
-join -t ' ' -1 1 -2 1 "$employees_file" "$departments_file" > "$output_file"
+### Examples with Compression
 
-# Display the output
-cat "$output_file"
+**Creating a gzip-compressed tarball:**
+```bash
+tar -czvf archive_name.tar.gz directory_or_files
+```
+- `-z`: Filter the archive through `gzip` for compression.
+
+**Extracting a gzip-compressed tarball:**
+```bash
+tar -xzvf archive_name.tar.gz
 ```
 
-This script merges `employees.txt` and `departments.txt` on the first field of each file (employee ID) using space (' ') as the delimiter. The joined data looks like this:
-
+**Creating a bzip2-compressed tarball:**
+```bash
+tar -cjvf archive_name.tar.bz2 directory_or_files
 ```
-1 Alice Accounting
-2 Bob Marketing
-3 Charlie Engineering
+- `-j`: Filter the archive through `bzip2` for compression.
+
+**Extracting a bzip2-compressed tarball:**
+```bash
+tar -xjvf archive_name.tar.bz2
 ```
 
-The result is redirected to `joined_data.txt`, and `cat` is used to display the contents. This example shows how `join` is effective for combining related records from two structured text files based on a shared key.
+**Creating an xz-compressed tarball:**
+```bash
+tar -cJvf archive_name.tar.xz directory_or_files
+```
+- `-J`: Filter the archive through `xz` for compression.
+
+**Extracting an xz-compressed tarball:**
+```bash
+tar -xJvf archive_name.tar.xz
+```
+
+### Advanced Options
+- `--exclude`: Exclude files or directories from the archive.
+- `-p`: Preserve permissions.
+- `-u`: Update an existing archive by adding newer versions of files.
+
+`tar` is extensively used in backups, data distribution, and software packaging in Unix/Linux environments. Its ability to handle large files and numerous files efficiently makes it indispensable in system administration.
 
 ---
 
-# split command
+## dpkg
+[dpkg]
 
-The `split` command in Bash is used to split a large file into smaller files. It's commonly used to manage large datasets by dividing them into manageable pieces or to split files for easier distribution and storage.
+`dpkg` is a package management program used on Debian-based Linux distributions, including Ubuntu. It is used to install, remove, and manage Debian (.deb) packages, but it does not handle dependency resolution automatically. This is typically managed by higher-level tools like `apt` or `apt-get`, which call `dpkg` in the background and handle dependencies for you.
 
-### Key Features of `split`:
-- **Size-based splitting**: You can split files based on the size of the output files (e.g., lines, bytes).
-- **Suffix size**: You can specify the length of the suffixes for the output files with the `-a` option.
-- **Custom prefixes**: Instead of using the default `x` prefix for output files, you can specify a prefix using the `--additional-suffix` option or simply by placing the desired prefix directly after the split command.
-- **Line count**: The `-l` option allows you to specify the number of lines each split file should contain.
+### Basic Usage of `dpkg`
+Here's a rundown of the most common operations you can perform with `dpkg`:
 
-### Example Usage of `split`:
+**Installing a package:**
+```bash
+sudo dpkg -i package_file.deb
+```
+- `-i`: Install a package.
 
-**Scenario**: Suppose you have a large text file named `data.txt` that you want to split into smaller files. Each file should contain no more than 100 lines.
+**Removing a package:**
+```bash
+sudo dpkg -r package_name
+```
+- `-r`: Remove a package but keep its configuration files.
 
-Here's a Bash script that uses the `split` command to perform this task:
+**Purging a package (remove including config files):**
+```bash
+sudo dpkg -P package_name
+```
+- `-P`: Purge a package, including its configuration files.
+
+**Listing all installed packages:**
+```bash
+dpkg -l
+```
+- `-l`: List packages.
+
+**Checking if a package is installed and getting its status:**
+```bash
+dpkg -s package_name
+```
+- `-s`: Show package status along with version and other details.
+
+**Checking the contents of a package file:**
+```bash
+dpkg -c package_file.deb
+```
+- `-c`: List contents of a .deb file.
+
+### Handling Errors and Configuration Issues
+If `dpkg` encounters problems, such as conflicts or missing dependencies, it will not proceed with the installation and will typically report an error. This can usually be fixed by manually installing the missing dependencies or by using `apt-get` which will automatically handle these dependencies for you.
+
+For example, if you try to install a package that depends on another package that isn't installed, `dpkg` will fail with an error. You can fix this by installing the required package or by running:
 
 ```bash
-#!/bin/bash
-
-# Input and parameters
-input_file="data.txt"
-lines_per_file=100
-prefix="data_part_"
-
-# Split the file
-split -l "$lines_per_file" "$input_file" "$prefix"
-
-# Show the created files
-ls -l "${prefix}"*
+sudo apt-get install -f
 ```
+- The `-f` option means "fix broken." This command asks `apt-get` to correct any broken dependencies.
 
-This script splits `data.txt` into multiple smaller files, each containing up to 100 lines. The split files are named starting with `data_part_` followed by a sequential suffix (e.g., `data_part_aa`, `data_part_ab`, etc.). The `ls -l` command at the end lists the details of the files created by the `split` command to confirm the operation.
+### Advanced Features
+`dpkg` also supports configuration files management, where it allows administrators to handle package-specific configuration through scripts executed during the package installation or removal.
 
-This example demonstrates the straightforward application of `split` for dividing large files into smaller, more manageable segments based on line count, which is especially useful for processing large datasets in parts or distributing them for parallel processing.
-
----
-
-# sed Command
-
-The `sed` command in Bash, short for "stream editor," is used for performing text transformations on an input stream (a file or input from a pipeline). It's an extremely powerful tool for text processing, especially useful for editing files programmatically without opening them.
-
-### Key Features of `sed`:
-- **In-place editing**: Using the `-i` option, you can modify files in place (i.e., change the original file).
-- **Regular expressions**: `sed` supports extensive use of regular expressions, allowing for complex pattern matching and substitution.
-- **Scripting**: Multiple `sed` commands can be combined into a script to perform a series of actions on text data.
-
-### Example Usage of `sed`:
-
-**Scenario**: Imagine you have a file named `example.txt` with the following content:
-
-```
-Hello World
-Hello Bash
-Hello sed
-```
-
-**Task**: Replace "Hello" with "Hi" in the file.
-
-Here’s how you could write a Bash script using `sed` to accomplish this:
+### Example Scenario: Installing a Package
+Suppose you have downloaded a package called `example.deb` and want to install it. You would use the following command:
 
 ```bash
-#!/bin/bash
-
-# File name
-file_name="example.txt"
-
-# Use sed to replace 'Hello' with 'Hi'
-sed -i 's/Hello/Hi/g' "$file_name"
-
-# Display the updated file content
-cat "$file_name"
+sudo dpkg -i example.deb
 ```
 
-This script uses `sed` with the `-i` option for in-place editing, meaning it will directly modify `example.txt`. The `s/Hello/Hi/g` part of the command is a substitution command in `sed`:
-- `s`: Specifies the substitution operation.
-- `Hello`: The pattern to search for.
-- `Hi`: The replacement string.
-- `g`: A flag to perform a global replacement (i.e., replace all occurrences in a line, not just the first one).
+If `dpkg` reports missing dependencies, you would then run:
 
-After running this script, the content of `example.txt` would be:
-
-```
-Hi World
-Hi Bash
-Hi sed
+```bash
+sudo apt-get install -f
 ```
 
-This example shows how `sed` can be used for simple text replacements, which is a common task in text processing and automation scripts.
+This sequence ensures that all dependencies are satisfied and that your package is correctly installed using the combination of `dpkg` and `apt-get`.
+
+`dpkg` is a crucial tool for Debian and Ubuntu users, especially when dealing with locally downloaded `.deb` files or managing packages on systems without internet access.
+
+## rpm
+[rpm]
+
+`rpm` stands for Red Hat Package Manager and is a powerful package management system used by Red Hat-based distributions like Red Hat Enterprise Linux (RHEL), CentOS, and Fedora. It handles the installation, upgrading, and removal of software packages in these distributions.
+
+### Basic Usage of `rpm`
+Here are some fundamental `rpm` commands that are used for managing software packages:
+
+**Installing a package:**
+```bash
+sudo rpm -ivh package_file.rpm
+```
+- `-i`: Install a package.
+- `-v`: Verbose output; shows more information during the installation process.
+- `-h`: Print hash marks during the installation process, which provides a visual indication of progress.
+
+**Upgrading a package:**
+```bash
+sudo rpm -Uvh package_file.rpm
+```
+- `-U`: Upgrade a package. This option will install the package if it's not already installed, or upgrade it if it is.
+
+**Removing a package:**
+```bash
+sudo rpm -e package_name
+```
+- `-e`: Erase (remove) an installed package.
+
+**Querying an installed package for information:**
+```bash
+rpm -qi package_name
+```
+- `-q`: Query an installed package.
+- `-i`: Display package information, including version, release, installation date, and description.
+
+**Querying a package file for information:**
+```bash
+rpm -qpi package_file.rpm
+```
+- `-p`: Query an uninstalled package file.
+
+**Listing all installed packages:**
+```bash
+rpm -qa
+```
+- `-a`: List all installed packages.
+
+**Verifying a package:**
+```bash
+rpm -V package_name
+```
+- `-V`: Verify a package. This checks various aspects like permissions, MD5 sums, file sizes, and documentation against the information stored in the RPM database.
+
+### Dependency Management
+Unlike `dpkg` in Debian-based systems, `rpm` does not automatically handle dependencies. If you attempt to install a package that requires dependencies that are not present on the system, `rpm` will fail and report what is missing. Dependency management is typically handled by higher-level tools like `yum` or `dnf`, which automatically resolve and install required dependencies.
+
+### Advanced Features
+`rpm` also supports querying package databases for specific files, checking configuration files, and verifying the integrity of installed packages.
+
+### Example Scenario: Installing a Package
+Suppose you have a file called `example.rpm` and want to install it. You would use the following command:
+
+```bash
+sudo rpm -ivh example.rpm
+```
+
+If `rpm` reports missing dependencies, you would need to locate and install those dependencies manually, or you could use `yum` or `dnf` (depending on your distribution) to handle these dependencies automatically:
+
+For RHEL/CentOS systems:
+```bash
+sudo yum localinstall example.rpm
+```
+
+For Fedora systems:
+```bash
+sudo dnf install example.rpm
+```
+
+These commands will automatically search for and install the required dependencies, making package management more straightforward.
+
+`rpm` is a cornerstone tool for managing software in Red Hat-based environments, providing detailed control over package management tasks.
+
+## apt
+[apt]
+
+`apt` (Advanced Package Tool) is a powerful and user-friendly command-line tool used for managing packages on Debian-based Linux distributions, such as Ubuntu. It simplifies the process of managing software by automating the retrieval, configuration, and installation of software packages from predefined repositories.
+
+### Key Features of `apt`
+- **Automatically handles package dependencies.**
+- **Supports easy installation, removal, updating, and upgrading of packages.**
+- **Maintains a database of available packages from configured sources.**
+
+### Commonly Used `apt` Commands
+
+**Updating package list:**
+```bash
+sudo apt update
+```
+- Fetches the list of available updates from configured repositories.
+
+**Upgrading all installed packages:**
+```bash
+sudo apt upgrade
+```
+- Upgrades all upgradable packages to the latest versions.
+
+**Installing a package:**
+```bash
+sudo apt install package_name
+```
+- Installs a new package along with its dependencies.
+
+**Removing a package:**
+```bash
+sudo apt remove package_name
+```
+- Removes a package but keeps its configuration files.
+
+**Purging a package (remove including config files):**
+```bash
+sudo apt purge package_name
+```
+- Removes a package and its configuration files.
+
+**Searching for packages:**
+```bash
+apt search keyword
+```
+- Searches for packages related to the given keyword.
+
+**Listing all installed packages:**
+```bash
+apt list --installed
+```
+- Displays a list of all installed packages.
+
+### Example Usage
+To update the package list and upgrade all your system's packages, you would use:
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+`apt` is preferred for its simplicity and effectiveness in managing packages through high-level commands that handle complex functions with ease.
+
+## yum
+[yum]
+
+`yum` (Yellowdog Updater, Modified) is a command-line package management utility for RPM-based Linux distributions such as Red Hat Enterprise Linux (RHEL), CentOS, and Fedora (before Fedora 22, which now uses `dnf`, a successor to `yum`). It automates the process of installing, updating, and removing packages and resolves dependencies for RPM packages.
+
+### Key Features of `yum`
+- **Dependency resolution**: Automatically finds and installs dependencies for packages.
+- **Package groups**: Allows the installation of package groups, which are collections of related packages that serve a common purpose.
+- **Repository management**: Manages software repositories from which packages are installed and updated.
+- **Configuration**: Supports detailed configuration files for managing repositories and `yum` behavior.
+
+### Common `yum` Commands
+
+**Updating package repository data:**
+```bash
+sudo yum check-update
+```
+- Checks for available updates in the repositories.
+
+**Installing a new package:**
+```bash
+sudo yum install package_name
+```
+- Installs a package and all of its dependencies.
+
+**Updating a package:**
+```bash
+sudo yum update package_name
+```
+- Updates the specified package. If no package name is given, `yum` updates all packages.
+
+**Removing a package:**
+```bash
+sudo yum remove package_name
+```
+- Removes a package along with any packages that depend on it.
+
+**Listing all installed packages:**
+```bash
+yum list installed
+```
+- Shows all packages installed on the system.
+
+**Searching for a package:**
+```bash
+yum search keyword
+```
+- Searches all available repositories for packages matching the keyword.
+
+**Listing available package groups:**
+```bash
+yum group list
+```
+- Lists all available package groups.
+
+**Installing a package group:**
+```bash
+sudo yum groupinstall "Group Name"
+```
+- Installs all packages in the specified group.
+
+### Example Usage
+To update all packages on your system with `yum`, you can use:
+```bash
+sudo yum update
+```
+
+This command refreshes repository metadata and upgrades all installed packages to their latest versions. If updates are available, `yum` handles all dependency resolutions automatically.
+
+`yum` provides a comprehensive and reliable package management solution for administrators and users of RPM-based Linux systems, simplifying software management tasks significantly.
