@@ -177,6 +177,89 @@ common Bash commands along with examples that you can try in the shell:
 
 ---
 
+
+# find command
+
+The `find` command in Linux is a powerful utility for searching and locating the list of files and directories based on conditions you specify from a specified directory. It allows you to search for files by permissions, user ownership, modification date/time, size, and other criteria.
+
+Here’s a basic overview of how to use the `find` command:
+
+### Basic Syntax
+
+```bash
+find [path] [options] [expression]
+```
+
+- **path**: Specifies the directory to start the search from. If no directory is provided, `find` uses the current directory by default.
+- **options**: Modifies the behavior of the `find` command.
+- **expression**: Defines what to search for and what to do with the matched files.
+
+### Common Examples
+
+1. **Find Files by Name**
+   ```bash
+   find /path/to/directory -name "filename"
+   ```
+   This command searches for files named "filename" starting from "/path/to/directory".
+
+2. **Find Files with Certain Extensions**
+   ```bash
+   find /path/to/directory -type f -name "*.txt"
+   ```
+   This command finds all `.txt` files in the specified directory and its subdirectories.
+
+3. **Find Directories by Name**
+   ```bash
+   find /path/to/directory -type d -name "docs"
+   ```
+   This searches for directories named "docs".
+
+4. **Find Files by Size**
+   ```bash
+   find /path/to/directory -type f -size +500k
+   ```
+   This finds files larger than 500 kilobytes.
+
+5. **Find Files Modified in the Last X Days**
+   ```bash
+   find /path/to/directory -mtime -7
+   ```
+   This finds files modified in the last 7 days.
+
+6. **Execute Commands on Files Found**
+   ```bash
+   find /path/to/directory -type f -name "*.tmp" -exec rm {} \;
+   ```
+   This finds all `.tmp` files and removes each one.
+
+7. **Find Files with Specific Permissions**
+   ```bash
+   find /path -type f -perm 0664
+   ```
+   This finds files with permissions set to 0664.
+
+### Advanced Use
+
+- **Combining Expressions**
+  You can combine expressions with logical operators like `-and`, `-or`, and `-not` to refine your search criteria.
+
+- **Using Regular Expressions**
+  ```bash
+  find /path/to/directory -regex ".*\.(txt|doc)"
+  ```
+  This uses a regular expression to find files ending in `.txt` or `.doc`.
+
+- **Limiting Depth of Search**
+  ```bash
+  find /path/to/directory -maxdepth 2 -name "filename"
+  ```
+  This limits the search to two directory levels below the starting point.
+
+
+
+---
+
+
 # pipe (`|`) and `tee` commands
 [|] [tee]
 The pipe (`|`) and `tee` commands are powerful tools in Unix and Linux that facilitate efficient data manipulation and redirection in command-line environments. Here's how each is used:
@@ -227,9 +310,6 @@ This command sequence does the following:
 
 This setup is especially useful for monitoring or debugging where you need to both log errors for later review and continue processing or inspecting them real-time.
 
-### Summary
-Together, `|` and `tee` provide a robust mechanism for data processing workflows in Unix-like systems, allowing you to manipulate and redirect data efficiently across multiple command-line utilities. They are essential for scripting, data analysis, and system administration tasks that involve handling streams of data.
-
 
 ---
 ---
@@ -242,6 +322,63 @@ The `cut` command in Bash is used to extract sections of lines from a file or in
 - `-d` (delimiter): Specifies a delimiter that separates fields; the default delimiter is the tab character.
 - `-f` (fields): Identifies which fields to extract, can be a single number, a comma-separated list, or a range (e.g., 1,3,5 or 1-5).
 - `-c` (characters): Specifies character positions.
+
+### Basic Syntax
+
+```bash
+cut [options] [file]
+```
+
+- **options**: Define what sections of each line should be extracted.
+- **file**: The input file to process. If no file is specified, `cut` reads from standard input.
+
+### Key Options
+
+1. **`-d` (delimiter)**: Specifies a delimiter that will be used as the field separator. By default, the delimiter is the tab character.
+   ```bash
+   cut -d ',' -f 1 file.csv  # Extracts the first field from a CSV file
+   ```
+
+2. **`-f` (fields)**: Selects the fields to extract. Fields are numbered starting with 1.
+   ```bash
+   cut -d ':' -f 1,3 /etc/passwd  # Extracts the first and third fields from each line
+   ```
+
+3. **`-c` (characters)**: Specifies the character positions to extract. 
+   ```bash
+   cut -c 1-5 file.txt  # Extracts the first five characters of each line
+   ```
+
+4. **`--complement`**: Inverts the selection, outputting all fields or characters except those specified.
+   ```bash
+   cut -d ',' --complement -f 1 file.csv  # Outputs all fields except the first
+   ```
+
+5. **`-s` (only-delimited)**: Suppresses lines that do not contain the delimiter (normally `cut` will output these lines unchanged).
+   ```bash
+   cut -d ',' -f 2 -s file.csv  # Outputs the second field, but only for lines that contain a comma
+   ```
+
+### Practical Examples
+
+- **Extracting Usernames and Home Directories from `/etc/passwd`**:
+  ```bash
+  cut -d ':' -f 1,6 /etc/passwd
+  ```
+  This command splits each line at colons (since `/etc/passwd` uses `:` as a delimiter) and extracts the first and sixth fields, typically representing the username and home directory.
+
+- **Extracting the First Name from a List**:
+  ```bash
+  cut -d ',' -f 1 names.csv
+  ```
+  If you have a CSV file `names.csv` where each line is a name in the format `Lastname,Firstname`, this command extracts just the first names.
+
+- **Cutting Characters for Formatting**:
+  ```bash
+  cut -c 1-10,20-30 file.txt
+  ```
+  This extracts characters 1 through 10 and 20 through 30 from each line of `file.txt`, useful for slicing out specific positions in a fixed-width file.
+
 
 ### Example Usage of `cut`:
 
@@ -274,7 +411,6 @@ cat "$output_file"
 
 This script sets up variables for the input and output files. It uses `cut` with `-d ','` to specify the comma as a field delimiter and `-f 1,2` to select the first and second fields (name and age). The output is redirected to `extracted_data.csv`, and then the `cat` command displays the content of this output file. 
 
-This example demonstrates how `cut` can be an efficient tool for parsing and manipulating data in shell scripting.
 
 
 
@@ -433,64 +569,84 @@ ls -l "${prefix}"*
 
 This script splits `data.txt` into multiple smaller files, each containing up to 100 lines. The split files are named starting with `data_part_` followed by a sequential suffix (e.g., `data_part_aa`, `data_part_ab`, etc.). The `ls -l` command at the end lists the details of the files created by the `split` command to confirm the operation.
 
-This example demonstrates the straightforward application of `split` for dividing large files into smaller, more manageable segments based on line count, which is especially useful for processing large datasets in parts or distributing them for parallel processing.
-
 ---
 
----
+
 
 
 # sed Command
 
-The `sed` command in Bash, short for "stream editor," is used for performing text transformations on an input stream (a file or input from a pipeline). It's an extremely powerful tool for text processing, especially useful for editing files programmatically without opening them.
+The `sed` command in Linux, short for "stream editor," is a powerful utility for performing text transformations on an input stream (like a file or input from a pipeline). It is primarily used for extracting and transforming text in files or output from other commands.
 
-### Key Features of `sed`:
-- **In-place editing**: Using the `-i` option, you can modify files in place (i.e., change the original file).
-- **Regular expressions**: `sed` supports extensive use of regular expressions, allowing for complex pattern matching and substitution.
-- **Scripting**: Multiple `sed` commands can be combined into a script to perform a series of actions on text data.
-
-### Example Usage of `sed`:
-
-**Scenario**: Imagine you have a file named `example.txt` with the following content:
-
-```
-Hello World
-Hello Bash
-Hello sed
-```
-
-**Task**: Replace "Hello" with "Hi" in the file.
-
-Here’s how you could write a Bash script using `sed` to accomplish this:
+### Basic Syntax
 
 ```bash
-#!/bin/bash
-
-# File name
-file_name="example.txt"
-
-# Use sed to replace 'Hello' with 'Hi'
-sed -i 's/Hello/Hi/g' "$file_name"
-
-# Display the updated file content
-cat "$file_name"
+sed [options] 'script' [input_file]
 ```
 
-This script uses `sed` with the `-i` option for in-place editing, meaning it will directly modify `example.txt`. The `s/Hello/Hi/g` part of the command is a substitution command in `sed`:
-- `s`: Specifies the substitution operation.
-- `Hello`: The pattern to search for.
-- `Hi`: The replacement string.
-- `g`: A flag to perform a global replacement (i.e., replace all occurrences in a line, not just the first one).
+- **options**: Control the behavior of `sed`. Common options include `-i` for editing files in-place (i.e., saves the output back to the input file) and `-e` to add multiple scripts.
+- **script**: The set of commands that `sed` will execute. The commands specify what to search for and how to modify it.
+- **input_file**: The file on which `sed` will operate. If no input file is provided, `sed` reads from standard input.
 
-After running this script, the content of `example.txt` would be:
+### Common Commands in `sed`
 
+- **`s` command**: Substitute command, used to replace text.
+  ```bash
+  sed 's/find/replace/' file.txt  # Replaces the first occurrence of 'find' with 'replace' in each line
+  ```
+
+- **`g` flag**: Global replacement flag. Without this flag, `s` replaces only the first occurrence in each line.
+  ```bash
+  sed 's/find/replace/g' file.txt  # Replaces all occurrences of 'find' with 'replace' in each line
+  ```
+
+- **Addressing lines**: You can specify which lines `sed` should operate on.
+  ```bash
+  sed '2,5s/find/replace/' file.txt  # Only apply the substitution on lines 2 through 5
+  sed '/pattern/s/find/replace/' file.txt  # Only apply the substitution on lines matching 'pattern'
+  ```
+
+- **`-i` option**: Edit files in-place, but use it with caution as it modifies the source file.
+  ```bash
+  sed -i 's/find/replace/g' file.txt  # Modifies file.txt directly
+  ```
+
+- **`d` command**: Delete lines.
+  ```bash
+  sed '3d' file.txt  # Deletes the third line
+  sed '/pattern/d' file.txt  # Deletes lines matching 'pattern'
+  ```
+
+- **`p` command**: Print lines explicitly, used often with `-n` option to suppress default output.
+  ```bash
+  sed -n 'p' file.txt  # Prints each line, combined with -n it prints nothing unless specified
+  sed -n '/pattern/p' file.txt  # Prints only the lines that match 'pattern'
+  ```
+
+- **`a`, `i`, and `c` commands**: Append, insert, or change a line.
+  ```bash
+  sed '2a new_line' file.txt  # Appends 'new_line' after line 2
+  sed '3i new_line' file.txt  # Inserts 'new_line' before line 3
+  sed '4c new_line' file.txt  # Changes line 4 to 'new_line'
+  ```
+
+### Advanced Usage
+
+`sed` can also execute more complex scripts involving multiple commands, utilize hold and pattern spaces for advanced text manipulation, and even execute commands conditionally or loop over sections of text.
+
+For instance, you can use a semi-colon to separate multiple commands:
+
+```bash
+sed 's/find/replace/; s/search/replace/' file.txt
 ```
-Hi World
-Hi Bash
-Hi sed
+
+Or use a file to hold multiple `sed` commands:
+
+```bash
+sed -f script.sed input_file
 ```
 
-This example shows how `sed` can be used for simple text replacements, which is a common task in text processing and automation scripts.
+This utility is extremely powerful for scripting and text processing tasks in Linux environments. If you need specific examples or have questions about more complex `sed` operations, feel free to ask!
 
 
 ---
@@ -821,7 +977,7 @@ cafe au lait
 ---
 ---
 
----
+
 # uniq Command
 [uniq]
 
@@ -887,11 +1043,162 @@ This command sequence:
 - Removes duplicates, ignoring case, and
 - Displays only those lines that were duplicated.
 
-### Summary:
-
-The `uniq` command is a valuable tool for processing sorted text data, especially in conjunction with `sort`. It is widely used in scripts for data cleaning, report generation, and analysis tasks where identifying or removing duplicate entries is necessary.
-
 
 ---
 ---
 
+# diff Command
+[diff]
+
+The `diff` command in Linux is a utility used to compare the contents of files line by line. It's especially useful in scenarios where you need to see changes between two versions of the same file, such as in programming or configuration management.
+
+### Basic Syntax
+
+```bash
+diff [options] file1 file2
+```
+
+- **file1**, **file2**: These are the two files you want to compare.
+
+### Common Options
+
+- **`-u`, `--unified`**: This option provides a unified diff, which shows several lines of context, making it easier to understand the differences. This is the most commonly used format for patches.
+  ```bash
+  diff -u file1 file2
+  ```
+
+- **`-c`, `--context`**: Like unified, but provides a more detailed context for each change. Useful for getting a broader view of changes.
+  ```bash
+  diff -c file1 file2
+  ```
+
+- **`-i`**: Ignores case differences in file contents.
+  ```bash
+  diff -i file1 file2
+  ```
+
+- **`-w`, `--ignore-all-space`**: Ignores all white space in the files, useful for when changes in indentation or spacing aren't relevant.
+  ```bash
+  diff -w file1 file2
+  ```
+
+- **`--side-by-side`**: Displays the files next to each other for easy comparison.
+  ```bash
+  diff --side-by-side file1 file2
+  ```
+
+- **`-r`, `--recursive`**: Used to compare directories recursively. This option is helpful when comparing directories of files.
+  ```bash
+  diff -r dir1 dir2
+  ```
+
+### Understanding Output
+
+The output of the `diff` command can be interpreted as follows:
+
+- **Lines prefixed with `<`**: These lines are from `file1`.
+- **Lines prefixed with `>`**: These lines are from `file2`.
+- **Context lines** (in unified or context mode): Shown for reference and not prefixed by any symbol.
+- **Change line numbers**: The line numbers before and after the change are shown, helping to identify the exact location in both files.
+
+### Example of Unified Diff
+
+If you run `diff -u file1 file2`, you might get output like this:
+
+```diff
+--- file1   2021-04-01 14:20:15.000000000 -0400
++++ file2   2021-04-01 14:20:30.000000000 -0400
+@@ -1,5 +1,5 @@
+-Old line in file1
++New line in file2
+ Context line
+ Context line
+-Another old line in file1
++Another new line in file2
+```
+
+This output indicates:
+- Lines beginning with `-` were in `file1` but changed in `file2`.
+- Lines beginning with `+` are new or modified lines appearing in `file2`.
+
+---
+
+# grep Command
+[grep]
+
+The `grep` command in Linux is a powerful tool used for searching text data sets for lines that match a regular expression. Its name comes from the ed command `g/re/p` (globally search a regular expression and print), which has a similar function.
+
+### Basic Syntax
+
+```bash
+grep [options] pattern [file...]
+```
+
+- **pattern**: The text or regular expression you want to search for.
+- **file...**: One or more files to search. If no file is specified, `grep` reads from standard input.
+
+### Key Options
+
+- **`-i`**: Ignore case distinctions in both the pattern and the input files.
+  ```bash
+  grep -i "example" file.txt
+  ```
+
+- **`-v`**: Invert the match, i.e., show only lines that do not match the pattern.
+  ```bash
+  grep -v "example" file.txt
+  ```
+
+- **`-r` or `--recursive`**: Recursively search subdirectories listed.
+  ```bash
+  grep -r "example" /path/to/directory/
+  ```
+
+- **`-n`**: Prefix each line of output with the line number within its input file.
+  ```bash
+  grep -n "example" file.txt
+  ```
+
+- **`-c`**: Count the number of lines that match the pattern.
+  ```bash
+  grep -c "example" file.txt
+  ```
+
+- **`-l` (lowercase L)**: Print only the names of files with matching lines, once for each file.
+  ```bash
+  grep -l "example" *.txt
+  ```
+
+- **`-o`**: Show only the part of a matching line that matches PATTERN.
+  ```bash
+  grep -o "example" file.txt
+  ```
+
+- **`--color=auto`**: Mark up the matching text with color on the terminal.
+  ```bash
+  grep --color=auto "example" file.txt
+  ```
+
+### Practical Examples
+
+1. **Search for a pattern in a file ignoring case**:
+   ```bash
+   grep -i "search term" filename
+   ```
+
+2. **Count the number of lines that contain the pattern**:
+   ```bash
+   grep -c "search term" filename
+   ```
+
+3. **List all files in a directory containing the pattern**:
+   ```bash
+   grep -rl "search term" /path/to/directory/
+   ```
+
+4. **Display lines that do not contain the pattern**:
+   ```bash
+   grep -v "search term" filename
+   ```
+
+---

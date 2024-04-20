@@ -97,7 +97,6 @@ In Linux, a Unix-like operating system, the file system is organized hierarchica
 
 
 
----
 # File System
 ### Virtual File System
 [virtual file system]
@@ -403,6 +402,9 @@ Consider a file with the following permissions:
 - `-rwx` for the user: The owner can read, write, and execute.
 - `r-x` for the group: Group members can read and execute, but not write.
 - `r--` for others: Others can only read.
+
+
+![[Pasted image 20240419134244.png]]
 
 ---
 ## chmod
@@ -1725,3 +1727,147 @@ sudo yum update
 This command refreshes repository metadata and upgrades all installed packages to their latest versions. If updates are available, `yum` handles all dependency resolutions automatically.
 
 `yum` provides a comprehensive and reliable package management solution for administrators and users of RPM-based Linux systems, simplifying software management tasks significantly.
+
+# Analyze text using basic regular expressions
+[regex]
+
+Analyzing text using basic regular expressions in Linux can be effectively accomplished using tools like `grep`. Regular expressions (regex) allow you to specify complex search patterns, which can be used to match various text strings within files, streams, or other data.
+
+Here’s a basic guide on how to use regular expressions with `grep` for text analysis:
+
+![[Pasted image 20240419160224.png]]
+
+
+### Regular Expression Basics
+
+Regular expressions consist of:
+- **Literals**: Ordinary characters that match themselves.
+- **Special characters**: Symbols that control how the regex matches text.
+
+### Key Regular Expression Elements
+
+1. **`.` (Dot)**: Matches any single character, except a newline.
+2. **`^`**: Anchors the match at the beginning of the line.
+3. **`$`**: Anchors the match at the end of the line.
+4. **`[ ]`**: Matches any one of the characters inside the brackets.
+5. **`-` (inside brackets)**: Indicates a range of characters.
+6. **`*`**: Matches zero or more occurrences of the preceding element.
+7. **`+`** (extended regex): Matches one or more of the preceding element.
+8. **`?`** (extended regex): Makes the preceding element optional.
+9. **`|`** (extended regex): Logical OR between expressions.
+10. **`( )`** (extended regex): Groups expressions.
+
+### Using `grep` with Regular Expressions
+
+To use regular expressions with `grep`, you can use the `-E` option for extended regex support, or just use basic regex by default.
+
+#### Examples
+
+1. **Find lines starting with a specific word**:
+   ```bash
+   grep '^start' filename
+   ```
+   This command finds lines that start with the word "start".
+
+2. **Find lines that end with a specific word**:
+   ```bash
+   grep 'end$' filename
+   ```
+   This command finds lines that end with the word "end".
+
+3. **Find lines containing any digits**:
+   ```bash
+   grep '[0-9]' filename
+   ```
+   Matches lines containing any digit.
+
+4. **Find lines that do not contain vowels**:
+   ```bash
+   grep -v '[aeiou]' filename
+   ```
+   Uses `-v` to invert the match, showing only lines without lowercase vowels.
+
+5. **Match multiple specific characters (either A, B, or C)**:
+   ```bash
+   grep '[ABC]' filename
+   ```
+   Matches lines containing any one of 'A', 'B', or 'C'.
+
+6. **Using wildcards to match patterns**:
+   ```bash
+   grep 'e*r' filename
+   ```
+   Matches lines containing an 'e' followed by zero or more of any characters, followed by an 'r'.
+
+
+
+## Extended Regular Expressions
+
+Extended Regular Expressions (EREs) expand the capabilities and flexibility of Basic Regular Expressions (BREs) used in text processing tools like `grep`, `sed`, and `awk`. EREs introduce additional meta-characters and constructs that simplify writing complex patterns.
+
+### Key Differences and Features in ERE
+
+Here are the primary enhancements in ERE compared to BRE:
+
+1. **`+` Operator**: Matches one or more occurrences of the preceding element.
+   ```bash
+   grep -E 'o+' file.txt   # Matches 'o', 'oo', 'ooo', etc.
+   ```
+
+2. **`?` Operator**: Matches zero or one occurrence of the preceding element, making it optional.
+   ```bash
+   grep -E 'lo?s' file.txt  # Matches 'ls' or 'los'
+   ```
+
+3. **`|` Operator**: Acts as a logical OR between multiple expressions.
+   ```bash
+   grep -E 'cat|dog' file.txt  # Matches lines containing 'cat' or 'dog'
+   ```
+
+4. **Parentheses for Grouping (`( )`)**: Used to group expressions or to limit the scope of `|` operators.
+   ```bash
+   grep -E '(cat|dog)s' file.txt  # Matches 'cats' or 'dogs'
+   ```
+
+5. **Braces for Specified Repetitions `{m,n}`**: Matches a specified number of repetitions of the previous token, where `m` is the minimum and `n` is the maximum.
+   ```bash
+   grep -E 'lo{2,4}k' file.txt  # Matches 'look', 'loook', 'loook'
+   ```
+
+### Using `grep` with Extended Regular Expressions
+
+To enable extended regular expressions in `grep`, use the `-E` flag. This allows you to use the additional ERE features without escaping the special characters, which is required in BRE.
+
+#### Examples of ERE with `grep`
+
+1. **Matching Optional Characters**:
+   ```bash
+   grep -E 'Colou?r' file.txt  # Matches both 'Color' and 'Colour'
+   ```
+
+2. **Matching Multiple Repetitions**:
+   ```bash
+   grep -E 'wo{2,3}d' file.txt  # Matches 'wood' or 'woood'
+   ```
+
+3. **Combining Multiple Patterns**:
+   ```bash
+   grep -E 'gr(ea|a)y' file.txt  # Matches 'grey' or 'gray'
+   ```
+
+4. **Grouping and Alternations**:
+   ```bash
+   grep -E '(file|grep) (found|missing)' log.txt  # Matches 'file found', 'file missing', 'grep found', 'grep missing'
+   ```
+
+5. **Counting Specific Repetitions**:
+   ```bash
+   grep -E 'ha{3}!' file.txt  # Matches 'haaa!'
+   ```
+
+### Practical Usage Tips
+
+- **Combine with Other `grep` Options**: You can combine ERE with options like `-i` for case-insensitive matching, `-v` for inverting the match, or `-o` to only output the matching parts of a line.
+- **Use in Scripts**: EREs are powerful in scripting and can be used to validate input, extract specific data, or conditionally process lines in a file based on complex patterns.
+
+---

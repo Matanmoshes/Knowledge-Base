@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux Commands.md",
+                "file": "Linux/Linux Concept.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux Commands.md",
+                "file": "Linux/Linux Concept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux Commands.md",
+                "file": "Linux/Linux Concept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux Commands.md"
+                "file": "Linux/Linux Concept.md"
               }
             }
           }
@@ -161,12 +161,14 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "e0920caef4039550",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Linux/Linux Bash.md",
-    "Linux/Linux.md",
     "Linux/Linux Commands.md",
     "Linux/Linux Concept.md",
+    "Pasted image 20240419160224.png",
+    "Pasted image 20240419134244.png",
+    "Linux/Linux Bash.md",
+    "Linux/Linux.md",
     "Pasted image 20240417201937.png",
     "Powershell/Powershell.md",
     "Installation/Installation Instructions.md",
