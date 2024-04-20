@@ -1,3 +1,20 @@
+# `stdin` and `stdout`
+
+In the context of Linux and programming, `stdin` and `stdout` refer to standard input and standard output streams, respectively. These are fundamental concepts used in handling input and output operations in most operating systems, including Unix-like systems such as Linux.
+
+- **Standard Input (stdin):** This is the default input stream which provides input to programs. By default, it reads input from the keyboard, but it can be redirected to read input from files or other devices. In programming, stdin is often accessed using file descriptor 0.
+
+- **Standard Output (stdout):** This is the default output stream used by programs to write their output data. Normally, stdout displays output directly to the terminal, but it can be redirected to write to files or other outputs. In programming, stdout is generally accessed using file descriptor 1.
+
+These streams can be manipulated in the shell using redirection operators. For example:
+- To redirect the output of a command to a file, you can use `command > file.txt`.
+- To feed the contents of a file to a program, you can use `command < file.txt`.
+
+![[Pasted image 20240420113559.png]]
+
+---
+
+
 # Text Editor vim
 [vi]  [vim]
 Certainly! Here are some commonly used Vim commands, organized by their mode of operation:
@@ -1435,6 +1452,9 @@ tar -xJvf archive_name.tar.xz
 - `-u`: Update an existing archive by adding newer versions of files.
 
 `tar` is extensively used in backups, data distribution, and software packaging in Unix/Linux environments. Its ability to handle large files and numerous files efficiently makes it indispensable in system administration.
+
+
+![[Pasted image 20240420102202.png]]
 
 ---
 

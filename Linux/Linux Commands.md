@@ -178,7 +178,7 @@ common Bash commands along with examples that you can try in the shell:
 ---
 
 
-# find command
+# `find` command
 
 The `find` command in Linux is a powerful utility for searching and locating the list of files and directories based on conditions you specify from a specified directory. It allows you to search for files by permissions, user ownership, modification date/time, size, and other criteria.
 
@@ -314,7 +314,7 @@ This setup is especially useful for monitoring or debugging where you need to bo
 ---
 ---
 
-# cut Command
+# `cut` Command
 [cut]
 The `cut` command in Bash is used to extract sections of lines from a file or input received from a pipeline. It selects portions of each line from a file and outputs these portions to the standard output. The `cut` command is particularly useful for extracting columns of text from structured files such as CSV or delimited log files.
 
@@ -419,7 +419,7 @@ This script sets up variables for the input and output files. It uses `cut` with
 ---
 
  
-# paste Command
+# `paste` Command
 [paste]
 The `paste` command in Bash is used to merge lines of files horizontally, effectively combining multiple files or streams side-by-side. This command is particularly useful for collating data from separate sources into a single file.
 
@@ -477,7 +477,7 @@ The merged data is then redirected to `combined.txt`, and `cat` is used to displ
 
 ---
 ---
-# join command
+# `join` command
 [join]
 The `join` command in Bash is used to combine two files based on a common field. It's particularly useful when you want to merge data from two files where lines share a common element, usually denoted as a key.
 
@@ -536,7 +536,7 @@ The result is redirected to `joined_data.txt`, and `cat` is used to display the 
 ---
 ---
 
-# split command
+# `split` command
 [split]
 The `split` command in Bash is used to split a large file into smaller files. It's commonly used to manage large datasets by dividing them into manageable pieces or to split files for easier distribution and storage.
 
@@ -574,7 +574,7 @@ This script splits `data.txt` into multiple smaller files, each containing up to
 
 
 
-# sed Command
+# `sed` Command
 
 The `sed` command in Linux, short for "stream editor," is a powerful utility for performing text transformations on an input stream (like a file or input from a pipeline). It is primarily used for extracting and transforming text in files or output from other commands.
 
@@ -652,7 +652,7 @@ This utility is extremely powerful for scripting and text processing tasks in Li
 ---
 ---
 
-# wc Command
+# `wc` Command
 [wc]
 The `wc` (word count) command in Unix and Linux is a simple utility used to count lines, words, and bytes (or characters) in files or standard input. It's commonly employed in scripting and command line operations to measure the size or length of input.
 
@@ -719,7 +719,7 @@ This command uses `watch` to repeatedly execute `wc -l log_file.txt`, allowing y
 
 ---
 ---
-# awk Command
+# `awk` Command
 [awk]
 
 `awk` is a versatile tool used for parsing and manipulating text based on patterns, handling text files line by line and field by field. It supports extensive programming capabilities, including loops, conditionals, and arrays for complex text processing tasks.
@@ -823,7 +823,7 @@ To use this script:
 ---
 
 ---
-# sort Command
+# `sort` Command
 [sort]
 The `sort` command in Bash is a utility for sorting lines in text files. It is widely used in Unix and Linux systems for organizing file content in a specified order, either numerically or alphabetically, among other options.
 
@@ -910,7 +910,7 @@ This example demonstrates the utility of `sort` in handling structured text data
 
 
 ---
-# tr Command
+# `tr` Command
 [tr]
 
 The `tr` command in Bash (short for translate) is a useful utility for transforming or deleting characters from the standard input and writing the result to the standard output. It is frequently used for replacing, removing, or squeezing repeating characters.
@@ -978,7 +978,7 @@ cafe au lait
 ---
 
 
-# uniq Command
+# `uniq` Command
 [uniq]
 
 The `uniq` command in Unix and Linux is used to filter or report repeated lines in a file. Particularly useful when dealing with sorted data, `uniq` helps in removing or counting duplicate entries. The command typically requires sorted input, as it only removes duplicates that are adjacent to each other.
@@ -1047,7 +1047,7 @@ This command sequence:
 ---
 ---
 
-# diff Command
+# `diff` Command
 [diff]
 
 The `diff` command in Linux is a utility used to compare the contents of files line by line. It's especially useful in scenarios where you need to see changes between two versions of the same file, such as in programming or configuration management.
@@ -1123,7 +1123,7 @@ This output indicates:
 
 ---
 
-# grep Command
+# `grep` Command
 [grep]
 
 The `grep` command in Linux is a powerful tool used for searching text data sets for lines that match a regular expression. Its name comes from the ed command `g/re/p` (globally search a regular expression and print), which has a similar function.
@@ -1200,5 +1200,160 @@ grep [options] pattern [file...]
    ```bash
    grep -v "search term" filename
    ```
+
+---
+
+# `rsync` Command
+
+[rsync]
+
+`rsync` is a highly versatile file-copying tool used on Unix-like systems for efficiently transferring and synchronizing files across local drives, mounted file systems, or networked computers using a secure shell (SSH). It is widely appreciated for its robust feature set, including the ability to only transfer the differences between files, support for symbolic links, permissions, and much more.
+
+![[Pasted image 20240420102837.png]]
+
+
+
+### Basic Syntax
+
+The basic syntax of `rsync` is as follows:
+
+```bash
+rsync [options] source destination
+```
+
+- **source**: The path to the source file(s) or directory.
+- **destination**: The path to the destination where the file(s) or directory should be copied.
+
+### Key Options
+
+- **`-a`**, **`--archive`**: Enables archive mode, which preserves symbolic links, permissions, timestamps, and group and owner information.
+- **`-v`**, **`--verbose`**: Provides detailed output of what `rsync` is doing.
+- **`-z`**, **`--compress`**: Compresses file data during the transfer, which is useful over slow connections.
+- **`-r`**, **`--recursive`**: Recursively copies entire directories.
+- **`--delete`**: Deletes files from the destination that are not present on the source.
+- **`-e`**, **`--rsh=COMMAND`**: Specifies the remote shell to use; often used to specify SSH.
+- **`--exclude`**: Excludes files that match the pattern.
+- **`--include`**: Includes files that match the pattern, useful with `--exclude`.
+- **`-n`**, **`--dry-run`**: Performs a trial run with no changes made.
+
+### Common Usage Scenarios
+
+#### 1. **Local File Transfer**
+Copying data from one directory to another on the same machine can be done using:
+
+```bash
+rsync -av /path/to/source/ /path/to/destination/
+```
+
+This command uses `-a` for archive mode to ensure that all characteristics of the files are preserved and `-v` for verbose output.
+
+#### 2. **Remote File Transfer**
+To copy data from a local machine to a remote server:
+
+```bash
+rsync -avz -e ssh /path/to/source/ user@remote_host:/path/to/destination/
+```
+
+This adds `-z` to compress the data during transfer and `-e ssh` to use SSH for secure data transfer.
+
+#### 3. **Synchronizing Files**
+To synchronize the contents of a local directory with a remote directory, ensuring that the remote directory exactly matches the local directory:
+
+```bash
+rsync -avz --delete /path/to/source/ user@remote_host:/path/to/destination/
+```
+
+The `--delete` option ensures that files not present in the source are removed from the destination, making both directories identical.
+
+#### 4. **Using Include and Exclude**
+To transfer files while excluding some types of files:
+
+```bash
+rsync -av --exclude '*.tmp' /path/to/source/ /path/to/destination/
+```
+
+To include specific files while excluding others:
+
+```bash
+rsync -av --include '*.txt' --exclude '*' /path/to/source/ /path/to/destination/
+```
+
+### Tips and Best Practices
+
+- **Use Absolute Paths**: Especially when scripting, to avoid errors related to relative paths.
+- **Check Firewall and Network Settings**: Ensure that any required ports (like SSH's port 22) are open when syncing over a network.
+- **Regularly Test**: Regularly test your `rsync` commands using the `--dry-run` option to ensure they perform as expected without actually transferring files.
+
+---
+
+# `dd` Command
+
+The `dd` command in Unix and Linux is a low-level utility for converting and copying files, but it is particularly famed for its capability to perform direct copying from one storage device to another at the block level. This makes it especially powerful for tasks involving disk imaging, backups, and recovery.
+
+### Basic Syntax
+
+The basic syntax of `dd` is:
+
+```bash
+dd if=input_file of=output_file [options]
+```
+
+- **`if=`** specifies the input file (or device).
+- **`of=`** specifies the output file (or device).
+- **options** include several parameters that can be adjusted to control how `dd` operates.
+
+### Key Options
+
+- **`bs=`**: Sets both input and output block size. Typical values are `512` bytes (for traditional disk sectors), `4K` (for modern drives), and larger sizes for efficiency in certain situations.
+- **`count=`**: Number of blocks to copy (combined with `bs`, determines total amount of data copied).
+- **`skip=`**: Number of input blocks to skip before starting to copy (useful for offsetting into the input).
+- **`seek=`**: Number of output blocks to skip before starting to write (useful for offsetting into the output).
+- **`conv=`**: A set of options to convert the file as per the specified keywords, like `notrunc` (do not truncate the output file), `sync` (pad every input block to size of `bs` with nulls), `noerror` (continue after read errors), etc.
+
+### Common Usage Examples
+
+#### 1. **Creating Disk Images**
+To create an image of a disk:
+
+```bash
+dd if=/dev/sda of=/path/to/disk_image.img bs=4M
+```
+This command will create an image (`disk_image.img`) of the `/dev/sda` device using a block size of 4 Megabytes, which can enhance the efficiency of the operation.
+
+#### 2. **Restoring Disk Images**
+To restore an image to a disk:
+
+```bash
+dd if=/path/to/disk_image.img of=/dev/sda bs=4M
+```
+This reverses the first example, writing the disk image back to a physical disk.
+
+#### 3. **Creating Bootable USB Drives**
+Copying an ISO image to a USB drive to make it bootable:
+
+```bash
+dd if=/path/to/linux.iso of=/dev/sdb bs=4M
+```
+This assumes that `/dev/sdb` is the USB drive. Care must be taken to verify the device name with tools like `lsblk` or `fdisk` before running the command to avoid overwriting the wrong disk.
+
+#### 4. **Backup of a Partition**
+To backup a single partition:
+
+```bash
+dd if=/dev/sda1 of=/path/to/partition_backup.img bs=4M
+```
+This command creates a backup image of the first partition on the disk `/dev/sda`.
+
+### Safety and Precautions
+
+- **Double-check device names**: `dd` can cause irreparable data loss if misused (commonly joked as "Disk Destroyer" due to its power and potential for damage).
+- **Root permissions**: `dd` often requires root access, especially for reading/writing directly to disk devices.
+- **Monitoring progress**: `dd` does not show progress in its traditional form. To view progress during the operation, you can use `status=progress` option in newer versions:
+
+  ```bash
+  dd if=/dev/sda of=/path/to/disk_image.img bs=4M status=progress
+  ```
+
+The `dd` command is extremely powerful and useful for a wide range of lower-level data manipulation tasks, especially those involving block devices. Always use it with care to ensure that you do not accidentally overwrite valuable data.
 
 ---
