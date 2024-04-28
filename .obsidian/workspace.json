@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux Concept.md",
+                "file": "Linux/Linux Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux Concept.md",
+                "file": "Linux/Linux Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux Concept.md",
+                "file": "Linux/Linux Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux Concept.md"
+                "file": "Linux/Linux Commands.md"
               }
             }
           }
@@ -163,9 +163,11 @@
   },
   "active": "e0920caef4039550",
   "lastOpenFiles": [
-    "Pasted image 20240420113559.png",
-    "Linux/Linux Commands.md",
+    "Installation/Installation Instructions.md",
     "Linux/Linux Concept.md",
+    "Linux/Linux Commands.md",
+    "Pasted image 20240420113934.png",
+    "Pasted image 20240420113559.png",
     "Pasted image 20240420102837.png",
     "Pasted image 20240420102202.png",
     "Pasted image 20240419160224.png",
@@ -174,14 +176,11 @@
     "Linux/Linux.md",
     "Pasted image 20240417201937.png",
     "Powershell/Powershell.md",
-    "Installation/Installation Instructions.md",
     "Powershell",
     "Installation",
     "Pasted image 20240406185756.png",
     "Pasted image 20240406185153.png",
     "Pasted image 20240406185040.png",
-    "Pasted image 20240406183630.png",
-    "Pasted image 20240404172118.png",
     "Git/Git.md",
     "linux process.md",
     "test.txt",

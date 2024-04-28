@@ -1357,3 +1357,364 @@ This command creates a backup image of the first partition on the disk `/dev/sda
 The `dd` command is extremely powerful and useful for a wide range of lower-level data manipulation tasks, especially those involving block devices. Always use it with care to ensure that you do not accidentally overwrite valuable data.
 
 ---
+
+
+# `gzip` Command
+[gzip]
+
+`gzip` (GNU zip) is a file compression utility in Linux and other Unix-like operating systems. It's commonly used to reduce the size of files, making them easier to store or transmit. `gzip` typically operates on single files and appends a `.gz` extension to the compressed files. It uses the DEFLATE algorithm for compression.
+
+### Basic Usage
+Here's how you can use `gzip` in its most basic form:
+
+```bash
+gzip filename
+```
+
+This command will compress the file named `filename` and replace it with `filename.gz` in the same directory.
+
+### Common Options
+- `-d`: Decompress a file
+- `-k`: Keep the input files (does not delete the original file after compression or decompression)
+- `-l`: List information about a compressed file
+- `-r`: Recursively compress files in a directory
+- `-1` to `-9`: Set the compression level (`-1` for fastest compression and `-9` for best compression)
+
+### Examples
+
+**Compressing a file while keeping the original:**
+```bash
+gzip -k filename
+```
+
+**Decompressing a file:**
+```bash
+gzip -d filename.gz
+```
+
+**Compressing all files in a directory recursively:**
+```bash
+gzip -r directory_name
+```
+
+**Checking compressed file details:**
+```bash
+gzip -l filename.gz
+```
+
+**Return to normal file 
+```bash
+gunzip filename.gz
+```
+
+`gzip` is widely used in scripts and pipelines in Linux systems for handling logs, backups, and any other scenarios where saving space is beneficial. If you need to compress multiple files into a single archive, you might typically pair `gzip` with `tar`, as `gzip` itself does not handle multiple files.
+
+![[Pasted image 20240417201937.png]]
+
+
+---
+
+
+# `tar` Command
+[tar]
+
+The `tar` command in Linux is a powerful tool used for collecting multiple files into a single archive file, often referred to as a tarball. The name "tar" stands for "tape archive," reflecting its original purpose for writing data to sequential I/O devices without a file system. While `tar` can handle file compression through its own options, it is commonly used with external compression tools like `gzip`, `bzip2`, or `xz` to reduce the size of the archive.
+
+### Basic Usage
+Here’s how you can use `tar` to create, extract, and manage tarball files:
+
+**Creating an archive:**
+```bash
+tar -cvf archive_name.tar directory_or_files
+```
+- `-c`: Create a new archive.
+- `-v`: Verbosely list files processed (optional).
+- `-f`: Use the following argument as the filename of the archive.
+
+**Extracting an archive:**
+```bash
+tar -xvf archive_name.tar
+```
+- `-x`: Extract files from an archive.
+- `-v`: Verbosely list files processed (optional).
+- `-f`: Use the following argument as the filename of the archive.
+
+### Examples with Compression
+
+**Creating a gzip-compressed tarball:**
+```bash
+tar -czvf archive_name.tar.gz directory_or_files
+```
+- `-z`: Filter the archive through `gzip` for compression.
+
+**Extracting a gzip-compressed tarball:**
+```bash
+tar -xzvf archive_name.tar.gz
+#=============================
+tar --extract --file /home/bob/archive.tar.gz --directory /tmp/
+#=============================
+tar xf /home/bob/archive.tar.gz -C /tmp
+```
+
+**Creating a bzip2-compressed tarball:**
+```bash
+tar -cjvf archive_name.tar.bz2 directory_or_files
+```
+- `-j`: Filter the archive through `bzip2` for compression.
+
+**Extracting a bzip2-compressed tarball:**
+```bash
+tar -xjvf archive_name.tar.bz2
+```
+
+**Creating an xz-compressed tarball:**
+```bash
+tar -cJvf archive_name.tar.xz directory_or_files
+```
+- `-J`: Filter the archive through `xz` for compression.
+
+**Extracting an xz-compressed tarball:**
+```bash
+tar -xJvf archive_name.tar.xz
+```
+
+### Advanced Options
+- `--exclude`: Exclude files or directories from the archive.
+- `-p`: Preserve permissions.
+- `-u`: Update an existing archive by adding newer versions of files.
+
+`tar` is extensively used in backups, data distribution, and software packaging in Unix/Linux environments. Its ability to handle large files and numerous files efficiently makes it indispensable in system administration.
+
+
+![[Pasted image 20240420102202.png]]
+
+---
+
+# `dpkg` Command
+[dpkg]
+
+`dpkg` is a package management program used on Debian-based Linux distributions, including Ubuntu. It is used to install, remove, and manage Debian (.deb) packages, but it does not handle dependency resolution automatically. This is typically managed by higher-level tools like `apt` or `apt-get`, which call `dpkg` in the background and handle dependencies for you.
+
+### Basic Usage of `dpkg`
+Here's a rundown of the most common operations you can perform with `dpkg`:
+
+**Installing a package:**
+```bash
+sudo dpkg -i package_file.deb
+```
+- `-i`: Install a package.
+
+**Removing a package:**
+```bash
+sudo dpkg -r package_name
+```
+- `-r`: Remove a package but keep its configuration files.
+
+**Purging a package (remove including config files):**
+```bash
+sudo dpkg -P package_name
+```
+- `-P`: Purge a package, including its configuration files.
+
+**Listing all installed packages:**
+```bash
+dpkg -l
+```
+- `-l`: List packages.
+
+**Checking if a package is installed and getting its status:**
+```bash
+dpkg -s package_name
+```
+- `-s`: Show package status along with version and other details.
+
+**Checking the contents of a package file:**
+```bash
+dpkg -c package_file.deb
+```
+- `-c`: List contents of a .deb file.
+
+### Handling Errors and Configuration Issues
+If `dpkg` encounters problems, such as conflicts or missing dependencies, it will not proceed with the installation and will typically report an error. This can usually be fixed by manually installing the missing dependencies or by using `apt-get` which will automatically handle these dependencies for you.
+
+For example, if you try to install a package that depends on another package that isn't installed, `dpkg` will fail with an error. You can fix this by installing the required package or by running:
+
+```bash
+sudo apt-get install -f
+```
+- The `-f` option means "fix broken." This command asks `apt-get` to correct any broken dependencies.
+
+### Advanced Features
+`dpkg` also supports configuration files management, where it allows administrators to handle package-specific configuration through scripts executed during the package installation or removal.
+
+### Example Scenario: Installing a Package
+Suppose you have downloaded a package called `example.deb` and want to install it. You would use the following command:
+
+```bash
+sudo dpkg -i example.deb
+```
+
+If `dpkg` reports missing dependencies, you would then run:
+
+```bash
+sudo apt-get install -f
+```
+
+This sequence ensures that all dependencies are satisfied and that your package is correctly installed using the combination of `dpkg` and `apt-get`.
+
+`dpkg` is a crucial tool for Debian and Ubuntu users, especially when dealing with locally downloaded `.deb` files or managing packages on systems without internet access.
+
+
+# `systemctl` Command
+[systemctl]
+
+To get a complete overview of all `systemctl` commands and options directly in the shell, you can use the `systemctl` command with the `--help` option. This will list all the commands, options, and a brief description of their usage. Here's how you can do it:
+
+```bash
+systemctl --help
+```
+
+This command will display a detailed help message covering all available `systemctl` commands, their syntax, and options. For a more structured and categorized overview, here’s how you can use common `systemctl` commands in the shell for various purposes:
+
+### Starting, Stopping, and Managing Services
+```bash
+# Start a service
+systemctl start <service_name>
+
+# Stop a service
+systemctl stop <service_name>
+
+# Restart a service
+systemctl restart <service_name>
+
+# Reload service configuration
+systemctl reload <service_name>
+
+# Check the status of a service
+systemctl status <service_name>
+```
+
+### Enabling and Disabling Services at Boot
+```bash
+# Enable a service to start at boot
+systemctl enable <service_name>
+
+# Disable a service from starting at boot
+systemctl disable <service_name>
+```
+
+### Listing and Analyzing System Units
+```bash
+# List all active units
+systemctl list-units
+
+# List all installed unit files
+systemctl list-unit-files
+
+# Show a tree of the unit dependencies
+systemctl list-dependencies <service_name>
+```
+
+### System Power Management
+```bash
+# Reboot the system
+systemctl reboot
+
+# Shut down and power off the system
+systemctl poweroff
+
+# Suspend the system
+systemctl suspend
+
+# Put the system into hibernation
+systemctl hibernate
+```
+
+### Handling Failed Services
+```bash
+# Show services that have entered a failed state
+systemctl --failed
+
+# Reset the failed state of all units
+systemctl reset-failed
+```
+
+### Advanced Commands
+```bash
+# Mask a service to prevent it from being started
+systemctl mask <service_name>
+
+# Unmask a service
+systemctl unmask <service_name>
+```
+
+
+
+---
+
+##  Install, configure and troubleshoot bootloaders
+
+In Linux, you can boot or change your system into different operating modes, known as "runlevels" in traditional init systems, and "targets" in systems using `systemd`. The concept of targets in `systemd` is more flexible and powerful than traditional runlevels, allowing for better control over what services and processes start at various stages of the system's boot process or during its operation.
+
+Here’s an overview of how to manage these targets with `systemd`, which is the initialization system used by many modern Linux distributions such as Fedora, Ubuntu (starting from 15.04), and CentOS/RHEL 7 and later.
+
+### Common Systemd Targets
+- **`poweroff.target`**: Shuts down and powers off the system.
+- **`rescue.target`**: Launches a minimal environment for troubleshooting (similar to single-user mode).
+- **`multi-user.target`**: Boots the system into a multi-user mode with networking but without a graphical interface, similar to runlevel 3 in older systems.
+- **`graphical.target`**: Boots the system into a multi-user, graphical mode, similar to runlevel 5.
+- **`reboot.target`**: Reboots the system.
+- **`emergency.target`**: Provides a minimal environment and boots the system into emergency mode for maximum troubleshooting.
+
+### Changing Targets
+To change the current target and therefore the mode of the system, you use the `systemctl` command. Here’s how to manage these changes:
+
+#### Check the Current Target
+```bash
+systemctl get-default
+```
+
+#### Set a Default Target
+To permanently change the default boot target, use:
+```bash
+systemctl set-default <target_name>
+```
+For example, to set the system to boot into graphical mode by default:
+```bash
+systemctl set-default graphical.target
+```
+
+#### Switch to Another Target
+To change the target temporarily (i.e., until the next reboot), use:
+```bash
+systemctl isolate <target_name>
+```
+For example, to switch to rescue mode immediately:
+```bash
+systemctl isolate rescue.target
+```
+
+### Example Commands
+Here are some example commands to manage these targets:
+
+- **Switch to graphical mode**:
+  ```bash
+  systemctl isolate graphical.target
+  ```
+
+- **Set multi-user mode as the default**:
+  ```bash
+  systemctl set-default multi-user.target
+  ```
+
+- **Reboot the system**:
+  ```bash
+  systemctl isolate reboot.target
+  ```
+
+- **Shut down and power off the system immediately**:
+  ```bash
+  systemctl isolate poweroff.target
+  ```
+
+These commands allow you to control the operational state of your Linux system flexibly and robustly. If you need to know more about specific targets or how to handle a special scenario, feel free to ask!
