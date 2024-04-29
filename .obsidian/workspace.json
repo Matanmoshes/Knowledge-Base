@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "1fa5597673a922c4",
+        "id": "305aead4ffb75aab",
         "type": "tabs",
         "children": [
           {
-            "id": "f47c91e1335596d9",
+            "id": "f1e1ea1d40b3da9d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux Bash.md",
+                "file": "Linux/Linux Commands/dpkg.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e0920caef4039550",
+            "id": "a6aff036b61bf12f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux Commands.md",
+                "file": "Linux/Linux Concept.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 465.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux Commands.md",
+                "file": "Linux/Linux Concept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux Commands.md",
+                "file": "Linux/Linux Concept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux Commands.md"
+                "file": "Linux/Linux Concept.md"
               }
             }
           }
@@ -161,31 +161,49 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "e0920caef4039550",
+  "active": "a6aff036b61bf12f",
   "lastOpenFiles": [
-    "Installation/Installation Instructions.md",
+    "Pasted image 20240404172118.png",
+    "Linux/Linux Bashs.md",
+    "Linux/Linux Commands/systemctl.md",
+    "Linux/Linux Com.md",
+    "Linux/Linux Commands/dpkg.md",
+    "Linux/Linux Commands/tar.md",
+    "Linux/Linux Commands/gzip.md",
+    "Linux/Linux Commands/dd.md",
+    "Linux/Linux Commands/rsync.md",
+    "Linux/Linux Commands/grep.md",
     "Linux/Linux Concept.md",
-    "Linux/Linux Commands.md",
+    "Linux/Linux Commands/General Commands.md",
+    "Linux/Linux Commands/find.md",
+    "Linux/Linux Commands/cut.md",
+    "Linux/Linux Commands/paste.md",
+    "Linux/Linux Commands/join.md",
+    "Linux/Linux Commands/split.md",
+    "Linux/Linux Commands/sed.md",
+    "Linux/Linux Commands/wc.md",
+    "Linux/Linux Commands/awk.md",
+    "Linux/Linux Commands/sort.md",
+    "Linux/Linux Commands/tr.md",
+    "Linux/Linux Commands/uniq.md",
+    "Linux/Linux Commands/diff.md",
+    "Linux/Linux Commands/pipe and tee.md",
+    "Linux/Linux Commands",
+    "Installation/Create systemd Services.md",
     "Pasted image 20240420113934.png",
     "Pasted image 20240420113559.png",
     "Pasted image 20240420102837.png",
     "Pasted image 20240420102202.png",
     "Pasted image 20240419160224.png",
     "Pasted image 20240419134244.png",
-    "Linux/Linux Bash.md",
-    "Linux/Linux.md",
     "Pasted image 20240417201937.png",
-    "Powershell/Powershell.md",
     "Powershell",
     "Installation",
     "Pasted image 20240406185756.png",
     "Pasted image 20240406185153.png",
     "Pasted image 20240406185040.png",
-    "Git/Git.md",
-    "linux process.md",
     "test.txt",
     "Git",
-    "Git.md",
     "Linux"
   ]
 }
