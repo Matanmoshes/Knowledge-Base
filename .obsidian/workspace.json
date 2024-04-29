@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f1e1ea1d40b3da9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux Commands/dpkg.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a6aff036b61bf12f",
             "type": "leaf",
             "state": {
@@ -30,9 +18,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ec0ba76d637a40aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Bash/Bash Script.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "84ee9bb2576d2bf1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Bash/Linux process script.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "01ba3a7837adcf35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Bash/Manipulate data script.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "693890abc4a00802",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Linux Concept.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -98,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Powershell/Powershell.md",
+                "file": "Linux/Linux Concept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Powershell/Powershell.md",
+                "file": "Linux/Linux Concept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Powershell/Powershell.md"
+                "file": "Linux/Linux Concept.md"
               }
             }
           }
@@ -161,16 +197,31 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "a6aff036b61bf12f",
+  "active": "693890abc4a00802",
   "lastOpenFiles": [
-    "Attachments/Pasted image 20240404172118.png",
+    "Powershell/Powershell.md",
+    "Linux/Linux Bashs.md",
     "Linux/Linux Concept.md",
+    "Linux/Bash/Linux process script.md",
+    "Linux/Bash/Package Managment Script.md",
+    "Linux/Bash/Manipulate data script.md",
+    "Linux/Bash/Bash Script.md",
+    "Linux/Linux Commands/dpkg.md",
+    "Powershell/Drive Space Alert Script.md",
+    "Powershell/Input Output.md",
+    "Powershell/PowerShell Basics.md",
+    "Powershell/pipeline operator.md",
+    "Powershell/State of the Shell.md",
+    "Powershell/PowerhShell Development.md",
+    "Powershell/Variables.md",
+    "Powershell/PowerShell Logic.md",
+    "Linux/Bash",
+    "Powershell/Untitled.loom",
+    "Attachments/Pasted image 20240404172118.png",
     "Assets",
     "Attachments",
-    "Linux/Linux Bashs.md",
     "Linux/Linux Commands/systemctl.md",
     "Linux/Linux Com.md",
-    "Linux/Linux Commands/dpkg.md",
     "Linux/Linux Commands/tar.md",
     "Linux/Linux Commands/gzip.md",
     "Linux/Linux Commands/dd.md",
@@ -179,19 +230,7 @@
     "Linux/Linux Commands/General Commands.md",
     "Linux/Linux Commands/find.md",
     "Linux/Linux Commands/cut.md",
-    "Linux/Linux Commands/paste.md",
-    "Linux/Linux Commands/join.md",
-    "Linux/Linux Commands/split.md",
-    "Linux/Linux Commands/sed.md",
-    "Linux/Linux Commands/wc.md",
-    "Linux/Linux Commands/awk.md",
-    "Linux/Linux Commands/sort.md",
-    "Linux/Linux Commands/tr.md",
-    "Linux/Linux Commands/uniq.md",
-    "Linux/Linux Commands/diff.md",
-    "Linux/Linux Commands/pipe and tee.md",
     "Linux/Linux Commands",
-    "Installation/Create systemd Services.md",
     "Attachments/Pasted image 20240420113934.png",
     "Pasted image 20240420113559.png",
     "Attachments/Pasted image 20240420102837.png",
