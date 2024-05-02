@@ -149,11 +149,9 @@ main
 ```
 
 
-### analysis
+### Analysis
 
-Sure, let's dive deeper into the workings of each function within the Bash script, detailing the commands and their interactions:
-
-### Function: `compress_decompress_logs`
+#### Function: `compress_decompress_logs`
 ```bash
 compress_decompress_logs() {
     local tar_file="/tmp/var_log.tar.gz"
@@ -179,7 +177,7 @@ compress_decompress_logs() {
 - **Directory Creation**: `mkdir -p "$LOG_BACKUP_DIR"` ensures the backup directory exists by creating it if it doesn't. The `-p` flag prevents an error if the directory already exists.
 - **Decompression**: The `tar -xzf` command decompresses the archive into the specified directory (`$LOG_BACKUP_DIR`). The `-x` flag extracts files from an archive, `-z` is for gzip decompression, and `-f` specifies the archive file. If decompression fails, it logs an error to `stderr` and returns 1.
 
-### Function: `create_and_compress_text_file`
+#### Function: `create_and_compress_text_file`
 ```bash
 create_and_compress_text_file() {
     local txt_file="test.txt"
@@ -206,7 +204,7 @@ create_and_compress_text_file() {
 - **GZIP Compression**: `gzip -k` compresses the file using GZIP but keeps the original file (`-k` flag).
 - **Size Comparison**: `ls -lh` lists the file sizes in a human-readable format, allowing comparison of the efficiency of the two compression methods.
 
-### Function: `list_installed_packages`
+#### Function: `list_installed_packages`
 ```bash
 list_installed_packages() {
     if command -v dpkg &> /dev/null; then
@@ -225,7 +223,7 @@ list_installed_packages() {
 - **Package Manager Detection**: Uses `command -v` to check for the presence of `dpkg` or `rpm`. This command returns the path of the command if it exists, suppressing output with `&> /dev/null`.
 - **Package Listing**: Depending on the package manager, it lists installed packages. `dpkg -l` lists all packages in Debian systems, and `rpm -qa` lists all in RPM systems. `head -n 10` or `head -n 11` limits the output to the first 10 entries.
 
-### Function: `check_curl_dependencies`
+#### Function: `check_curl_dependencies`
 ```bash
 check_curl_dependencies() {
     if command -v apt &> /dev/null; then

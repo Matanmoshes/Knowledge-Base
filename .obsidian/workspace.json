@@ -25,7 +25,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash/Bash Script.md",
+                "file": "Linux/Linux Concept.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8bf9a53d2e38ea89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Bash/Package Managment Script.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "21cbdf0f0c009f9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Bash/Comprehensive File System Organization/Summery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2c4f3f2604bcec94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Bash/Comprehensive File System Organization/Summery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b8d7db79ba624836",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Bash/Comprehensive File System Organization/Code Breakdown.md",
                 "mode": "source",
                 "source": false
               }
@@ -54,21 +102,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "693890abc4a00802",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux Concept.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -118,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 358.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -134,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux Concept.md",
+                "file": "Linux/Bash/Comprehensive File System Organization/Code Breakdown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux Concept.md",
+                "file": "Linux/Bash/Comprehensive File System Organization/Code Breakdown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux Concept.md"
+                "file": "Linux/Bash/Comprehensive File System Organization/Code Breakdown.md"
               }
             }
           }
@@ -197,15 +233,27 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "693890abc4a00802",
+  "active": "b8d7db79ba624836",
   "lastOpenFiles": [
+    "Linux/Bash/Comprehensive File System Organization/Summery.md",
+    "Linux/Bash/Linux process script.md",
+    "Linux/Bash/Comprehensive File System Organization/Code Breakdown.md",
+    "Linux/Bash/Comprehensive File System Organization/filesystem_organizer.sh.md",
+    "Linux/Bash/Comprehensive File System Organization",
+    "Linux/Bash/Package Managment Script.md",
+    "Linux/Bash/Bash Script.md",
+    "Installation/Create systemd Services.md",
+    "Linux/Linux Commands/ps.md",
+    "Linux/Linux Concept.md",
+    "Linux/Linux Commands/systemctl.md",
+    "Linux/Linux Commands/uniq.md",
+    "Linux/Linux Commands/awk.md",
+    "Linux/Linux Commands/wc.md",
+    "Linux/Linux Commands/sort.md",
+    "Linux/Linux Commands/pipe and tee.md",
     "Powershell/Powershell.md",
     "Linux/Linux Bashs.md",
-    "Linux/Linux Concept.md",
-    "Linux/Bash/Linux process script.md",
-    "Linux/Bash/Package Managment Script.md",
     "Linux/Bash/Manipulate data script.md",
-    "Linux/Bash/Bash Script.md",
     "Linux/Linux Commands/dpkg.md",
     "Powershell/Drive Space Alert Script.md",
     "Powershell/Input Output.md",
@@ -214,22 +262,11 @@
     "Powershell/State of the Shell.md",
     "Powershell/PowerhShell Development.md",
     "Powershell/Variables.md",
-    "Powershell/PowerShell Logic.md",
     "Linux/Bash",
     "Powershell/Untitled.loom",
     "Attachments/Pasted image 20240404172118.png",
     "Assets",
     "Attachments",
-    "Linux/Linux Commands/systemctl.md",
-    "Linux/Linux Com.md",
-    "Linux/Linux Commands/tar.md",
-    "Linux/Linux Commands/gzip.md",
-    "Linux/Linux Commands/dd.md",
-    "Linux/Linux Commands/rsync.md",
-    "Linux/Linux Commands/grep.md",
-    "Linux/Linux Commands/General Commands.md",
-    "Linux/Linux Commands/find.md",
-    "Linux/Linux Commands/cut.md",
     "Linux/Linux Commands",
     "Attachments/Pasted image 20240420113934.png",
     "Pasted image 20240420113559.png",
@@ -243,7 +280,6 @@
     "Attachments/Pasted image 20240406185756.png",
     "Attachments/Pasted image 20240406185153.png",
     "test.txt",
-    "Git",
-    "Linux"
+    "Git"
   ]
 }

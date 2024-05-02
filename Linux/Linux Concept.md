@@ -223,7 +223,6 @@ A thread is the smallest sequence of programmed instructions that can be managed
 
 ---
 
----
 # Users & Groups in Linux
 
 ---
