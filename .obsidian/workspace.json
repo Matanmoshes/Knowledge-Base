@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "15e78667846a49c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "create_users.sh.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "eb25966f19600a97",
             "type": "leaf",
             "state": {
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/Maintenance Script.md",
+                "file": "create_users.sh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/Maintenance Script.md",
+                "file": "create_users.sh.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/Maintenance Script.md"
+                "file": "create_users.sh.md"
               }
             }
           }
@@ -174,10 +186,11 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "2b25cfbcab39744c",
+  "active": "15e78667846a49c5",
   "lastOpenFiles": [
-    "Linux/Bash/Comprehensive File System Organization/Backup Script.md",
     "Linux/Bash/Comprehensive File System Organization/Maintenance Script.md",
+    "create_users.sh.md",
+    "Linux/Bash/Comprehensive File System Organization/Backup Script.md",
     "Linux/Bash/Comprehensive File System Organization/Summery.md",
     "Linux/Bash/Comprehensive File System Organization/Code Breakdown.md",
     "Linux/Linux Concept.md",
@@ -204,7 +217,6 @@
     "Powershell/Input Output.md",
     "Powershell/PowerShell Basics.md",
     "Powershell/pipeline operator.md",
-    "Powershell/State of the Shell.md",
     "Linux/Bash",
     "Powershell/Untitled.loom",
     "Attachments/Pasted image 20240404172118.png",
