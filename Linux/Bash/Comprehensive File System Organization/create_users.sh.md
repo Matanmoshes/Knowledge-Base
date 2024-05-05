@@ -113,3 +113,76 @@ main
 - **Execution Requirements**: This script should be run with superuser privileges (`sudo`) because creating users is an administrative task.
 - **Script Permissions**: Before running, ensure the script is executable with `chmod +x create_users.sh`.
 
+---
+
+
+### Instructions to run `create_users.sh` script:
+
+### 1. **Make the Script Executable**
+Set the executable permission for the script:
+```bash
+chmod +x create_users.sh
+```
+
+### 2. **Run the Script with Superuser Privileges**
+Execute the script using `sudo` to ensure it has the necessary permissions to create user accounts:
+```bash
+sudo ./create_users.sh
+```
+
+### Notes
+- **No Arguments Required**: The script runs without any external arguments as it uses predefined user details.
+- Ensure you review the script contents before execution to verify it meets your needs.
+
+This will run your script, creating the specified user accounts if they do not already exist.
+
+---
+
+### Check if the users were created
+### 1. **List all Users from the `/etc/passwd` File**
+This file contains a list of all users. You can view it using `grep` to filter for specific usernames or `cat` to view all entries:
+
+```bash
+cat /etc/passwd
+```
+
+To filter and check for the specific users created by your script, you might use:
+
+```bash
+grep 'edu_user\|dev_user\|personal_user' /etc/passwd
+```
+
+This command uses `grep` to search for the usernames in the `/etc/passwd` file, which lists all accounts.
+
+### 2. **Check Individual User with the `id` Command**
+The `id` command provides user and group information for any username:
+
+```bash
+id edu_user
+id dev_user
+id personal_user
+```
+
+These commands will show the user IDs (UID), group IDs (GID), and the groups the users belong to.
+
+### 3. **Using the `getent` Command**
+`getent` fetches entries from databases configured in `/etc/nsswitch.conf`, including user account information:
+
+```bash
+getent passwd edu_user
+getent passwd dev_user
+getent passwd personal_user
+```
+
+Each `getent` command will display the entry from the `passwd` database for the specified user, showing details like UID, GID, home directory, and default shell.
+
+### 4. **Check User Home Directories**
+Verify that the home directories for the users were created:
+
+```bash
+ls -ld /home/edu_user
+ls -ld /home/dev_user
+ls -ld /home/personal_user
+```
+
+These commands list the directory details to ensure that the home directories exist and are correctly assigned to each user.
