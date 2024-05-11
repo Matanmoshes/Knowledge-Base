@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "305aead4ffb75aab",
+        "id": "849230bd48b5d44e",
         "type": "tabs",
         "children": [
           {
-            "id": "2c4f3f2604bcec94",
+            "id": "6baa7b43023bd33f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/backup_Script.sh.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2b25cfbcab39744c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/maintenance_script.sh.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "15e78667846a49c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/create_users.sh.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e03d2e817fc0922c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/monitor_processes.sh.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eb25966f19600a97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux Concept.md",
+                "file": "Trivy.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/monitor_processes.sh.md",
+                "file": "Trivy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/monitor_processes.sh.md",
+                "file": "Trivy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/monitor_processes.sh.md"
+                "file": "Trivy.md"
               }
             }
           }
@@ -198,53 +149,53 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "e03d2e817fc0922c",
+  "active": "6baa7b43023bd33f",
   "lastOpenFiles": [
+    "Linux/Concepts/Linux Concept.md",
+    "Linux/Operation Deployment/Locate and analyze system log files.md",
+    "Linux/Operation Deployment/Create systemd Services.md",
+    "Linux/Operation Deployment/Diagnose and manage processes.md",
+    "Linux/Operation Deployment/Manage the startup process and services (In Services Configuration).md",
+    "Linux/Operation Deployment/Install, configure and troubleshoot bootloaders.md",
+    "Linux/Concepts/anacron.md",
+    "Linux/Operation Deployment/Manage software with package manager.md",
+    "Linux/Concepts/`stdin`, `stdout`, and `stderr`.md",
+    "Linux/Concepts/cron.md",
+    "Linux/Concepts",
+    "Linux/Operation Deployment/Schedule tasks to run at a set date and time.md",
+    "Attachments/Pasted image 20240510151452.png",
+    "Attachments/Pasted image 20240510150607.png",
+    "Linux/Operation Deployment",
+    "Linux/Linux Commands/ps.md",
+    "AWS/AWS Solution Archtect/Untitled.md",
+    "AWS/AWS Solution Archtect",
+    "Linux/Bash/Comprehensive File System Organization/backup_Script.sh.md",
+    "Linux/Bash/Comprehensive File System Organization/maintenance_script.sh.md",
+    "Linux/Bash/Comprehensive File System Organization/create_users.sh.md",
+    "Linux/Bash/Comprehensive File System Organization/Learning and Documentation.md",
+    "Trivy.md",
+    "Linux/Bash/Comprehensive File System Organization/Summary.md",
     "Linux/Bash/Comprehensive File System Organization/filesystem_organizer.sh.md",
     "Linux/Bash/Comprehensive File System Organization/monitor_processes.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/create_users.sh.md",
     "Linux/Bash/Comprehensive File System Organization/Code Breakdown.md",
     "Linux/Bash/Comprehensive File System Organization/Summery.md",
-    "Linux/Bash/Comprehensive File System Organization/maintenance_script.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/backup_Script.sh.md",
-    "Linux/Linux Concept.md",
     "Linux/Bash/Bash Scripts exsercies/Manipulate data script.md",
-    "Untitled",
+    "AWS",
     "Linux/Bash/Bash Scripts exsercies/Bash Script.md",
     "Linux/Bash/Bash Scripts exsercies",
     "Linux/Bash/Bash Scripts exsercies/Linux process script.md",
     "Linux/Bash/Comprehensive File System Organization",
-    "Linux/Bash/Bash Scripts exsercies/Package Managment Script.md",
-    "Installation/Create systemd Services.md",
-    "Linux/Linux Commands/ps.md",
-    "Linux/Linux Commands/systemctl.md",
-    "Linux/Linux Commands/uniq.md",
-    "Linux/Linux Commands/awk.md",
-    "Linux/Linux Commands/wc.md",
-    "Linux/Linux Commands/sort.md",
-    "Linux/Linux Commands/pipe and tee.md",
-    "Powershell/Powershell.md",
-    "Linux/Linux Bashs.md",
-    "Linux/Linux Commands/dpkg.md",
-    "Powershell/Drive Space Alert Script.md",
-    "Powershell/Input Output.md",
-    "Powershell/PowerShell Basics.md",
     "Linux/Bash",
     "Powershell/Untitled.loom",
     "Attachments/Pasted image 20240404172118.png",
     "Assets",
     "Attachments",
-    "Linux/Linux Commands",
     "Attachments/Pasted image 20240420113934.png",
     "Pasted image 20240420113559.png",
     "Attachments/Pasted image 20240420102837.png",
     "Attachments/Pasted image 20240420102202.png",
     "Attachments/Pasted image 20240419160224.png",
     "Attachments/Pasted image 20240419134244.png",
-    "Attachments/Pasted image 20240417201937.png",
-    "Powershell",
-    "Installation",
-    "Attachments/Pasted image 20240406185756.png",
-    "Attachments/Pasted image 20240406185153.png"
+    "Attachments/Pasted image 20240417201937.png"
   ]
 }

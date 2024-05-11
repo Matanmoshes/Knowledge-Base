@@ -91,3 +91,9 @@ ps -eLf
 This command will list all processes and threads with a detailed output, showing the PID (process ID) for processes and LWP (lightweight process, or thread ID) for threads.
 
 Understanding how processes and threads work and interact is crucial for efficient programming and system design, especially when it comes to developing applications that perform multiple tasks simultaneously or require high levels of concurrency.
+
+
+### To view process in live:
+```bash
+top
+```
