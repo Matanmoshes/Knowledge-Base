@@ -8,18 +8,79 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6baa7b43023bd33f",
+            "id": "b4e2d5c94fa05942",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trivy.md",
+                "file": "Linux/User and Group Managment/Create, delete, and modify local user accounts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c02e1ffbc854ff8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Storage Management/List, create, delete, and modify physical storage partitions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "16818e4dc4f78f7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Storage Management/Configure and manage swap space.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b728605aad5b0034",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Storage Management/Configure and manage swap space.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a147d8036ec97a55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Storage Management/Mount and Unmount file system.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1539e42ad509cb15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -69,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 316.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -85,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Trivy.md",
+                "file": "Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Trivy.md",
+                "file": "Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Trivy.md"
+                "file": "Git/Git.md"
               }
             }
           }
@@ -149,8 +210,23 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "6baa7b43023bd33f",
+  "active": "1539e42ad509cb15",
   "lastOpenFiles": [
+    "AWS/AWS Developer Associate/IAM.md",
+    "Attachments/Pasted image 20240518191030.png",
+    "Pasted image 20240518190942.png",
+    "Linux/Storage Management/Mount and Unmount file system.md",
+    "AWS/AWS Developer Associate",
+    "Linux/Storage Management/Configure and manage swap space.md",
+    "Linux/Storage Management/List, create, delete, and modify physical storage partitions.md",
+    "Linux/User and Group Managment/Create, delete, and modify local user accounts.md",
+    "Linux/User and Group Managment/Create, delete, and modify local groups and group memberships.md",
+    "Linux/Storage Management",
+    "Linux/Operation Deployment/List and Identify SELinux AppArmor file and process contexts.md",
+    "Linux/User and Group Managment",
+    "Linux/Operation Deployment/Change kernel runtime parameters, persistent and non-persistent.md",
+    "Linux/Operation Deployment/Verify the integrity and availability of resources.md",
+    "Trivy.md",
     "Linux/Concepts/Linux Concept.md",
     "Linux/Operation Deployment/Locate and analyze system log files.md",
     "Linux/Operation Deployment/Create systemd Services.md",
@@ -171,31 +247,15 @@
     "AWS/AWS Solution Archtect",
     "Linux/Bash/Comprehensive File System Organization/backup_Script.sh.md",
     "Linux/Bash/Comprehensive File System Organization/maintenance_script.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/create_users.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/Learning and Documentation.md",
-    "Trivy.md",
-    "Linux/Bash/Comprehensive File System Organization/Summary.md",
-    "Linux/Bash/Comprehensive File System Organization/filesystem_organizer.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/monitor_processes.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/Code Breakdown.md",
-    "Linux/Bash/Comprehensive File System Organization/Summery.md",
-    "Linux/Bash/Bash Scripts exsercies/Manipulate data script.md",
     "AWS",
-    "Linux/Bash/Bash Scripts exsercies/Bash Script.md",
     "Linux/Bash/Bash Scripts exsercies",
-    "Linux/Bash/Bash Scripts exsercies/Linux process script.md",
     "Linux/Bash/Comprehensive File System Organization",
     "Linux/Bash",
-    "Powershell/Untitled.loom",
     "Attachments/Pasted image 20240404172118.png",
-    "Assets",
-    "Attachments",
     "Attachments/Pasted image 20240420113934.png",
     "Pasted image 20240420113559.png",
     "Attachments/Pasted image 20240420102837.png",
     "Attachments/Pasted image 20240420102202.png",
-    "Attachments/Pasted image 20240419160224.png",
-    "Attachments/Pasted image 20240419134244.png",
-    "Attachments/Pasted image 20240417201937.png"
+    "Attachments/Pasted image 20240419160224.png"
   ]
 }
