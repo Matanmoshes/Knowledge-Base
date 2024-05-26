@@ -4,76 +4,76 @@
     "type": "split",
     "children": [
       {
-        "id": "849230bd48b5d44e",
+        "id": "14fc0bf412dd4a74",
         "type": "tabs",
         "children": [
           {
-            "id": "b4e2d5c94fa05942",
+            "id": "fbfdf1987235eccd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/User and Group Managment/Create, delete, and modify local user accounts.md",
+                "file": "AWS/AWS Solution Archtect/General Question.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c02e1ffbc854ff8b",
+            "id": "38e44058275dd236",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Storage Management/List, create, delete, and modify physical storage partitions.md",
+                "file": "AWS/AWS Solution Archtect/AWS Fundamentals/The Building Blocks of AWS Availability Zones and Regions.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "16818e4dc4f78f7e",
+            "id": "deb9e338edcb5740",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Storage Management/Configure and manage swap space.md",
+                "file": "AWS/AWS Solution Archtect/AWS Fundamentals/Who Owns What in the Cloud?.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b728605aad5b0034",
+            "id": "1d8d6ef10bdcd662",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Storage Management/Configure and manage swap space.md",
+                "file": "AWS/AWS Solution Archtect/AWS Fundamentals/Compute, Storage, Databases, and Networking.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a147d8036ec97a55",
+            "id": "dc587b34d06793be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Storage Management/Mount and Unmount file system.md",
+                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1539e42ad509cb15",
+            "id": "ab505d17b0c3b5fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Git.md",
+                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/Git.md",
+                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/Git.md",
+                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/Git.md"
+                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md"
               }
             }
           }
@@ -210,52 +210,52 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "1539e42ad509cb15",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
+    "AWS/AWS Solution Archtect/AWS Fundamentals/AWS Fundamental Building Blocks Quiz.md",
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)",
+    "Well-Architected Framework.md",
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
+    "AWS/AWS Solution Archtect/AWS Fundamentals/Compute, Storage, Databases, and Networking.md",
+    "AWS/AWS Solution Archtect/AWS Fundamentals/Who Owns What in the Cloud?.md",
+    "Attachments/Pasted image 20240525173725.png",
+    "AWS/AWS Solution Archtect/AWS Fundamentals/The Building Blocks of AWS Availability Zones and Regions.md",
+    "AWS/AWS Solution Archtect/General Question.md",
+    "AWS/AWS Solution Archtect/AWS Fundamentals",
+    "AWS/AWS Solution Archtect/Exam Guide.md",
     "AWS/AWS Developer Associate/IAM.md",
+    "Python/Scripts/To do list/todo_cli.py.md",
+    "Python/Scripts/Coin flip game/coin_flip_game.py.md",
+    "Python/Scripts/Coin flip game/Code Break Down.md",
+    "Attachments/Pasted image 20240525140446.png",
+    "Attachments/Pasted image 20240525140512.png",
+    "Git/git ignore.md",
+    "AWS/Untitled",
+    "Python/Scripts/Coin flip game",
+    "Python/Scripts/To do list/todo_functions.py.md",
+    "Linux/Linux Commands/chown & chmod.md",
+    "Linux/User and Group Managment/Create, delete, and modify local groups and group memberships.md",
+    "Linux/User and Group Managment/Create, delete, and modify local user accounts.md",
+    "Python/Scripts/To do list",
+    "Linux/Storage Management/Mount and Unmount file system.md",
+    "Linux/Storage Management/List, create, delete, and modify physical storage partitions.md",
+    "Linux/Storage Management/Configure and manage swap space.md",
+    "Git/Git.md",
+    "Python/Scripts",
+    "Python",
     "Attachments/Pasted image 20240518191030.png",
     "Pasted image 20240518190942.png",
-    "Linux/Storage Management/Mount and Unmount file system.md",
     "AWS/AWS Developer Associate",
-    "Linux/Storage Management/Configure and manage swap space.md",
-    "Linux/Storage Management/List, create, delete, and modify physical storage partitions.md",
-    "Linux/User and Group Managment/Create, delete, and modify local user accounts.md",
-    "Linux/User and Group Managment/Create, delete, and modify local groups and group memberships.md",
     "Linux/Storage Management",
     "Linux/Operation Deployment/List and Identify SELinux AppArmor file and process contexts.md",
     "Linux/User and Group Managment",
     "Linux/Operation Deployment/Change kernel runtime parameters, persistent and non-persistent.md",
     "Linux/Operation Deployment/Verify the integrity and availability of resources.md",
     "Trivy.md",
-    "Linux/Concepts/Linux Concept.md",
-    "Linux/Operation Deployment/Locate and analyze system log files.md",
-    "Linux/Operation Deployment/Create systemd Services.md",
-    "Linux/Operation Deployment/Diagnose and manage processes.md",
-    "Linux/Operation Deployment/Manage the startup process and services (In Services Configuration).md",
-    "Linux/Operation Deployment/Install, configure and troubleshoot bootloaders.md",
-    "Linux/Concepts/anacron.md",
-    "Linux/Operation Deployment/Manage software with package manager.md",
-    "Linux/Concepts/`stdin`, `stdout`, and `stderr`.md",
-    "Linux/Concepts/cron.md",
-    "Linux/Concepts",
-    "Linux/Operation Deployment/Schedule tasks to run at a set date and time.md",
     "Attachments/Pasted image 20240510151452.png",
     "Attachments/Pasted image 20240510150607.png",
-    "Linux/Operation Deployment",
-    "Linux/Linux Commands/ps.md",
-    "AWS/AWS Solution Archtect/Untitled.md",
-    "AWS/AWS Solution Archtect",
-    "Linux/Bash/Comprehensive File System Organization/backup_Script.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/maintenance_script.sh.md",
-    "AWS",
-    "Linux/Bash/Bash Scripts exsercies",
-    "Linux/Bash/Comprehensive File System Organization",
-    "Linux/Bash",
     "Attachments/Pasted image 20240404172118.png",
     "Attachments/Pasted image 20240420113934.png",
-    "Pasted image 20240420113559.png",
-    "Attachments/Pasted image 20240420102837.png",
-    "Attachments/Pasted image 20240420102202.png",
-    "Attachments/Pasted image 20240419160224.png"
+    "Pasted image 20240420113559.png"
   ]
 }
