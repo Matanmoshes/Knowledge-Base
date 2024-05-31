@@ -4,76 +4,76 @@
     "type": "split",
     "children": [
       {
-        "id": "14fc0bf412dd4a74",
+        "id": "d7ee31435cfbcc0e",
         "type": "tabs",
         "children": [
           {
-            "id": "fbfdf1987235eccd",
+            "id": "fc36d84e1b39675b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/General Question.md",
+                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Securing the AWS Root Account.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "38e44058275dd236",
+            "id": "851db1bdda2c6d96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/AWS Fundamentals/The Building Blocks of AWS Availability Zones and Regions.md",
+                "file": "AWS/AWS Solution Archtect/Well-Architected Framework.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "deb9e338edcb5740",
+            "id": "9a4422981ce572fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/AWS Fundamentals/Who Owns What in the Cloud?.md",
+                "file": "Networking/DHCP-DORA.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1d8d6ef10bdcd662",
+            "id": "83bf30cba4df36ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/AWS Fundamentals/Compute, Storage, Databases, and Networking.md",
+                "file": "AWS/AWS Solution Archtect/Well-Architected Framework.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dc587b34d06793be",
+            "id": "255adfe24f42dc6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
+                "file": "Networking/TCP IP.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ab505d17b0c3b5fe",
+            "id": "e5dd4ffd64501310",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
+                "file": "Networking/DNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
+                "file": "Networking/DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
+                "file": "Networking/DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md"
+                "file": "Networking/DNS.md"
               }
             }
           }
@@ -210,20 +210,40 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "e5dd4ffd64501310",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20240530211325.png",
+    "Networking/Access Control List (ACL).md",
+    "Attachments/Pasted image 20240530204254.png",
+    "Networking/DNS.md",
+    "Networking/DHCP-DORA.md",
+    "Attachments/Pasted image 20240530203350.png",
+    "Networking/Network Commands.md",
+    "Networking/TCP IP.md",
+    "Attachments/Pasted image 20240530194538.png",
+    "Attachments/Pasted image 20240530194306.png",
+    "Networking/IP Addressing - Subnet Mask - Classes.md",
+    "Networking/OSI Model.md",
+    "Networking/WAN, LAN, and VLAN.md",
+    "AWS/AWS Solution Archtect/Well-Architected Framework.md",
+    "Networking/Establishing a Secure Connection Using HTTPS and SSL-TLS.md",
+    "Networking/Communication Between an Internet Application TCP IP model.md",
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Permanent IAM Credentials.md",
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Controlling User Actions with IAM Policy Documents.md",
+    "AWS/AWS Developer Associate/IAM.md",
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Securing the AWS Root Account.md",
+    "AWS/AWS Solution Archtect/Exam Guide.md",
+    "AWS/AWS Solution Archtect/General Question.md",
+    "AWS/AWS Solution Archtect/AWS Fundamentals/Who Owns What in the Cloud?.md",
+    "AWS/AWS Solution Archtect/AWS Fundamentals/The Building Blocks of AWS Availability Zones and Regions.md",
+    "AWS/AWS Solution Archtect/AWS Fundamentals/Compute, Storage, Databases, and Networking.md",
+    "Attachments/Pasted image 20240526193221.png",
+    "Attachments/Pasted image 20240526192828.png",
+    "Networking",
     "AWS/AWS Solution Archtect/AWS Fundamentals/AWS Fundamental Building Blocks Quiz.md",
     "AWS/AWS Solution Archtect/Identity and Access Management (IAM)",
-    "Well-Architected Framework.md",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Untitled.md",
-    "AWS/AWS Solution Archtect/AWS Fundamentals/Compute, Storage, Databases, and Networking.md",
-    "AWS/AWS Solution Archtect/AWS Fundamentals/Who Owns What in the Cloud?.md",
     "Attachments/Pasted image 20240525173725.png",
-    "AWS/AWS Solution Archtect/AWS Fundamentals/The Building Blocks of AWS Availability Zones and Regions.md",
-    "AWS/AWS Solution Archtect/General Question.md",
     "AWS/AWS Solution Archtect/AWS Fundamentals",
-    "AWS/AWS Solution Archtect/Exam Guide.md",
-    "AWS/AWS Developer Associate/IAM.md",
     "Python/Scripts/To do list/todo_cli.py.md",
     "Python/Scripts/Coin flip game/coin_flip_game.py.md",
     "Python/Scripts/Coin flip game/Code Break Down.md",
@@ -232,30 +252,11 @@
     "Git/git ignore.md",
     "AWS/Untitled",
     "Python/Scripts/Coin flip game",
-    "Python/Scripts/To do list/todo_functions.py.md",
-    "Linux/Linux Commands/chown & chmod.md",
-    "Linux/User and Group Managment/Create, delete, and modify local groups and group memberships.md",
-    "Linux/User and Group Managment/Create, delete, and modify local user accounts.md",
     "Python/Scripts/To do list",
-    "Linux/Storage Management/Mount and Unmount file system.md",
-    "Linux/Storage Management/List, create, delete, and modify physical storage partitions.md",
-    "Linux/Storage Management/Configure and manage swap space.md",
-    "Git/Git.md",
     "Python/Scripts",
     "Python",
     "Attachments/Pasted image 20240518191030.png",
-    "Pasted image 20240518190942.png",
     "AWS/AWS Developer Associate",
-    "Linux/Storage Management",
-    "Linux/Operation Deployment/List and Identify SELinux AppArmor file and process contexts.md",
-    "Linux/User and Group Managment",
-    "Linux/Operation Deployment/Change kernel runtime parameters, persistent and non-persistent.md",
-    "Linux/Operation Deployment/Verify the integrity and availability of resources.md",
-    "Trivy.md",
-    "Attachments/Pasted image 20240510151452.png",
-    "Attachments/Pasted image 20240510150607.png",
-    "Attachments/Pasted image 20240404172118.png",
-    "Attachments/Pasted image 20240420113934.png",
-    "Pasted image 20240420113559.png"
+    "Linux/Storage Management"
   ]
 }
