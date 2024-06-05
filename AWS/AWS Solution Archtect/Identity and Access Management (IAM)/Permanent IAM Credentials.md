@@ -1,7 +1,7 @@
-### Permanent IAM Credentials
+### <span style="color:#ff0000">Permanent IAM Credentials</span>
 
 
-#### Building Blocks of IAM
+#### <span style="color:#ff0000">Building Blocks of IAM</span>
 
 1. **Users**:
    - Should represent a single physical person.
@@ -15,7 +15,7 @@
    - Used internally within AWS to grant permissions to AWS services.
    - Example: Allowing EC2 instances to access S3 buckets.
 
-#### Best Practices
+#### <span style="color:#ff0000">Best Practices</span>
 
 - **Policy Assignment**:
   - Assign IAM policies to groups rather than individual users for easier management.
@@ -25,8 +25,8 @@
   - Grant users and groups the minimum amount of privileges needed to perform their job.
   - Different roles (e.g., developers, finance) should have appropriate permissions according to their needs.
 
-#### IAM in AWS Console
-
+#### <span style="color:#ff0000">IAM in AWS Console
+</span>
 - **Creating Users and Groups**:
   - Create a user group first, then add users to the group.
   - Users inherit permissions from the group.
@@ -47,13 +47,13 @@
   - Access key ID and secret access key are used for CLI or API access, not for console login.
   - Ensure keys are saved as they are only viewable once.
 
-#### Identity Providers
+#### <span style="color:#ff0000">Identity Providers</span>
 
 - **Identity Federation**:
   - Connect IAM to corporate directories (e.g., Active Directory).
   - SAML and OpenID Connect are supported for federation.
 
-#### Exam Tips
+#### <span style="color:#ff0000">Exam Tips</span>
 
 1. **IAM is Global**:
    - IAM applies globally, not regionally.
@@ -78,9 +78,9 @@
 
 
 
-### Exam Tip (IAM) Section
+### <span style="color:#ff0000">Exam Tip (IAM) Section</span>
 
-#### Securing the Root Account
+#### <span style="color:#ff0000">Securing the Root Account</span>
 
 1. **Enable Multifactor Authentication (MFA)**:
    - Protect the root account with MFA.
@@ -92,7 +92,7 @@
    - Add these users to the administrator group.
    - Avoid using the root account by using administrator accounts instead.
 
-#### IAM Policy Documents
+#### <span style="color:#ff0000"> IAM Policy Documents</span>
 
 - **Structure and Format**:
   - Policies are written in JSON (JavaScript Object Notation).
@@ -106,7 +106,7 @@
   - Be able to read and interpret JSON policy documents.
   - Practice with various policy documents and read AWS documentation.
 
-#### Key Points for the Exam
+#### <span style="color:#ff0000">Key Points for the Exam</span>
 
 1. **IAM is Universal**:
    - Applies globally, not regionally.

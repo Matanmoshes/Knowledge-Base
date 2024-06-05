@@ -8,79 +8,53 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fc36d84e1b39675b",
+            "id": "19f83d4456a149f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Securing the AWS Root Account.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "851db1bdda2c6d96",
+            "id": "b8763d6748cf6dcf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Well-Architected Framework.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9a4422981ce572fd",
+            "id": "59f25784cd02f34a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/DHCP-DORA.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "83bf30cba4df36ea",
+            "id": "7cde09a2d7816cc4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Well-Architected Framework.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "255adfe24f42dc6c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking/TCP IP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e5dd4ffd64501310",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking/DNS.md",
-                "mode": "source",
-                "source": false
+                "file": "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf"
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -130,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.5
+    "width": 470.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -146,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networking/DNS.md",
+                "file": "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networking/DNS.md",
+                "file": "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networking/DNS.md"
+                "file": "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf"
               }
             }
           }
@@ -210,53 +184,52 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "e5dd4ffd64501310",
+  "active": "7cde09a2d7816cc4",
   "lastOpenFiles": [
-    "Attachments/Pasted image 20240530211325.png",
+    "NGINX content/NGINX_Basic_Setup.pdf",
     "Networking/Access Control List (ACL).md",
-    "Attachments/Pasted image 20240530204254.png",
+    "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
+    "NGINX content",
     "Networking/DNS.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
+    "Untitled.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
+    "Attachments/Pasted image 20240601160030.png",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Lifecycle Management with S3.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/AWS S3 Overview.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Section Summary.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Storage Classes and Glacier.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Questions.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Versioning Objects in S3.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Replication Overview.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Optimizing S3 Performance.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Encryption Overview.md",
+    "Attachments/Pasted image 20240531171853.png",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Object Lock and Glacier Vault Lock.md",
+    "Attachments/Pasted image 20240531132342.png",
+    "Attachments/Pasted image 20240531130928.png",
+    "Attachments/Pasted image 20240531130139.png",
+    "Attachments/Pasted image 20240531124318.png",
+    "Attachments/Pasted image 20240531123922.png",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Hosting Static Websites on S3.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Securing S3 Buckets with Block Public Access.md",
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Permanent IAM Credentials.md",
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Securing the AWS Root Account.md",
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Controlling User Actions with IAM Policy Documents.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)",
+    "Attachments/Pasted image 20240530211325.png",
+    "Attachments/Pasted image 20240530204254.png",
     "Networking/DHCP-DORA.md",
     "Attachments/Pasted image 20240530203350.png",
     "Networking/Network Commands.md",
     "Networking/TCP IP.md",
-    "Attachments/Pasted image 20240530194538.png",
-    "Attachments/Pasted image 20240530194306.png",
     "Networking/IP Addressing - Subnet Mask - Classes.md",
     "Networking/OSI Model.md",
-    "Networking/WAN, LAN, and VLAN.md",
-    "AWS/AWS Solution Archtect/Well-Architected Framework.md",
-    "Networking/Establishing a Secure Connection Using HTTPS and SSL-TLS.md",
-    "Networking/Communication Between an Internet Application TCP IP model.md",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Permanent IAM Credentials.md",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Controlling User Actions with IAM Policy Documents.md",
-    "AWS/AWS Developer Associate/IAM.md",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Securing the AWS Root Account.md",
-    "AWS/AWS Solution Archtect/Exam Guide.md",
-    "AWS/AWS Solution Archtect/General Question.md",
-    "AWS/AWS Solution Archtect/AWS Fundamentals/Who Owns What in the Cloud?.md",
-    "AWS/AWS Solution Archtect/AWS Fundamentals/The Building Blocks of AWS Availability Zones and Regions.md",
-    "AWS/AWS Solution Archtect/AWS Fundamentals/Compute, Storage, Databases, and Networking.md",
-    "Attachments/Pasted image 20240526193221.png",
-    "Attachments/Pasted image 20240526192828.png",
     "Networking",
-    "AWS/AWS Solution Archtect/AWS Fundamentals/AWS Fundamental Building Blocks Quiz.md",
     "AWS/AWS Solution Archtect/Identity and Access Management (IAM)",
-    "Attachments/Pasted image 20240525173725.png",
     "AWS/AWS Solution Archtect/AWS Fundamentals",
-    "Python/Scripts/To do list/todo_cli.py.md",
-    "Python/Scripts/Coin flip game/coin_flip_game.py.md",
-    "Python/Scripts/Coin flip game/Code Break Down.md",
-    "Attachments/Pasted image 20240525140446.png",
-    "Attachments/Pasted image 20240525140512.png",
-    "Git/git ignore.md",
     "AWS/Untitled",
-    "Python/Scripts/Coin flip game",
-    "Python/Scripts/To do list",
-    "Python/Scripts",
-    "Python",
-    "Attachments/Pasted image 20240518191030.png",
-    "AWS/AWS Developer Associate",
-    "Linux/Storage Management"
+    "Python/Scripts/Coin flip game"
   ]
 }
