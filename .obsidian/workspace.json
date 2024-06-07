@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,12 +49,48 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf"
+                "file": "NGINX content/NGINX_Basic_Setup.pdf"
+              }
+            }
+          },
+          {
+            "id": "f4d5875f140225a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "989709b527303b93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4d584b7905bd7b5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -104,7 +140,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5
+    "width": 337.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -120,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
+                "file": "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
+                "file": "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf"
+                "file": "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md"
               }
             }
           }
@@ -184,18 +220,22 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "7cde09a2d7816cc4",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
+    "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
+    "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
+    "NGINX content/Reverse proxy for a simple Flask application running on port 8080.md",
+    "NGINX content/Web Servering NGINX.md",
     "NGINX content/NGINX_Basic_Setup.pdf",
-    "Networking/Access Control List (ACL).md",
     "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Object Lock and Glacier Vault Lock.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Lifecycle Management with S3.md",
+    "Networking/Access Control List (ACL).md",
     "NGINX content",
     "Networking/DNS.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
-    "Untitled.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
     "Attachments/Pasted image 20240601160030.png",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Lifecycle Management with S3.md",
     "AWS/AWS Solution Archtect/Simple Storage Service (S3)/AWS S3 Overview.md",
     "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Section Summary.md",
     "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Storage Classes and Glacier.md",
@@ -206,7 +246,6 @@
     "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Optimizing S3 Performance.md",
     "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Encryption Overview.md",
     "Attachments/Pasted image 20240531171853.png",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Object Lock and Glacier Vault Lock.md",
     "Attachments/Pasted image 20240531132342.png",
     "Attachments/Pasted image 20240531130928.png",
     "Attachments/Pasted image 20240531130139.png",
@@ -224,8 +263,6 @@
     "Attachments/Pasted image 20240530203350.png",
     "Networking/Network Commands.md",
     "Networking/TCP IP.md",
-    "Networking/IP Addressing - Subnet Mask - Classes.md",
-    "Networking/OSI Model.md",
     "Networking",
     "AWS/AWS Solution Archtect/Identity and Access Management (IAM)",
     "AWS/AWS Solution Archtect/AWS Fundamentals",
