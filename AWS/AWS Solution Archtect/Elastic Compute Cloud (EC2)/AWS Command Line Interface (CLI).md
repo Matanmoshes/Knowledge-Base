@@ -49,7 +49,7 @@ Unable to locate credentials. You can configure credentials by running "aws conf
 
 [root@ip-172-31-17-43 ec2-user]# aws configure
 AWS Access Key ID [None]: AKIAW3MEBD7V3HX644EK
-AWS Secret Access Key [None]: 7cQ5/ZkAVfDd4UtTitSy4yLNLbfywf2U3LiX9dVk
+AWS Secret Access Key [None]: example key
 Default region name [None]: 
 Default output format [None]: 
 

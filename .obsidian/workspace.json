@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Installation/Guide to Creating VPC Peering on AWS.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Installation/Guide to Creating VPC Peering on AWS.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Installation/Guide to Creating VPC Peering on AWS.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Installation/Guide to Creating VPC Peering on AWS.md"
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md"
               }
             }
           }
@@ -162,31 +162,31 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "3abc6645ee90b161",
   "lastOpenFiles": [
-    "NGINX content/NGINX_Basic_Setup.pdf",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Networking.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS IAM Roles.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
+    "Installation/Guide to Creating VPC Peering on AWS.md",
+    "NGINX content/NGINX_Basic_Setup.pdf",
     "Linux/Concepts/Certification & Encryption.md",
     "Certification & Encryption/SSL Certificates and Keys.md",
-    "Installation/Guide to Creating VPC Peering on AWS.md",
     "Linux/Bash/Comprehensive File System Organization/Learning and Documentation.md",
     "Linux/Bash/Comprehensive File System Organization/filesystem_organizer.sh.md",
     "Linux/Bash/Comprehensive File System Organization/create_users.sh.md",
     "Linux/Bash/Comprehensive File System Organization/backup_Script.sh.md",
     "AWS/AWS Solution Archtect/Exam Guide.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Security Groups and Bootstrap Scripts.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
     "Networking/DHCP-DORA.md",
     "Networking/OSI Model.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
     "Attachments/Pasted image 20240608142351.png",
     "Attachments/Pasted image 20240608141807.png",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Networking.md",
     "Attachments/Pasted image 20240608141641.png",
     "Attachments/Pasted image 20240608124757.png",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
     "Attachments/Pasted image 20240608105615.png",
     "Attachments/Pasted image 20240608121609.png",
     "Attachments/Pasted image 20240608105453.png",
