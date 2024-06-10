@@ -43,7 +43,6 @@
    - **Create a Bucket**: `AWS S3 MB s3://bucket-name` to create a new bucket.
    - **Verify**: Use `AWS S3 LS` to ensure the bucket is created.
 
-
 #### <span style="color:#ffc000">Exam Tips</span>
 1. **Principle of Least Privilege**:
    - Give users the minimum necessary access.

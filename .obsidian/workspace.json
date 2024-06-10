@@ -30,6 +30,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e7c1622f2d0083b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -162,15 +174,16 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "3abc6645ee90b161",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Networking.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS IAM Roles.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
     "Installation/Guide to Creating VPC Peering on AWS.md",
     "NGINX content/NGINX_Basic_Setup.pdf",
     "Linux/Concepts/Certification & Encryption.md",
@@ -198,7 +211,7 @@
     "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
     "Certification & Encryption/OpenSSL.md",
     "Linux/Concepts/Linux Concept.md",
-    "Trivy.md",
+    "Installation/Trivy.md",
     "Certification & Encryption",
     "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
     "NGINX content",
