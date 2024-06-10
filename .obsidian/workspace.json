@@ -8,89 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "19f83d4456a149f4",
+            "id": "2193e5ab59e70103",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
+                "file": "Linux/Bash/Comprehensive File System Organization/Learning and Documentation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b8763d6748cf6dcf",
+            "id": "3abc6645ee90b161",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59f25784cd02f34a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7cde09a2d7816cc4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "NGINX content/NGINX_Basic_Setup.pdf"
-              }
-            }
-          },
-          {
-            "id": "f4d5875f140225a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "989709b527303b93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4d584b7905bd7b5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
+                "file": "Installation/Guide to Creating VPC Peering on AWS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.5
+    "width": 371.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -156,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
+                "file": "Installation/Guide to Creating VPC Peering on AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
+                "file": "Installation/Guide to Creating VPC Peering on AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md"
+                "file": "Installation/Guide to Creating VPC Peering on AWS.md"
               }
             }
           }
@@ -222,51 +164,50 @@
   },
   "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
-    "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
+    "NGINX content/NGINX_Basic_Setup.pdf",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS IAM Roles.md",
+    "Linux/Concepts/Certification & Encryption.md",
+    "Certification & Encryption/SSL Certificates and Keys.md",
+    "Installation/Guide to Creating VPC Peering on AWS.md",
+    "Linux/Bash/Comprehensive File System Organization/Learning and Documentation.md",
+    "Linux/Bash/Comprehensive File System Organization/filesystem_organizer.sh.md",
+    "Linux/Bash/Comprehensive File System Organization/create_users.sh.md",
+    "Linux/Bash/Comprehensive File System Organization/backup_Script.sh.md",
+    "AWS/AWS Solution Archtect/Exam Guide.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Security Groups and Bootstrap Scripts.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
+    "Networking/DHCP-DORA.md",
+    "Networking/OSI Model.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
+    "Attachments/Pasted image 20240608142351.png",
+    "Attachments/Pasted image 20240608141807.png",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Networking.md",
+    "Attachments/Pasted image 20240608141641.png",
+    "Attachments/Pasted image 20240608124757.png",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
+    "Attachments/Pasted image 20240608105615.png",
+    "Attachments/Pasted image 20240608121609.png",
+    "Attachments/Pasted image 20240608105453.png",
+    "Attachments/Pasted image 20240608095652.png",
+    "Attachments/Pasted image 20240607181708.png",
     "NGINX content/Reverse proxy for a simple Flask application running on port 8080.md",
     "NGINX content/Web Servering NGINX.md",
-    "NGINX content/NGINX_Basic_Setup.pdf",
+    "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
+    "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
+    "Certification & Encryption/OpenSSL.md",
+    "Linux/Concepts/Linux Concept.md",
+    "Trivy.md",
+    "Certification & Encryption",
     "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Object Lock and Glacier Vault Lock.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Lifecycle Management with S3.md",
-    "Networking/Access Control List (ACL).md",
     "NGINX content",
-    "Networking/DNS.md",
     "Attachments/Pasted image 20240601160030.png",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/AWS S3 Overview.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Section Summary.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Storage Classes and Glacier.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Questions.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Versioning Objects in S3.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Replication Overview.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Optimizing S3 Performance.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Encryption Overview.md",
-    "Attachments/Pasted image 20240531171853.png",
-    "Attachments/Pasted image 20240531132342.png",
-    "Attachments/Pasted image 20240531130928.png",
-    "Attachments/Pasted image 20240531130139.png",
-    "Attachments/Pasted image 20240531124318.png",
-    "Attachments/Pasted image 20240531123922.png",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Hosting Static Websites on S3.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Securing S3 Buckets with Block Public Access.md",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Permanent IAM Credentials.md",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Securing the AWS Root Account.md",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)/Controlling User Actions with IAM Policy Documents.md",
     "AWS/AWS Solution Archtect/Simple Storage Service (S3)",
-    "Attachments/Pasted image 20240530211325.png",
-    "Attachments/Pasted image 20240530204254.png",
-    "Networking/DHCP-DORA.md",
-    "Attachments/Pasted image 20240530203350.png",
-    "Networking/Network Commands.md",
-    "Networking/TCP IP.md",
     "Networking",
     "AWS/AWS Solution Archtect/Identity and Access Management (IAM)",
     "AWS/AWS Solution Archtect/AWS Fundamentals",
-    "AWS/Untitled",
-    "Python/Scripts/Coin flip game"
+    "AWS/Untitled"
   ]
 }
