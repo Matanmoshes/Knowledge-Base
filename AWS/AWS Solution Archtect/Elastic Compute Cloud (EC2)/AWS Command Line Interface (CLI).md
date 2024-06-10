@@ -43,26 +43,6 @@
    - **Create a Bucket**: `AWS S3 MB s3://bucket-name` to create a new bucket.
    - **Verify**: Use `AWS S3 LS` to ensure the bucket is created.
 
-```aws
-[root@ip-172-31-17-43 ec2-user]# aws s3 ls
-Unable to locate credentials. You can configure credentials by running "aws configure".
-
-[root@ip-172-31-17-43 ec2-user]# aws configure
-AWS Access Key ID [None]: example Access Key ID
-AWS Secret Access Key [None]: example Secret Access
-Default region name [None]: 
-Default output format [None]: 
-
-[root@ip-172-31-17-43 ec2-user]# aws s3 ls
-
-[root@ip-172-31-17-43 ec2-user]# aws s3 mb s3://dsfkljsd45jkljfgrej34
-make_bucket: dsfkljsd45jkljfgrej34
-
-[root@ip-172-31-17-43 ec2-user]# aws s3 ls
-2024-06-08 06:32:59 dsfkljsd45jkljfgrej34
-
-[root@ip-172-31-17-43 ec2-user]# 
-```
 
 #### <span style="color:#ffc000">Exam Tips</span>
 1. **Principle of Least Privilege**:
