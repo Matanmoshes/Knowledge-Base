@@ -25,7 +25,91 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
+                "file": "Git/Git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7ed96ab994c0d8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/Git log.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2ded41740f381a5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/Git Push.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae245ba5857a6a66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cad61fc3c1b33532",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/Gir Config.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "978930702d11901c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/Git Push.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f99f68d7d1255a24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/Git Merge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38f9701cc6055820",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/Git log.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
+                "file": "Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
+                "file": "Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md"
+                "file": "Git/Git.md"
               }
             }
           }
@@ -164,8 +248,19 @@
   },
   "active": "3abc6645ee90b161",
   "lastOpenFiles": [
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
+    "Git/Git log.md",
+    "Git/Gir Config.md",
+    "Untitled.md",
+    "Git/Git Push.md",
+    "Git/Git ignore.md",
+    "Git/Git Rebase.md",
+    "Git/Git Add.md",
+    "Git/Git.md",
+    "Git/Git Merge.md",
+    "Linux/Concepts/Certification & Encryption.md",
+    "Certification & Encryption/SSL Certificates and Keys.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Networking.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
@@ -173,8 +268,6 @@
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
     "Installation/Guide to Creating VPC Peering on AWS.md",
     "NGINX content/NGINX_Basic_Setup.pdf",
-    "Linux/Concepts/Certification & Encryption.md",
-    "Certification & Encryption/SSL Certificates and Keys.md",
     "Linux/Bash/Comprehensive File System Organization/Learning and Documentation.md",
     "Linux/Bash/Comprehensive File System Organization/filesystem_organizer.sh.md",
     "Linux/Bash/Comprehensive File System Organization/create_users.sh.md",
@@ -182,7 +275,6 @@
     "AWS/AWS Solution Archtect/Exam Guide.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Security Groups and Bootstrap Scripts.md",
     "Networking/DHCP-DORA.md",
-    "Networking/OSI Model.md",
     "Attachments/Pasted image 20240608142351.png",
     "Attachments/Pasted image 20240608141807.png",
     "Attachments/Pasted image 20240608141641.png",
@@ -192,13 +284,6 @@
     "Attachments/Pasted image 20240608105453.png",
     "Attachments/Pasted image 20240608095652.png",
     "Attachments/Pasted image 20240607181708.png",
-    "NGINX content/Reverse proxy for a simple Flask application running on port 8080.md",
-    "NGINX content/Web Servering NGINX.md",
-    "NGINX content/SSL configuration, load balancing, caching, rate limiting, setting up Nginx as a reverse proxy, and practical tips.md",
-    "NGINX content/Guide for Setting Up Nginx as a Reverse Proxy.md",
-    "Certification & Encryption/OpenSSL.md",
-    "Linux/Concepts/Linux Concept.md",
-    "Installation/Trivy.md",
     "Certification & Encryption",
     "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
     "NGINX content",
