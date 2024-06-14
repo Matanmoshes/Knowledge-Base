@@ -1,10 +1,10 @@
-### AWS EC2 Instance Launch - Key Points
+### <span style="color:#ffc000">AWS EC2 Instance Launch - Key Points</span>
 
 #### Introduction
 - **Objective**: Learn how to launch an EC2 instance.
 - **AWS Console**: Access the EC2 service under the Compute section.
 
-#### Step-by-Step Process
+#### <span style="color:#ffc000">Step-by-Step Process</span>
 
 1. **Accessing EC2 Service**:
    - Navigate to the AWS console.
@@ -40,7 +40,7 @@
    - Click **Launch Instance**.
    - View the instance state (initially pending).
 
-#### Connecting to the Instance
+#### <span style="color:#ffc000">Connecting to the Instance</span>
 1. **Instance Details**:
    - View instance details, security group settings, and public IP address.
    - Example: Public IP address for web server setup.
@@ -55,7 +55,7 @@
    - **Update System**: Run `dnf update -y`.
    - **Disconnect**: Type `exit` to log out.
 
-#### Terminating the Instance
+#### <span style="color:#ffc000">Terminating the Instance</span>
 1. **Terminate Instance**:
    - Select the instance and choose **Terminate**.
    - Instance state will change to **shutting down** and then **terminated**.
@@ -64,7 +64,7 @@
    - Note the availability zone (e.g., us-east-1c).
    - Understand high availability architecture using multiple availability zones.
 
-#### Summary
+#### <span style="color:#ffc000">Summary</span>
 - **First EC2 Instance**: Successfully launched and terminated.
 - **Next Steps**: Proceed to the next lecture or reach out with any questions.
 

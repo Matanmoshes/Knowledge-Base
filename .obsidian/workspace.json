@@ -8,115 +8,91 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2193e5ab59e70103",
+            "id": "a88004bf61d30b5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash/Comprehensive File System Organization/Learning and Documentation.md",
+                "file": "Installation/AWS - FortiGate Site-to-Site VPN.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3abc6645ee90b161",
+            "id": "a27512990d5dc7e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Git.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Deploying vCenter in AWS with VMware Cloud on AWS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c7ed96ab994c0d8c",
+            "id": "d078251fc7c51389",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Git log.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2ded41740f381a5d",
+            "id": "f7c42b705704ebf8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Git Push.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Networking.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ae245ba5857a6a66",
+            "id": "0a205a8b93c08796",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Demo - EC2 Instance Bootstrapping.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cad61fc3c1b33532",
+            "id": "aab5bfcef9c84ee1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Gir Config.md",
+                "file": "Web-Servers/Aphache/Apache HTTP Server Guide.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "978930702d11901c",
+            "id": "5b219dabd5e21662",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Git Push.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f99f68d7d1255a24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/Git Merge.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "38f9701cc6055820",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/Git log.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Exam Tips.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -166,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5
+    "width": 200
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -182,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/Git.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Demo - EC2 Instance Bootstrapping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/Git.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Demo - EC2 Instance Bootstrapping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/Git.md"
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Demo - EC2 Instance Bootstrapping.md"
               }
             }
           }
@@ -246,35 +222,39 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "3abc6645ee90b161",
+  "active": "0a205a8b93c08796",
   "lastOpenFiles": [
-    "Git/Git log.md",
-    "Git/Gir Config.md",
-    "Untitled.md",
-    "Git/Git Push.md",
-    "Git/Git ignore.md",
-    "Git/Git Rebase.md",
-    "Git/Git Add.md",
-    "Git/Git.md",
-    "Git/Git Merge.md",
-    "Linux/Concepts/Certification & Encryption.md",
-    "Certification & Encryption/SSL Certificates and Keys.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS Command Line Interface (CLI).md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Networking.md",
+    "Web-Servers/Aphache/Key Apache Configuration Files.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Exam Tips.md",
+    "Linux/Linux Commands/chown & chmod.md",
+    "Web-Servers/Aphache/Apache HTTP Server Guide.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Demo - EC2 Instance Bootstrapping.md",
+    "Web-Servers/Aphache",
+    "Web-Servers",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS IAM Roles.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Exam Questions.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Extending AWS Beyond the Cloud with AWS Outposts.md",
+    "Attachments/Pasted image 20240612140057.png",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Deploying vCenter in AWS with VMware Cloud on AWS.md",
+    "Web-Servers/NGINX content/Web Servering NGINX.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
-    "Installation/Guide to Creating VPC Peering on AWS.md",
-    "NGINX content/NGINX_Basic_Setup.pdf",
-    "Linux/Bash/Comprehensive File System Organization/Learning and Documentation.md",
-    "Linux/Bash/Comprehensive File System Organization/filesystem_organizer.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/create_users.sh.md",
-    "Linux/Bash/Comprehensive File System Organization/backup_Script.sh.md",
-    "AWS/AWS Solution Archtect/Exam Guide.md",
+    "Installation/AWS - FortiGate Site-to-Site VPN.md",
+    "Installation/Detailed Guide for Creating AWS - FortiGate Site-to-Site VPN.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Deep Dive on Spot Instances and Spot Fleets.md",
+    "Attachments/Pasted image 20240611173018.png",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Solving Licensing Issues with Dedicated Hosts.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS IAM Roles.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Security Groups and Bootstrap Scripts.md",
     "Networking/DHCP-DORA.md",
+    "Git/Git.md",
+    "Git/Git log.md",
+    "Git/Gir Config.md",
+    "Git/Git Push.md",
+    "Git/Git ignore.md",
+    "Web-Servers/NGINX content/NGINX_Basic_Setup.pdf",
     "Attachments/Pasted image 20240608142351.png",
     "Attachments/Pasted image 20240608141807.png",
     "Attachments/Pasted image 20240608141641.png",
@@ -283,16 +263,12 @@
     "Attachments/Pasted image 20240608121609.png",
     "Attachments/Pasted image 20240608105453.png",
     "Attachments/Pasted image 20240608095652.png",
-    "Attachments/Pasted image 20240607181708.png",
     "Certification & Encryption",
-    "NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
-    "NGINX content",
-    "Attachments/Pasted image 20240601160030.png",
+    "Web-Servers/NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
+    "Web-Servers/NGINX content",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)",
     "AWS/AWS Solution Archtect/Simple Storage Service (S3)",
     "Networking",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)",
-    "AWS/AWS Solution Archtect/AWS Fundamentals",
-    "AWS/Untitled"
+    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)"
   ]
 }

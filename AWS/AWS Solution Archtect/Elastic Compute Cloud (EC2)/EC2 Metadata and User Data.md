@@ -86,7 +86,11 @@ echo "</h1></body></html>" >> index.html
 
 2. **Important IP Address**:
    - **Metadata IP**: `169.254.169.254`. Previously popular in exam questions but less so now.
-   
+
+```shell
+curl http://169.254.169.254/latest/meta-data/placement/availability-zone
+```
+
 3. **Command Knowledge**:
    - **Solutions Architect Exam**: Focus on understanding the concepts of user data and metadata, rather than specific commands.
    - **Developer Exam**: May require knowledge of specific commands.

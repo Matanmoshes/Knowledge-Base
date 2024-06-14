@@ -27,7 +27,7 @@
      - Creating dual-homed instances with distinct subnets for different roles or workloads
      - Low budget, high availability solutions
 
-2. **<span style="color:#d68a8a">Enhanced Networking (ENA)</span>**:
+2. **<span style="color:#d68a8a">Enhanced Networking Adapter (ENA)</span>**:
    - **Definition**: High-performance networking offering between 10 and 100 gigabits per second.
    - **Technology**: Uses Single Root I/O Virtualization (SR-IOV) for higher I/O performance and lower CPU utilization.
    - **Benefits**:
@@ -43,7 +43,7 @@
        - Used in older instances
    - **Recommendation**: Prefer ENA over VF for better performance.
 
-3. **<span style="color:#d68a8a">EFA (Elastic Fabric Adapter)</span>**:
+3. **<span style="color:#d68a8a">Elastic Fabric Adapter (EFA)</span>**:
    - **Definition**: Network device to accelerate high-performance computing (HPC) and machine learning applications.
    - **Benefits**:
      - Lower and more consistent latency
