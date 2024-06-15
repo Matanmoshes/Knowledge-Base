@@ -297,3 +297,74 @@ The other options are not suitable for this specific requirement:
  [Spread Placement Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html#placement-groups-spread "null")
 
 ---
+
+### Question
+
+Which of the following statements about user data on an EC2 instance is true?
+
+1. If you stop an instance, modify its user data, and start the instance, the updated user data is run automatically.
+2. By default, user data runs one time and one time only.
+3. User data is automatically updated when you restart an instance.
+4. If you reboot your EC2 instance, the user data will rerun automatically.
+
+### Answer
+
+**By default, user data runs one time and one time only.**
+
+### Explanation
+
+By default, the user data scripts or commands that you specify are executed only once when the instance is first launched. This means that they do not run automatically if you stop and start the instance, restart it, or reboot it. If you need user data to run again, you would need to configure your scripts accordingly or manually trigger them after such operations. The other statements are not true as per the default behavior of user data in EC2 instances.
+
+---
+
+### Question
+
+Which of the following statements about IAM roles is true?
+
+1. IAM roles can only be associated with one user.
+2. IAM roles are associated with standard, long-term access keys and passwords for each role.
+3. IAM roles can only be used to allow EC2 instances to talk to other AWS services.
+4. IAM roles can be used with a variety of AWS services.
+
+### Answer
+
+**IAM roles can be used with a variety of AWS services.**
+
+### Explanation
+
+IAM roles are designed to be assumed by any entity that needs temporary credentials to access AWS services, and this includes not just users and EC2 instances, but a wide variety of AWS services such as Lambda functions, ECS tasks, CloudFormation stacks, and more. Roles provide temporary security credentials for these entities, ensuring secure and controlled access to AWS resources without requiring long-term access keys and passwords. This makes IAM roles very versatile in managing permissions and access across different AWS services and use cases. 
+
+The other statements are not true:
+- IAM roles can be assumed by multiple users, services, or applications as needed.
+- IAM roles use temporary security credentials, not long-term access keys and passwords.
+- While IAM roles are commonly used with EC2 instances, they are not limited to this use case alone.
+
+---
+
+
+### Question
+
+What is user data most commonly used for?
+
+1. For updating the content of your S3 bucket
+2. For bootstrapping an EC2 instance as it comes online
+3. For rotating your IAM passwords
+4. For deploying EC2 instances into an Auto Scaling group
+
+### Answer
+
+**For bootstrapping an EC2 instance as it comes online.**
+
+### Explanation
+
+User data in AWS is a feature that allows you to specify configuration scripts or commands that run automatically when an EC2 instance is launched. This process is known as "bootstrapping." It is used to set up and configure the instance without manual intervention. Examples of tasks performed during bootstrapping include:
+
+- Installing software packages
+- Configuring application settings
+- Running initialization scripts
+- Applying patches and updates
+
+This makes the instance ready to use immediately after it comes online. The other options listed do not pertain to the primary use case of user data:
+- **Updating the content of your S3 bucket**: This is managed through other AWS services and APIs.
+- **Rotating your IAM passwords**: This is handled through IAM policies and procedures, not user data scripts.
+- **Deploying EC2 instances into an Auto Scaling group**: While user data can be used within Auto Scaling groups for instance configuration, the primary function of user data is for bootstrapping individual instances as they come online.

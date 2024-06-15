@@ -12,6 +12,10 @@ This guide will walk you through the process of setting up IAM roles and instanc
 
 ![[Pasted image 20240614160100.png]]
 
+>[!Instance Profile:]
+>-  An instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
+>- When an EC2 instance is launched with an instance profile, the instance can assume the role associated with that profile and use its permissions.
+
 ### Solution
 
 **1. Log in to the AWS Management Console**
@@ -58,6 +62,11 @@ This guide will walk you through the process of setting up IAM roles and instanc
    }
    ```
 3. Save and quit the file.
+
+>[!Note]
+>An **IAM Trust Policy** is a JSON document that defines which entities (users, services, or accounts) are allowed to assume an IAM role. When it comes to EC2 roles, the trust policy specifies that the EC2 service itself can assume the role, enabling the EC2 instances to obtain temporary credentials to access AWS resources.
+>
+
 
 **Create the DEV_ROLE IAM Role:**
 1. Run the following AWS CLI command:
