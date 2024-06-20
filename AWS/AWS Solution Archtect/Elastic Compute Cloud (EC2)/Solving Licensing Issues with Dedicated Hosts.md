@@ -1,10 +1,10 @@
-### Solving Licensing Issues with Dedicated Hosts - Key Points
+### <span style="color:#ffc000">Solving Licensing Issues with Dedicated Hosts - Key Points</span>
 
-#### Introduction
+#### <span style="color:#ffc000">Introduction</span>
 - **Objective**: Understand how Dedicated Hosts can solve licensing issues.
 - **Context**: Previously discussed pricing models (On-Demand, Reserved Instances, Dedicated Hosts, Spot).
 
-#### Pricing Models Recap
+#### <span style="color:#ffc000">Pricing Models Recap</span>
 1. **On-Demand**:
    - **Payment**: Pay by the hour or second.
    - **Use Case**: Flexible, no long-term commitment.
@@ -25,17 +25,17 @@
    - **Savings**: Up to 70% discount for reserved Dedicated Hosts.
    - **Use Case**: Compliance and special licensing requirements.
 
-#### Dedicated Hosts
+#### <span style="color:#ffc000">Dedicated Hosts</span>
 - **Compliance**: Ideal for regulatory requirements not supporting multi-tenant virtualization.
 - **Licensing**: Suitable for software licenses not supporting multi-tenancy or cloud deployments (e.g., Microsoft, Oracle).
 
-#### Exam Tip
+#### <span style="color:#ffc000">Exam Tip</span>
 - **Scenario Questions**: For any questions involving special licensing requirements, think of Dedicated Hosts.
 - **Benefits**:
   - Use existing per-socket, per-core, or per virtual machine software licensing.
   - Supports software like Windows Server, Microsoft SQL Server, SUSE Linux Enterprise Server, Oracle licenses.
 
-#### Summary
+#### <span style="color:#ffc000">Summary</span>
 - **Key Takeaway**: Dedicated Hosts are essential for meeting special licensing and compliance needs.
 - **Exam Focus**: Remember Dedicated Hosts for any special licensing or compliance requirements in scenario-based questions.
 

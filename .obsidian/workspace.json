@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Exam Questions.md",
+                "file": "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a10b5f387c418a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Exercises/To Do list.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Exam Guide.md",
+                "file": "AWS/AWS Solution Archtect/Simple Storage Service (S3)/AWS S3 Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1328c45d467b9fef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 221.5
+    "width": 321.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Exam Guide.md",
+                "file": "Python/Exercises/To Do list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Exam Guide.md",
+                "file": "Python/Exercises/To Do list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Exam Guide.md"
+                "file": "Python/Exercises/To Do list.md"
               }
             }
           }
@@ -162,38 +186,41 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "5c0d40c3dea64ab3",
+  "active": "0a10b5f387c418a7",
   "lastOpenFiles": [
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Demo - EC2 Roles and Instance Profiles.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Exam Questions.md",
-    "Attachments/Pasted image 20240614160100.png",
-    "Web-Servers/Aphache/Apache HTTP Server Guide.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Demo - EC2 Instance Bootstrapping.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Networking.md",
-    "Web-Servers/Aphache/Key Apache Configuration Files.md",
+    "Python/Exercises/Bank Account.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Questions.md",
+    "Python/Exercises",
+    "AWS/AWS Solution Archtect/EBS & EFS",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/AWS S3 Overview.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/S3 Storage Classes and Glacier.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Securing S3 Buckets with Block Public Access.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Versioning Objects in S3.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Exam Tips.md",
-    "Linux/Linux Commands/chown & chmod.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
+    "Python/Activate Jupyter.md",
+    "Git/Gir Config.md",
+    "Git/Git.md",
+    "Git/Git Add.md",
+    "Git/Git ignore.md",
+    "Git/Git log.md",
+    "Git/Git Push.md",
+    "Git/Git Rebase.md",
+    "Git/Git Merge.md",
+    "Python/Exercises/To Do list.md",
+    "LICENSE.md",
+    "Installation/Trivy.md",
+    "Python/VENV.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Lifecycle Management with S3.md",
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Hosting Static Websites on S3.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Exam Questions.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Extending AWS Beyond the Cloud with AWS Outposts.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
+    "Attachments/Pasted image 20240614160100.png",
     "Web-Servers/Aphache",
     "Web-Servers",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Metadata and User Data.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Extending AWS Beyond the Cloud with AWS Outposts.md",
     "Attachments/Pasted image 20240612140057.png",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Deploying vCenter in AWS with VMware Cloud on AWS.md",
-    "Web-Servers/NGINX content/Web Servering NGINX.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS EC2 Instance Launch.md",
-    "Installation/AWS - FortiGate Site-to-Site VPN.md",
-    "Installation/Detailed Guide for Creating AWS - FortiGate Site-to-Site VPN.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Deep Dive on Spot Instances and Spot Fleets.md",
     "Attachments/Pasted image 20240611173018.png",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Solving Licensing Issues with Dedicated Hosts.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/AWS IAM Roles.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/EC2 Overview.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Security Groups and Bootstrap Scripts.md",
-    "Networking/DHCP-DORA.md",
-    "Git/Git.md",
-    "Git/Git log.md",
-    "Git/Gir Config.md",
     "Web-Servers/NGINX content/NGINX_Basic_Setup.pdf",
     "Attachments/Pasted image 20240608142351.png",
     "Attachments/Pasted image 20240608141807.png",
@@ -206,8 +233,6 @@
     "Web-Servers/NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
     "Web-Servers/NGINX content",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)",
-    "Networking",
-    "AWS/AWS Solution Archtect/Identity and Access Management (IAM)"
+    "AWS/AWS Solution Archtect/Simple Storage Service (S3)"
   ]
 }
