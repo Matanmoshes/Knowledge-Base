@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "db8dc7a57b9fd491",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Guide to Using GitHub Actions Workflows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/GitHub Actions.md",
+                "file": "Guide to Using GitHub Actions Workflows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/GitHub Actions.md",
+                "file": "Guide to Using GitHub Actions Workflows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/GitHub Actions.md"
+                "file": "Guide to Using GitHub Actions Workflows.md"
               }
             }
           }
@@ -162,10 +174,11 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "1eb961742a88a785",
+  "active": "db8dc7a57b9fd491",
   "lastOpenFiles": [
-    "Python/Exercises/Implementing a Simple Library System.md",
     "Git/GitHub Actions.md",
+    "Guide to Using GitHub Actions Workflows.md",
+    "Python/Exercises/Implementing a Simple Library System.md",
     "AWS/AWS Solution Archtect/EBS & EFS/Volumes and Snapshots.md",
     "AWS/AWS Solution Archtect/EBS & EFS/Amazon Elastic File System (EFS).md",
     "AWS/AWS Solution Archtect/EBS & EFS/Amazon Machine Images - EBS vs. Instance Store.md",
@@ -190,7 +203,6 @@
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Solving Licensing Issues with Dedicated Hosts.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Security Groups and Bootstrap Scripts.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Extending AWS Beyond the Cloud with AWS Outposts.md",
     "aws-test.html",
     "AWS Certified Solutions Architect - Associate (SAA 5660dbb3a6634cd8b660e0951376d77e.html",
     "Python/Exercises",
