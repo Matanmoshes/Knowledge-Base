@@ -37,14 +37,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Guide to Using GitHub Actions Workflows.md",
+                "file": "Git/Guide to Using GitHub Actions Workflows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c4e5a6a94254a27d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Concepts/host file.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6eb3ca0d8402cb05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Guide to Using GitHub Actions Workflows.md",
+                "file": "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Guide to Using GitHub Actions Workflows.md",
+                "file": "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Guide to Using GitHub Actions Workflows.md"
+                "file": "Installation/Guide to Troubleshooting Terraform and Apache Errors.md"
               }
             }
           }
@@ -174,10 +198,12 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "db8dc7a57b9fd491",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
+    "Linux/Concepts/host file.md",
+    "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
+    "Git/Guide to Using GitHub Actions Workflows.md",
     "Git/GitHub Actions.md",
-    "Guide to Using GitHub Actions Workflows.md",
     "Python/Exercises/Implementing a Simple Library System.md",
     "AWS/AWS Solution Archtect/EBS & EFS/Volumes and Snapshots.md",
     "AWS/AWS Solution Archtect/EBS & EFS/Amazon Elastic File System (EFS).md",
@@ -201,8 +227,6 @@
     "Python/Exercises/Bank Guide.md",
     "AWS Certified Solutions Architect - Associate (SAA 5660dbb3a6634cd8b660e0951376d77e 2.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Solving Licensing Issues with Dedicated Hosts.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Security Groups and Bootstrap Scripts.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Optimizing EC2 Using Placement Groups.md",
     "aws-test.html",
     "AWS Certified Solutions Architect - Associate (SAA 5660dbb3a6634cd8b660e0951376d77e.html",
     "Python/Exercises",
