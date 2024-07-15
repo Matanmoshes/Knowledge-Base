@@ -1,18 +1,3 @@
-To solve the maze, we can use the Breadth-First Search (BFS) algorithm, which is well-suited for finding the shortest path in an unweighted grid. We'll first create a function to generate a random 5x5 maze and then a function to solve the maze.
-
-Here’s the step-by-step approach:
-
-1. **Generate a Random Maze**:
-    - Create a 5x5 grid with random `0`s and `1`s.
-    - Ensure that the start `(0, 0)` and end `(4, 4)` points are always `0`.
-2. **Solve the Maze**:
-    - Implement the BFS algorithm to find the shortest path from the start to the end.
-    - Use a queue to explore nodes level by level.
-    - Keep track of the visited nodes to avoid cycles.
-    - Store the path using a dictionary to trace back from the end to the start.
-
-Here is the complete implementation:
-
 ```python
 import random
 from collections import deque
@@ -98,5 +83,3 @@ The code successfully generates a random 5x5 maze and finds the shortest path fr
     
     The path traces through the maze efficiently from start to end.
     
-
-Feel free to use the provided functions to generate and solve mazes as needed. Let me know if there are any specific modifications or further features you would like to add!
