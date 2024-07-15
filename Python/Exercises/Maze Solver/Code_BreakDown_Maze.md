@@ -99,105 +99,159 @@ def solve_maze(maze):
 
 ```
 
-### Explanation:
 
-1. **Function Definition:**
-    
-    ```python
-    def solve_maze(maze):
-    
-    ```
-    
-    - Defines a function named `solve_maze` that takes a single parameter `maze`.
-2. **Initialization:**
-    
-    ```python
+### Function Definition and Initialization
+
+```python
+def solve_maze(maze):
+```
+- Defines a function named `solve_maze` that takes a single parameter `maze`, which is expected to be a 2D list representing the maze.
+
+```python
     rows, cols = len(maze), len(maze[0])
+```
+- Calculates the number of rows and columns in the maze.
+- `rows` is the number of sublists in `maze` (the number of rows).
+- `cols` is the number of elements in the first sublist of `maze` (the number of columns).
+
+```python
     start, end = (0, 0), (rows-1, cols-1)
-    
-    ```
-    
-    - Determines the number of rows and columns in the maze.
-    - Sets the start cell at the top-left corner `(0, 0)` and the end cell at the bottom-right corner `(rows-1, cols-1)`.
-3. **Define Directions:**
-    
-    ```python
+```
+- Sets the coordinates of the start cell to `(0, 0)` (top-left corner).
+- Sets the coordinates of the end cell to `(rows-1, cols-1)` (bottom-right corner).
+
+```python
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-    
-    ```
-    
-    - Lists possible movement directions: up `(-1, 0)`, down `(1, 0)`, left `(0, -1)`, and right `(0, 1)`.
-4. **Initialize BFS Structures:**
-    
-    ```python
+```
+- Defines the possible directions for movement:
+  - `(-1, 0)` for moving up.
+  - `(1, 0)` for moving down.
+  - `(0, -1)` for moving left.
+  - `(0, 1)` for moving right.
+
+```python
     queue = deque([start])
+```
+- Initializes a deque (double-ended queue) with the start cell. The deque will be used to implement Breadth-First Search (BFS).
+
+```python
     visited = set()
+```
+- Creates an empty set to keep track of cells that have been visited.
+
+```python
     visited.add(start)
+```
+- Marks the start cell as visited by adding it to the `visited` set.
+
+```python
     path = {start: None}
-    
-    ```
-    
-    - Initializes a deque (double-ended queue) with the start cell for BFS traversal.
-    - Creates an empty set `visited` to keep track of visited cells and adds the start cell.
-    - Initializes a dictionary `path` to keep track of the path, mapping each cell to its predecessor. The start cell maps to `None`.
-5. **BFS Loop:**
-    
-    ```python
+```
+- Initializes a dictionary to keep track of the path. Each cell will map to its predecessor cell. The start cell maps to `None` because it has no predecessor.
+
+### Breadth-First Search (BFS) Loop
+
+```python
     while queue:
+```
+- Starts a loop that continues as long as there are cells in the queue.
+
+```python
         current = queue.popleft()
+```
+- Dequeues the front cell from the queue and assigns it to `current`.
+
+```python
         if current == end:
             break
+```
+- Checks if the current cell is the end cell. If it is, the loop breaks, indicating that the end has been reached.
+
+```python
         for direction in directions:
+```
+- Iterates over the possible movement directions.
+
+```python
             next_cell = (current[0] + direction[0], current[1] + direction[1])
+```
+- Calculates the coordinates of the next cell based on the current cell and the direction.
+
+### Check Conditions for the Next Cell
+
+```python
             if (0 <= next_cell[0] < rows and 0 <= next_cell[1] < cols and
                 next_cell not in visited and maze[next_cell[0]][next_cell[1]] == 0):
+```
+- Checks if the next cell is within the bounds of the maze:
+  - `0 <= next_cell[0] < rows` ensures the next cell's row index is valid.
+  - `0 <= next_cell[1] < cols` ensures the next cell's column index is valid.
+- Checks if the next cell has not been visited.
+- Checks if the next cell is a path (`0`).
+
+```python
                 queue.append(next_cell)
+```
+- Enqueues the next cell to the queue for further exploration.
+
+```python
                 visited.add(next_cell)
+```
+- Marks the next cell as visited.
+
+```python
                 path[next_cell] = current
-    
-    ```
-    
-    - Continues as long as there are cells in the queue.
-    - Dequeues the front cell from the queue and assigns it to `current`.
-    - Checks if the current cell is the end cell; if so, breaks the loop.
-    - Iterates over the possible movement directions.
-    - Calculates the coordinates of the next cell.
-    - Checks if the next cell is within bounds, has not been visited, and is a path.
-    - Enqueues the next cell to the queue, marks it as visited, and updates the path dictionary.
-6. **Check for Path Existence:**
-    
-    ```python
+```
+- Updates the path dictionary to indicate that the next cell was reached from the current cell.
+
+### Check if Path Exists and Reconstruct Path
+
+```python
     if end not in path:
         return "No path found"
-    
-    ```
-    
-    - After the loop, checks if the end cell is not in the path dictionary, indicating no path was found. If so, returns "No path found".
-7. **Path Reconstruction:**
-    
-    ```python
+```
+- After the loop, checks if the end cell is not in the path dictionary, indicating no path was found from the start to the end. If so, returns "No path found".
+
+### Path Reconstruction
+
+```python
     shortest_path = []
+```
+- Initializes an empty list `shortest_path` to store the shortest path.
+
+```python
     step = end
+```
+- Starts tracing back the path from the end cell.
+
+```python
     while step is not None:
+```
+- Continues tracing back until reaching the start cell.
+
+```python
         shortest_path.append(step)
+```
+- Appends the current step (cell) to the shortest path list.
+
+```python
         step = path[step]
+```
+- Moves to the predecessor cell.
+
+```python
     shortest_path.reverse()
-    
-    ```
-    
-    - Initializes an empty list `shortest_path` to store the shortest path.
-    - Starts tracing back the path from the end cell.
-    - Continues tracing back until reaching the start cell.
-    - Appends the current step to the shortest path and moves to the predecessor cell.
-    - Reverses the shortest path list to get the correct order from start to end.
-8. **Return Path:**
-    
-    ```python
+```
+- Reverses the shortest path list to get the correct order from start to end.
+
+### Return the Shortest Path
+
+```python
     return shortest_path
-    
-    ```
-    
-    - Returns the shortest path.
+```
+- Returns the shortest path from the start cell to the end cell.
+
+
 
 ### Example Usage
 
