@@ -1,6 +1,6 @@
 
 
-```
+```python
 import unittest
 from maze import generate_random_maze
 
