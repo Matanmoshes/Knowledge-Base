@@ -8,67 +8,187 @@
         "type": "tabs",
         "children": [
           {
-            "id": "740fd86120488e9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Exercises/Implementing a Simple Library System.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1eb961742a88a785",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/GitHub Actions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "db8dc7a57b9fd491",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/Guide to Using GitHub Actions Workflows.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c4e5a6a94254a27d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Concepts/host file.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6eb3ca0d8402cb05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
+                "file": "AWS/AWS Solution Archtect/EBS & EFS/Volumes and Snapshots.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "408059bb9e6c7c9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Exam Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0951521ae8f3eae7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Relational Database Service (RDS).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "81f7d9e01c5941a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Increasing Read Performance with Read Replicas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d57aee3d0ba3361a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Amazon Aurora.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fb85c7975070b45e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Amazon DynamoDB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "84dcd35511db362a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/DynamoDB Transactions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e9a223f2de03355",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/DynamoDB Backups.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6824a9eff2ed9c20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/DynamoDB Streams and Global Tables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0e07b17d5dc918e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Operating MongoDB-Compatible Databases in Amazon DocumentDB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "052625133c29b452",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Implementing Graph Databases Using Amazon Neptune.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "427c091f0112fea5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Implementing Graph Databases Using Amazon Neptune.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "232f78ea765c1dd4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Leveraging Amazon Quantum Ledger Database (QLDB) for Ledger Databases.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aca8096d81295a48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Databases/Analyzing Time-Series Data with Amazon Timestream.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1912428e71a96650",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Exam Preparation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 14
       }
     ],
     "direction": "vertical"
@@ -118,7 +238,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5
+    "width": 537.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -134,7 +254,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
+                "file": "AWS/AWS Solution Archtect/Exam Preparation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +271,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
+                "file": "AWS/AWS Solution Archtect/Exam Preparation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +294,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Installation/Guide to Troubleshooting Terraform and Apache Errors.md"
+                "file": "AWS/AWS Solution Archtect/Exam Preparation.md"
               }
             }
           }
@@ -198,35 +318,37 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "1912428e71a96650",
   "lastOpenFiles": [
-    "Linux/Concepts/host file.md",
-    "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
-    "Git/Guide to Using GitHub Actions Workflows.md",
-    "Git/GitHub Actions.md",
-    "Python/Exercises/Implementing a Simple Library System.md",
+    "AWS/AWS Solution Archtect/General Question.md",
+    "AWS/AWS Solution Archtect/Exam Preparation.md",
+    "AWS/AWS Solution Archtect/Databases/Analyzing Time-Series Data with Amazon Timestream.md",
+    "AWS/AWS Solution Archtect/Databases/Leveraging Amazon Quantum Ledger Database (QLDB) for Ledger Databases.md",
+    "AWS/AWS Solution Archtect/Databases/Implementing Graph Databases Using Amazon Neptune.md",
+    "AWS/AWS Solution Archtect/Databases/Running Apache Cassandra Workloads with Amazon Keyspaces.md",
+    "AWS/AWS Solution Archtect/Databases/Operating MongoDB-Compatible Databases in Amazon DocumentDB.md",
+    "AWS/AWS Solution Archtect/Databases/DynamoDB Streams and Global Tables.md",
+    "AWS/AWS Solution Archtect/Databases/DynamoDB Backups.md",
+    "AWS/AWS Solution Archtect/Databases/DynamoDB Transactions.md",
+    "AWS/AWS Solution Archtect/Databases/Amazon DynamoDB.md",
+    "AWS/AWS Solution Archtect/Databases/Amazon Aurora.md",
+    "AWS/AWS Solution Archtect/Databases/Increasing Read Performance with Read Replicas.md",
+    "AWS/AWS Solution Archtect/Databases/Relational Database Service (RDS).md",
+    "AWS/AWS Solution Archtect/Exam Guide.md",
+    "AWS/AWS Solution Archtect/EBS & EFS/Question.md",
+    "AWS/AWS Solution Archtect/Databases",
     "AWS/AWS Solution Archtect/EBS & EFS/Volumes and Snapshots.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/Amazon Elastic File System (EFS).md",
-    "AWS/AWS Solution Archtect/EBS & EFS/Amazon Machine Images - EBS vs. Instance Store.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/AWS Backup.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/Amazon Elastic File System.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/Amazon FSx.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/Reduce Storage Costs with EFS.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/Summary of the EBS Section.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/EC2 Hibernation.md",
-    "Python/Exercises/To Do list.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/EBS Encryption.md",
-    "AWS EC2 Volumes and Snapshots.md",
-    "AWS/AWS Solution Archtect/EBS & EFS/AWS Elastic Block Storage (EBS).md",
-    "Linux/Linux Commands/mount.md",
-    "Python/Exercises/Bank Account.md",
+    "Python/Exercises/Implementing a Simple Library System.md",
+    "Git/GitHub Actions.md",
+    "Git/Guide to Using GitHub Actions Workflows.md",
+    "Python/Exercises/Maze Solver/test_maze_third.md",
+    "Python/Exercises/Maze Solver/test_maze_first.md",
+    "Python/Exercises/Maze Solver/maze_solver_script.md",
+    "Python/Exercises/Maze Solver/Code_BreakDown_Maze.md",
+    "Installation/Guide to Troubleshooting Terraform and Apache Errors.md",
+    "Python/Exercises/Maze Solver/test_maze_sec.md",
+    "Python/Exercises/Maze Solver",
     "Untitled.canvas",
-    "Linux/Operation Deployment/Verify the integrity and availability of resources.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/Optimizing S3 Performance.md",
-    "AWS/AWS Solution Archtect/Simple Storage Service (S3)/AWS S3 Overview.md",
-    "Python/Exercises/Bank Guide.md",
-    "AWS Certified Solutions Architect - Associate (SAA 5660dbb3a6634cd8b660e0951376d77e 2.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/Solving Licensing Issues with Dedicated Hosts.md",
     "aws-test.html",
     "AWS Certified Solutions Architect - Associate (SAA 5660dbb3a6634cd8b660e0951376d77e.html",
     "Python/Exercises",
@@ -244,8 +366,6 @@
     "Attachments/Pasted image 20240608105615.png",
     "Attachments/Pasted image 20240608121609.png",
     "Attachments/Pasted image 20240608105453.png",
-    "Certification & Encryption",
-    "Web-Servers/NGINX content/NGINX_Self-Signed_SSL_Certificate.pdf",
-    "Web-Servers/NGINX content"
+    "Certification & Encryption"
   ]
 }
