@@ -1,5 +1,3 @@
-
-
 # Guide to Setting Up an AWS Web Server with Terraform
 
 This guide walks you through the steps to create and bootstrap a web server on AWS using Terraform. It covers generating SSH keys and configuring Terraform files.
@@ -25,6 +23,7 @@ AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 Default region name [None]: us-east-1
 Default output format [None]: json
 ```
+
 ## Step 2: Verify AWS CLI Configuration
 
 Verify that your AWS CLI configuration is correct by running:
@@ -44,6 +43,9 @@ ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
 
 This command creates a private key (`id_rsa`) and a public key (`id_rsa.pub`) in the `~/.ssh/` directory.
 
+>[!Note]
+>When you generate an SSH key pair locally using `ssh-keygen`, it creates a private key (`~/.ssh/id_rsa`) and a public key (`~/.ssh/id_rsa.pub`). However, AWS needs to have a reference to this key pair to allow SSH access to the EC2 instances. The `aws_key_pair` resource uploads your public key to AWS and creates a key pair that AWS can manage.
+
 ## Step 4: Create Terraform Configuration Files
 
 Create a directory for your Terraform project and navigate to it:
@@ -53,9 +55,9 @@ mkdir terraform-aws-webserver
 cd terraform-aws-webserver
 ```
 
-### Create `setup.tf`
+### Create `main.tf`
 
-Create a `setup.tf` file in your project directory with the following configuration:
+Create a `main.tf` file in your project directory with the following configuration:
 
 ```hcl
 provider "aws" {
@@ -142,31 +144,6 @@ resource "aws_security_group" "sg" {
   }
 }
 
-output "Webserver-Public-IP" {
-  value = aws_instance.webserver.public_ip
-}
-```
-
-### Explanation of `setup.tf`
-
-- **`provider "aws"`**: Configures the AWS provider and region.
-- **`resource "aws_key_pair" "webserver-key"`**: Creates an SSH key pair resource in AWS using your locally generated public key.
-- **`data "aws_ssm_parameter" "webserver-ami"`**: Fetches the latest Amazon Linux 2 AMI ID using SSM Parameter Store.
-- **`resource "aws_vpc" "vpc"`**: Creates a VPC with DNS support and hostname enabled.
-- **`resource "aws_internet_gateway" "igw"`**: Creates an Internet Gateway for the VPC.
-- **`data "aws_route_table" "main_route_table"`**: Fetches the main route table associated with the VPC.
-- **`resource "aws_default_route_table" "internet_route"`**: Creates a default route table to route internet traffic through the Internet Gateway.
-- **`data "aws_availability_zones" "azs"`**: Gets all available availability zones in the region.
-- **`resource "aws_subnet" "subnet"`**: Creates a subnet in the first availability zone.
-- **`resource "aws_security_group" "sg"`**: Creates a security group to allow HTTP and SSH access.
-- **`output "Webserver-Public-IP"`**: Outputs the public IP address of the web server.
-
-
-### Create `main.tf`
-
-Create a `main.tf` file in your project directory with the following configuration:
-
-```hcl
 resource "aws_instance" "webserver" {
   ami                         = data.aws_ssm_parameter.webserver-ami.value
   instance_type               = "t3.micro"
@@ -193,20 +170,27 @@ resource "aws_instance" "webserver" {
     Name = "webserver"
   }
 }
-```
 
+output "Webserver-Public-IP" {
+  value = aws_instance.webserver.public_ip
+}
+```
 
 ### Explanation of `main.tf`
 
+- **`provider "aws"`**: Configures the AWS provider and region.
+- **`resource "aws_key_pair" "webserver-key"`**: Creates an SSH key pair resource in AWS using your locally generated public key.
+- **`data "aws_ssm_parameter" "webserver-ami"`**: Fetches the latest Amazon Linux 2 AMI ID using SSM Parameter Store.
+- **`resource "aws_vpc" "vpc"`**: Creates a VPC with DNS support and hostname enabled.
+- **`resource "aws_internet_gateway" "igw"`**: Creates an Internet Gateway for the VPC.
+- **`data "aws_route_table" "main_route_table"`**: Fetches the main route table associated with the VPC.
+- **`resource "aws_default_route_table" "internet_route"`**: Creates a default route table to route internet traffic through the Internet Gateway.
+- **`data "aws_availability_zones" "azs"`**: Gets all available availability zones in the region.
+- **`resource "aws_subnet" "subnet"`**: Creates a subnet in the first availability zone.
+- **`resource "aws_security_group" "sg"`**: Creates a security group to allow HTTP and SSH access.
 - **`resource "aws_instance" "webserver"`**: Defines an EC2 instance resource named `webserver`.
-- **`ami`**: Uses the latest Amazon Linux 2 AMI.
-- **`instance_type`**: Specifies the instance type as `t3.micro`.
-- **`key_name`**: References the key pair created in AWS using your locally generated public key.
-- **`associate_public_ip_address`**: Ensures the instance gets a public IP address.
-- **`vpc_security_group_ids`**: Attaches the security group for network access.
-- **`subnet_id`**: Places the instance in the specified subnet.
 - **`provisioner "remote-exec"`**: Runs commands on the instance after launch to install and start the Apache HTTP server and set up a test webpage.
-- **`tags`**: Adds a name tag to the instance for identification.
+- **`output "Webserver-Public-IP"`**: Outputs the public IP address of the web server.
 
 ## Step 5: Initialize and Validate Terraform Configuration
 
@@ -251,8 +235,8 @@ output "Webserver-Public-IP" {
 ### Example Output
 
 ```sh
-Webserver-Public-IP = "54.123.45.67"
+Webserver-Public-IP = "54.83.98.202"
 ```
 
-Visit `http://54.123.45.67` in your web browser to see your test website.
+Visit `http://54.83.98.202` in your web browser to see your test website.
 
