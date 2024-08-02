@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "7cfabf36e3d1fb8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terraform/Setting Up an AWS Web Server with Terraform.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terraform/Setting Up an AWS Web Server with Terraform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terraform/Setting Up an AWS Web Server with Terraform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terraform/Setting Up an AWS Web Server with Terraform.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -162,11 +147,11 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "7cfabf36e3d1fb8a",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Guides/AWS CLI Guide.md",
     "Terraform/Setting Up an AWS Web Server with Terraform.md",
     "Untitled.md",
+    "Guides/AWS CLI Guide.md",
     "Terraform/Terraform Overview.md",
     "Guides/Trivy.md",
     "Guides/Installation Instructions Apache Server.md",
