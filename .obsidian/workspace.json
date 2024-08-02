@@ -8,42 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7a144e50bef84d7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Servers/Aphache/Apache HTTP Server Guide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9907952484a1a1e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Guides/Trivy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "96c3131c17ee30c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terraform/Terraform Overview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7fcb1c4981454e0d",
             "type": "leaf",
             "state": {
@@ -54,9 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7cfabf36e3d1fb8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terraform/Setting Up an AWS Web Server with Terraform.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Guides/AWS CLI Guide.md",
+                "file": "Terraform/Setting Up an AWS Web Server with Terraform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Guides/AWS CLI Guide.md",
+                "file": "Terraform/Setting Up an AWS Web Server with Terraform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Guides/AWS CLI Guide.md"
+                "file": "Terraform/Setting Up an AWS Web Server with Terraform.md"
               }
             }
           }
@@ -186,16 +162,17 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "7fcb1c4981454e0d",
+  "active": "7cfabf36e3d1fb8a",
   "lastOpenFiles": [
+    "Guides/AWS CLI Guide.md",
     "Terraform/Setting Up an AWS Web Server with Terraform.md",
+    "Untitled.md",
     "Terraform/Terraform Overview.md",
     "Guides/Trivy.md",
     "Guides/Installation Instructions Apache Server.md",
     "Guides/Guide to Troubleshooting Terraform and Apache Errors.md",
     "Guides/Guide to Creating VPC Peering on AWS.md",
     "Guides/Create systemd Services.md",
-    "Guides/AWS CLI Guide.md",
     "Web-Servers/Aphache/Apache HTTP Server Guide.md",
     "Terraform",
     "Python/HTTP FastAPI.md",
@@ -217,7 +194,6 @@
     "AWS/AWS Solution Archtect/Databases/Amazon DynamoDB.md",
     "AWS/AWS Solution Archtect/Databases/Amazon Aurora.md",
     "AWS/AWS Solution Archtect/Databases/Relational Database Service (RDS).md",
-    "AWS/AWS Solution Archtect/Exam Preparation.md",
     "AWS/AWS Solution Archtect/Databases",
     "Python/Exercises/Maze Solver",
     "Untitled.canvas",

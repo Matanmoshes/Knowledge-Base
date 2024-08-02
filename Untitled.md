@@ -16,15 +16,6 @@ This guide walks you through the steps to create and bootstrap a web server on A
 
    You will be prompted to enter your AWS Access Key ID, Secret Access Key, Default region name, and Default output format. These credentials can be obtained from the AWS Management Console under IAM -> Users -> [Your User] -> Security credentials.
 
- **Example Output**:
-
-```sh
-$ aws configure
-AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
-AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-Default region name [None]: us-east-1
-Default output format [None]: json
-```
 ## Step 2: Verify AWS CLI Configuration
 
 Verify that your AWS CLI configuration is correct by running:
