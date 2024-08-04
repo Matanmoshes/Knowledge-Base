@@ -13,13 +13,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Guides/AWS CLI Guide.md",
+                "file": "AWS/AWS Solution Archtect/Databases/Relational Database Service (RDS).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2134650cef64508d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Scripts/Send news with API/Send email notification.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6338cfb571cf215",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terraform/Terraform Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "153355560e523458",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad41dcbc98f31c75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31934944621bc6a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terraform/aws-k8s-terraform-automation/Description.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -69,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 505.5
+    "width": 451.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -85,6 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md"
               }
             }
           }
@@ -147,12 +210,25 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "ad41dcbc98f31c75",
   "lastOpenFiles": [
-    "Terraform/Setting Up an AWS Web Server with Terraform.md",
-    "Untitled.md",
-    "Guides/AWS CLI Guide.md",
+    "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
+    "Terraform/aws-k8s-terraform-automation/Description.md",
+    "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
+    "Container/Containers and Microservices Architecture.md",
+    "Container",
     "Terraform/Terraform Overview.md",
+    "Terraform/aws-k8s-terraform-automation",
+    "Python/Scripts/Send news with API/Send email notification.md",
+    "Python/Scripts/Send news with API/Get with API request the news.md",
+    "Python/Scripts/Send news with API",
+    "AWS/AWS Solution Archtect/Databases/Relational Database Service (RDS).md",
+    "AWS/AWS Solution Archtect/Databases/AWS Databases Review.md",
+    "Attachments/Pasted image 20240802160845.png",
+    "Attachments/Pasted image 20240802160933.png",
+    "Attachments/Pasted image 20240802160920.png",
+    "Terraform/Setting Up an AWS Web Server with Terraform.md",
+    "Guides/AWS CLI Guide.md",
     "Guides/Trivy.md",
     "Guides/Installation Instructions Apache Server.md",
     "Guides/Guide to Troubleshooting Terraform and Apache Errors.md",
@@ -172,29 +248,16 @@
     "Attachments/Pasted image 20240801155322.png",
     "Python/Exercises/Justify Text/Test Code.md",
     "Python/Exercises/Justify Text",
-    "AWS/AWS Solution Archtect/Databases/Implementing Graph Databases Using Amazon Neptune.md",
-    "AWS/AWS Solution Archtect/Databases/Operating MongoDB-Compatible Databases in Amazon DocumentDB.md",
-    "AWS/AWS Solution Archtect/Databases/DynamoDB Streams and Global Tables.md",
-    "AWS/AWS Solution Archtect/Databases/DynamoDB Backups.md",
-    "AWS/AWS Solution Archtect/Databases/Amazon DynamoDB.md",
-    "AWS/AWS Solution Archtect/Databases/Amazon Aurora.md",
-    "AWS/AWS Solution Archtect/Databases/Relational Database Service (RDS).md",
     "AWS/AWS Solution Archtect/Databases",
     "Python/Exercises/Maze Solver",
     "Untitled.canvas",
     "aws-test.html",
     "AWS Certified Solutions Architect - Associate (SAA 5660dbb3a6634cd8b660e0951376d77e.html",
     "Python/Exercises",
-    "AWS/AWS Solution Archtect/EBS & EFS",
     "Attachments/Pasted image 20240614160100.png",
-    "Web-Servers/Aphache",
-    "Web-Servers",
     "Attachments/Pasted image 20240612140057.png",
     "Attachments/Pasted image 20240611173018.png",
     "Attachments/Pasted image 20240608142351.png",
-    "Attachments/Pasted image 20240608141807.png",
-    "Attachments/Pasted image 20240608141641.png",
-    "Attachments/Pasted image 20240608124757.png",
-    "Attachments/Pasted image 20240608105615.png"
+    "Attachments/Pasted image 20240608141807.png"
   ]
 }

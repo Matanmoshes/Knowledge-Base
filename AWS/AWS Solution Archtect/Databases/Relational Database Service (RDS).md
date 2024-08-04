@@ -35,7 +35,7 @@
     - Provides automated failover in case of an availability zone failure.
 - **Supported Engines**: SQL Server, MySQL, MariaDB, Oracle, PostgreSQL.
 - **Aurora**: Always Multi-AZ by design.
-
+![[Pasted image 20240802160933.png]]
 ### Handling Failures and Maintenance
 
 - **Automatic Failover**:
