@@ -177,3 +177,10 @@ region              = "us-east-1"
 6. **Destroy Infrastructure**: Run `terraform destroy` when you no longer need the infrastructure.
 
 This example demonstrates how to manage multiple resources using Terraform. By following this guide, you can create, manage, and destroy infrastructure efficiently using Terraform.
+
+---
+
+# References:
+
+Terraform documentation
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs

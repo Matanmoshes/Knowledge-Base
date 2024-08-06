@@ -20,60 +20,48 @@
             }
           },
           {
-            "id": "2134650cef64508d",
+            "id": "13750bad0120bf00",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Scripts/Send news with API/Send email notification.md",
+                "file": "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c6338cfb571cf215",
+            "id": "ad35f7803a9e432c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform/Terraform Overview.md",
+                "file": "Docker/Docker Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "153355560e523458",
+            "id": "f18edb9fb84256b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
+                "file": "Docker/Docker Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ad41dcbc98f31c75",
+            "id": "b1a04f9e9d459671",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "31934944621bc6a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terraform/aws-k8s-terraform-automation/Description.md",
+                "file": "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
+                "file": "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
+                "file": "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md"
+                "file": "Terraform/Setting Up the AWS Infrastructure with Terraform.md"
               }
             }
           }
@@ -210,14 +198,21 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "ad41dcbc98f31c75",
+  "active": "b1a04f9e9d459671",
   "lastOpenFiles": [
+    "Docker/Docker Commands.md",
+    "Docker/Docker Volumes.md",
+    "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
+    "Docker",
+    "Attachments/Pasted image 20240805225708.png",
     "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
+    "Terraform/Setting Up an AWS Web Server with Terraform.md",
+    "Terraform/Terraform Overview.md",
+    "Linux/Concepts/Linux Concept.md",
     "Terraform/aws-k8s-terraform-automation/Description.md",
     "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
     "Container/Containers and Microservices Architecture.md",
     "Container",
-    "Terraform/Terraform Overview.md",
     "Terraform/aws-k8s-terraform-automation",
     "Python/Scripts/Send news with API/Send email notification.md",
     "Python/Scripts/Send news with API/Get with API request the news.md",
@@ -227,7 +222,6 @@
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
     "Attachments/Pasted image 20240802160920.png",
-    "Terraform/Setting Up an AWS Web Server with Terraform.md",
     "Guides/AWS CLI Guide.md",
     "Guides/Trivy.md",
     "Guides/Installation Instructions Apache Server.md",
@@ -241,23 +235,17 @@
     "AWS/AWS Solution Archtect/EBS & EFS/Volumes and Snapshots.md",
     "Networking/HTTP Protocol.md",
     "Python/Exercises/Maze Solver/README.md",
-    "Python/Exercises/Justify Text/justify_text.md",
     "Attachments/Pasted image 20240801155351.png",
-    "Git/Git advanced Commands.md",
-    "Git/Git advanse.md",
     "Attachments/Pasted image 20240801155322.png",
-    "Python/Exercises/Justify Text/Test Code.md",
     "Python/Exercises/Justify Text",
     "AWS/AWS Solution Archtect/Databases",
     "Python/Exercises/Maze Solver",
     "Untitled.canvas",
     "aws-test.html",
     "AWS Certified Solutions Architect - Associate (SAA 5660dbb3a6634cd8b660e0951376d77e.html",
-    "Python/Exercises",
     "Attachments/Pasted image 20240614160100.png",
     "Attachments/Pasted image 20240612140057.png",
     "Attachments/Pasted image 20240611173018.png",
-    "Attachments/Pasted image 20240608142351.png",
-    "Attachments/Pasted image 20240608141807.png"
+    "Attachments/Pasted image 20240608142351.png"
   ]
 }
