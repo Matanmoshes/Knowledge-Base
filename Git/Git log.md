@@ -169,6 +169,3 @@ Now you can use `git lg` to run the custom log command:
 git lg
 ```
 
-### Summary
-
-The `git log` command is extremely powerful and flexible. By combining different options and filters, you can tailor the output to meet your specific needs, making it an invaluable tool for understanding the history and changes in a Git repository.

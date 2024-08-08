@@ -89,9 +89,4 @@ When you run an interactive rebase, a text editor opens with a list of commits. 
 3. **Resolving Divergent Branch Histories**:
    - Rebasing to align branch histories for cleaner integration.
 
-### Important Tips
-
-- **Use with Caution**: Rebasing rewrites commit history. Avoid rebasing commits that have already been pushed to a shared repository.
-- **Resolve Conflicts**: During a rebase, you might encounter conflicts. Resolve them manually, stage the resolved files, and continue the rebase.
-- **Interactive Rebase**: Use interactive rebase for more control over how commits are replayed. It’s especially useful for cleaning up commit history.
 

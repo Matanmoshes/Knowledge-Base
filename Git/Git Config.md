@@ -147,6 +147,3 @@ The `credential.helper` setting in Git helps you manage your credentials for acc
    git config --global --list
    ```
 
-### Conclusion
-
-The `git config` command is a versatile tool for managing your Git environment. By configuring your user information, default editor, color settings, command aliases, and credential storage, you can tailor Git to your preferences and streamline your workflow. Remember to be cautious with storing credentials, especially when using the `store` option, and consider more secure methods if necessary.

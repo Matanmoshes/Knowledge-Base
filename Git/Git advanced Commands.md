@@ -42,6 +42,11 @@
    ```
    *Explanation: Displays the details of the latest commit, the previous commit, and the second previous commit.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C (main)
+   ```
+
 2. **Add and Push to a Remote Repository:**
    - Create a new repository on GitHub.
    - Add the remote repository using `git remote add origin <url>`.
@@ -55,6 +60,11 @@
    git push -u origin main
    ```
    *Explanation: Adds the GitHub repository as a remote named `origin`, renames the default branch to `main`, and pushes the local commits to the remote repository.*
+
+   **Visualization:**
+   ```mathematica
+   A---B---C (main, origin/main)
+   ```
 
 3. **Tagging Commits:**
    - Create two tags in your local repository: one lightweight tag and one annotated tag.
@@ -77,6 +87,13 @@
    git push origin v1.1
    ```
    *Explanation: Pushes both tags to the remote repository.*
+
+   **Visualization:**
+   ```mathematica
+   A---B---C (main, origin/main)
+        |     |
+       v1.0  v1.1
+   ```
 
 ### Task Set 2: gitignore, Log, Reset, and Restore
 
@@ -118,6 +135,11 @@
    git push -u origin main
    ```
    *Explanation: Adds the remote repository, sets the branch name to `main`, and pushes the commits.*
+
+   **Visualization:**
+   ```mathematica
+   A (main, origin/main)
+   ```
 
 2. **Analyze Commit History:**
    - Make a series of five more commits to your project.
@@ -166,6 +188,11 @@
    ```
    *Explanation: Displays a condensed commit history, a graphical commit history, and detailed commit changes, respectively.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F (main, origin/main)
+   ```
+
 3. **Undo Changes with Reset and Restore:**
    - Make a few additional commits to the project.
    - Use `git reset --soft HEAD~1` to reset the last commit but keep the changes staged.
@@ -189,15 +216,32 @@
    ```
    *Explanation: Repeats the process for `code8.py`.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H (main, origin/main)
+   ```
+
    ```sh
    git reset --soft HEAD~1
    ```
    *Explanation: Resets the last commit but keeps the changes staged.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G (main)
+                        \
+                         H (staged changes)
+   ```
+
    ```sh
    git reset --hard HEAD~1
    ```
    *Explanation: Resets the last commit and discards the changes.*
+
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G (main)
+   ```
 
    ```sh
    echo "Modify code2" > src/code2.py
@@ -206,15 +250,38 @@
    ```
    *Explanation: Modifies `code2.py` and `code3.py`, then stages the changes.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G (main)
+                        \
+                         I (staged changes)
+   ```
+
    ```sh
    git restore --staged src/code2.py
    ```
    *Explanation: Unstages the changes in `code2.py`.*
 
+   **Visualization:**
+   ```mathematica
+   A
+
+---B---C---D---E---F---G (main)
+                        \
+                         I' (partially staged changes)
+   ```
+
    ```sh
    git restore src/code3.py
    ```
    *Explanation: Discards the changes in `code3.py`.*
+
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G (main)
+                        \
+                         I'' (staged changes for other files)
+   ```
 
 ### Task Set 3: Revert, Stash, Switch, and Rebase
 
@@ -247,7 +314,15 @@
    ```
    *Explanation: Reverts a specific commit by its hash and pushes the changes to the remote repository.
 
- `git revert` creates a new commit that undoes the changes of a previous commit, without altering the commit history, unlike `git reset` which changes the commit history.*
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H (main)
+                             \
+                              I (revert commit)
+   ```
+
+   **Explanation**:
+   - `git revert` creates a new commit that undoes the changes of a previous commit, without altering the commit history, unlike `git reset` which changes the commit history.
 
 2. **Stashing and Restoring Changes:**
    - Make some modifications in multiple files but don't commit them.
@@ -285,6 +360,13 @@
    ```
    *Explanation: Applies the stashed changes back to the working directory.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H---I---J (main)
+                        \             /
+                         K---L---M---N (stashed changes applied)
+   ```
+
 3. **Switching Branches:**
    - Create a new branch and switch to it using `git switch <branch_name>`.
    - Make a few commits on this new branch.
@@ -321,6 +403,13 @@
    git commit -m "Main branch commit: Add code17.py"
    ```
    *Explanation: Creates `code17.py`, stages it, and commits it.*
+
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H---I---J (main)
+                        \                   \
+                         K---L---M---N (new-branch)
+   ```
 
 4. **Rebasing a Branch:**
    - Create another branch from the main branch.
@@ -366,6 +455,13 @@
    ```
    *Explanation: Switches to `another-branch` and rebases it onto the main branch, reapplying its commits on top of the main branch. If conflicts arise, they must be resolved to complete the rebase.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H---I---J (main)
+                        \                 \
+                         K---L---M---N (another-branch rebased)
+   ```
+
 ### Task Set 4: Blame, Clean, Bisect, and Cherry-pick
 
 #### Task: Analyzing Changes and Managing Commits
@@ -394,6 +490,11 @@
    ```
    *Explanation: Uses `git blame` to show the last modification made to each line of `code21.py` along with the author.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H---I---J (main)
+   ```
+
 2. **Cleaning the Working Directory:**
    - Create some untracked files and directories in your project.
    - Use `git clean -n` to preview the files that will be removed.
@@ -416,9 +517,16 @@
    ```
    *Explanation: Forcefully removes the untracked files and directories.*
 
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H---I---J (main)
+   ```
+
 3. **Finding Bugs with Git Bisect:**
    - Intentionally introduce a bug in your project in one of the commits.
-   - Use `git bisect start`, `git bisect bad`, and `git bisect good <commit_hash>` to find the commit that introduced the bug.
+   - Use `git bisect start`, `git bisect bad`, and `git bis
+
+ect good <commit_hash>` to find the commit that introduced the bug.
 
    **Solution:**
    ```sh
@@ -440,6 +548,13 @@
    git bisect reset
    ```
    *Explanation: Completes the bisect process and resets the repository to its original state.*
+
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H---I---J (main)
+                             \
+                              K (bug introduced)
+   ```
 
 4. **Applying Changes with Git Cherry-pick:**
    - Create a new branch and make a few commits.
@@ -481,3 +596,11 @@
    git push origin feature-branch
    ```
    *Explanation: Pushes the commits in `feature-branch` to the remote repository.*
+
+   **Visualization:**
+   ```mathematica
+   A---B---C---D---E---F---G---H---I---J---K (main)
+                        \                   \
+                         L---M---N (feature-branch with cherry-pick)
+   ```
+
