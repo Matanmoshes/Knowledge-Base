@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0fc0ef536d4e6ea8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Uploading a Docker Image to Docker Hub.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/Dockerfile.md",
+                "file": "Docker/Uploading a Docker Image to Docker Hub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/Dockerfile.md",
+                "file": "Docker/Uploading a Docker Image to Docker Hub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/Dockerfile.md"
+                "file": "Docker/Uploading a Docker Image to Docker Hub.md"
               }
             }
           }
@@ -162,10 +174,11 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "0fc0ef536d4e6ea8",
   "lastOpenFiles": [
-    "Docker/Docker Volumes.md",
     "Docker/Dockerfile.md",
+    "Docker/Uploading a Docker Image to Docker Hub.md",
+    "Docker/Docker Volumes.md",
     "Docker/Docker Commands.md",
     "HTTP/HTTP Protocol.md",
     "HTTP/Presentation HTTP.md",
@@ -195,7 +208,6 @@
     "Container/Containers and Microservices Architecture.md",
     "Container",
     "Terraform/aws-k8s-terraform-automation",
-    "Python/Scripts/Send news with API/Send email notification.md",
     "Python/Scripts/Send news with API",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
