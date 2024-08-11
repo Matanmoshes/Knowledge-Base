@@ -74,6 +74,24 @@ HTTP requests are structured into several components:
 An HTTP API (Application Programming Interface) allows two systems to communicate over the web using HTTP. It typically involves sending HTTP requests to a server and receiving responses. HTTP APIs are commonly used for web services, where clients (e.g., web apps, mobile apps) interact with backend services.
 
 **APIs Use HTTP as a Transport Protocol**: Many web APIs use HTTP as the underlying protocol to communicate between clients and servers. These are often called **HTTP APIs**. When you interact with a web service (e.g., REST API), you typically send HTTP requests to the API server and receive HTTP responses in return.
+
+
+>[! http / api]
+>- **HTTP Request:** Any request made to a web server is an HTTP request. These can be for web pages, APIs, images, files, etc.
+> 
+> **`127.0.0.1 - - [10/Aug/2024 13:50:05] "GET / HTTP/1.1" 200 -`**
+> 
+> **Explanation:** This is an HTTP request to the root endpoint (`/`).
+> This is an HTTP request to the root endpoint, not an API request for weather data
+> 
+>- **API Request:** An API request is a specific type of HTTP request made to an API endpoint, intended to retrieve or manipulate data.
+>  
+> **`127.0.0.1 - - [10/Aug/2024 13:50:13] "GET /weather/New%20York HTTP/1.1" 200 -`**
+> 
+> **Explanation:** This is an HTTP request to the `/weather/New%20York` endpoint
+> This is an API request made to the `/weather/<city>` endpoint
+ 
+
 #### RESTful APIs
 
 REST (Representational State Transfer) is an architectural style for designing networked applications. RESTful APIs adhere to these principles:
