@@ -1,4 +1,4 @@
-Here’s an overview of common syntax and commands used in a `Dockerfile`:
+# `Dockerfile` Overview:
 
 ### 1. `FROM`
 - **Purpose**: Specifies the base image from which you are building.
@@ -193,6 +193,8 @@ VOLUME ["/path"]
 
 ---
 
+
+
 ## Create docker file build Image and run container
 ### Step 1: Create a Basic Python Application
 
@@ -257,6 +259,8 @@ docker run python-hello-docker
 
 ---
 
+
+
 ## `ARG` and `ENV`
 
 The `ARG` and `ENV` instructions in a Dockerfile both allow you to define variables, but they serve different purposes and have different scopes and lifetimes.
@@ -319,6 +323,8 @@ In summary, use `ARG` for variables that are only needed during the build proces
 
 
 ---
+
+
 
 ## Key Differences Between `ENTRYPOINT` and `CMD`
 
