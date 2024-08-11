@@ -255,3 +255,105 @@ docker run python-hello-docker
 - **COPY . $APP_HOME**: Copies the current directory’s content into the container's `/app` directory.
 - **CMD ["python", "app.py"]**: Defines the command to run the application, which in this case is `python app.py`.
 
+---
+
+## `ARG` and `ENV`
+
+The `ARG` and `ENV` instructions in a Dockerfile both allow you to define variables, but they serve different purposes and have different scopes and lifetimes.
+
+### 1. **`ARG` (Build-time Argument)**
+
+- **Purpose**: The `ARG` instruction defines a variable that users can pass at build time to the Docker build command using the `--build-arg` flag. This is useful for setting configuration values that might change depending on the environment in which the image is being built.
+
+- **Scope**: `ARG` variables are only available during the build process. They cannot be accessed or used in the running container after the image has been built.
+
+- **Lifetime**: The value of an `ARG` variable is only available during the image build process and does not persist after the image is built.
+
+- **Usage Example**:
+
+  ```dockerfile
+  ARG VERSION=1.0
+  RUN echo "Building version $VERSION"
+  ```
+
+  You can pass a different value when building the image:
+
+  ```bash
+  docker build --build-arg VERSION=2.0 -t myapp:2.0 .
+  ```
+
+  Here, `VERSION` is used only during the build process, for example, to install specific versions of software or to label the image.
+
+### 2. **`ENV` (Environment Variable)**
+
+- **Purpose**: The `ENV` instruction sets an environment variable that will be available both during the build process (after the `ENV` instruction is defined) and in the running container. These variables are typically used to configure the application or the environment in which it runs.
+
+- **Scope**: `ENV` variables are available during both the build process and within the running container. They persist in the container and can be used by any processes that run within it.
+
+- **Lifetime**: `ENV` variables are available for the lifetime of the container. Once set, they can be accessed by the application or scripts running inside the container.
+
+- **Usage Example**:
+
+  ```dockerfile
+  ENV APP_HOME /app
+  WORKDIR $APP_HOME
+  ```
+
+  In this example, `APP_HOME` is set to `/app`, and it will be available in both the build process and in the running container. Any processes or scripts in the container can access this variable.
+
+### **Key Differences**
+
+1. **Scope**:
+   - **`ARG`**: Available only during the image build process.
+   - **`ENV`**: Available during both the build process and in the running container.
+
+2. **Lifetime**:
+   - **`ARG`**: Exists only at build time and cannot be accessed in the container.
+   - **`ENV`**: Persists and can be accessed throughout the container's lifecycle.
+
+3. **Use Case**:
+   - **`ARG`**: Best for setting build-time variables like versions, build-specific configurations, or temporary values that are only needed during the image creation.
+   - **`ENV`**: Best for setting environment variables that your application will need to run, like paths, configuration settings, or any other data that should be available inside the container.
+
+In summary, use `ARG` for variables that are only needed during the build process and won’t be required by the container once it’s running. Use `ENV` for variables that should be available during both the build and runtime of the container.
+
+
+---
+
+## Key Differences Between `ENTRYPOINT` and `CMD`
+
+1. **Purpose**:
+   - **`CMD`**: Provides default arguments for the container's main process. It can be overridden by command-line arguments when the container is run.
+   - **`ENTRYPOINT`**: Defines the container's main executable, making the container behave like a command-line tool. The command set by `ENTRYPOINT` cannot be easily overridden by command-line arguments.
+
+2. **Usage**:
+   - **`CMD`**: Often used to specify the default command or arguments that should run when the container starts, but these can be changed by the user.
+   - **`ENTRYPOINT`**: Used to set a fixed command that will always run, regardless of the arguments provided during the container's execution.
+
+3. **Combination**:
+   - **Together**: When both `ENTRYPOINT` and `CMD` are used in the same Dockerfile, `CMD` provides default arguments to the `ENTRYPOINT` command.
+
+4. **Example**:
+   - **`CMD`**:
+     ```dockerfile
+     CMD ["nginx", "-g", "daemon off;"]
+     ```
+     You can override `nginx` with another command at runtime: `docker run myimage bash`.
+
+   - **`ENTRYPOINT`**:
+     ```dockerfile
+     ENTRYPOINT ["nginx", "-g", "daemon off;"]
+     ```
+     The container will always run `nginx`, and arguments provided at runtime will be passed to `nginx`.
+
+In summary, use `ENTRYPOINT` for the main command that should always run, and `CMD` for default arguments or commands that can be overridden.
+### How its looks in Dockerfile
+
+```dockerfile
+# ENTRYPOINT example
+ENTRYPOINT ["nginx"]
+
+# CMD example
+CMD ["nginx", "-g", "daemon off;"]
+```
+
