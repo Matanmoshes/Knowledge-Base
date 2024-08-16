@@ -35,14 +35,64 @@
             "id": "0fc0ef536d4e6ea8",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Docker/docker-cheat-sheet.pdf"
+                "file": "Python/Scripts/Send news with API/Get with API request the news.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2e1597423dc72c65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "11c0526815132b71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af95147638eca6bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Scripts/Flask Weather API APP/weather_app.py.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3ec782b494ea12c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -108,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/docker-cheat-sheet.pdf",
+                "file": "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/docker-cheat-sheet.pdf",
+                "file": "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/docker-cheat-sheet.pdf"
+                "file": "Python/Scripts/Flask Weather API APP/Code Breakdown.md"
               }
             }
           }
@@ -172,10 +222,18 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "0fc0ef536d4e6ea8",
+  "active": "3ec782b494ea12c7",
   "lastOpenFiles": [
-    "Docker/Docker Commands.md",
+    "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
+    "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
+    "Python/Scripts/Flask Weather API APP/weather_app.py.md",
+    "Python/Scripts/Flask Weather API APP",
+    "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
+    "Python/Scripts/Send news with API/Get with API request the news.md",
+    "Python/Scripts/Centralize Git Repository",
+    "Python/Scripts/Send news with API/Send email notification.md",
     "Docker/docker-cheat-sheet.pdf",
+    "Docker/Docker Commands.md",
     "Docker/docker-cheat-sheet (1).pdf",
     "Docker/Uploading a Docker Image to Docker Hub.md",
     "Docker/Dockerfile.md",
@@ -200,21 +258,14 @@
     "Docker",
     "Attachments/Pasted image 20240805225708.png",
     "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
-    "Terraform/Setting Up an AWS Web Server with Terraform.md",
-    "Terraform/Terraform Overview.md",
-    "Linux/Concepts/Linux Concept.md",
-    "Terraform/aws-k8s-terraform-automation/Description.md",
-    "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
     "Container",
     "Terraform/aws-k8s-terraform-automation",
     "Python/Scripts/Send news with API",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
     "Attachments/Pasted image 20240802160920.png",
-    "Terraform",
     "Attachments/Pasted image 20240801155351.png",
     "Attachments/Pasted image 20240801155322.png",
-    "Python/Exercises/Justify Text",
     "Untitled.canvas",
     "Attachments/Pasted image 20240614160100.png",
     "Attachments/Pasted image 20240612140057.png",
