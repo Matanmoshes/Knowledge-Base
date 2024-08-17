@@ -112,6 +112,11 @@
   docker volume inspect <volume_name>
   ```
 
+- **Manipulate Inspect command to view specific field:**
+```Shell
+docker inspect --format='{{json .Mounts}}' <container_name>
+```
+
 - **Remove a volume:**
   ```bash
   docker volume rm <volume_name>

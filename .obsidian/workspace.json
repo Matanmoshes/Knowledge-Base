@@ -73,26 +73,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Scripts/Flask Weather API APP/weather_app.py.md",
+                "file": "CI_CD Pipeline/CI-CD Pipeline.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3ec782b494ea12c7",
+            "id": "60ac1b6e9b3571ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
+                "file": "CI_CD Pipeline/CI_CD_Weather_App/Project Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ee61e2c753c2037",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CI_CD Pipeline/CI_CD_Weather_App/CI Pipeline.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a24c5a7fddf3d74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -158,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
+                "file": "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
+                "file": "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Scripts/Flask Weather API APP/Code Breakdown.md"
+                "file": "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md"
               }
             }
           }
@@ -217,30 +241,35 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "notion-like-tables:Create loom": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "3ec782b494ea12c7",
+  "active": "7a24c5a7fddf3d74",
   "lastOpenFiles": [
-    "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
-    "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
-    "Python/Scripts/Flask Weather API APP/weather_app.py.md",
-    "Python/Scripts/Flask Weather API APP",
+    "CI_CD Pipeline/CI_CD_Weather_App/CI Pipeline.md",
+    "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
+    "CI_CD Pipeline/CI_CD_Weather_App/Project Overview.md",
+    "CI_CD Pipeline/CI-CD Pipeline.md",
+    "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
+    "CI_CD Pipeline/CI_CD_Weather_App",
+    "Docker/docker-cheat-sheet.pdf",
+    "Container/Containers and Microservices Architecture.md",
+    "Docker/Uploading a Docker Image to Docker Hub.md",
+    "Docker/Docker Commands.md",
     "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
+    "Python/Scripts/Flask Weather API APP/weather_app.py.md",
+    "Python/Exercises/Implementing a Simple Library System.md",
+    "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
+    "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
+    "Python/Scripts/Flask Weather API APP",
     "Python/Scripts/Send news with API/Get with API request the news.md",
     "Python/Scripts/Centralize Git Repository",
     "Python/Scripts/Send news with API/Send email notification.md",
-    "Docker/docker-cheat-sheet.pdf",
-    "Docker/Docker Commands.md",
     "Docker/docker-cheat-sheet (1).pdf",
-    "Docker/Uploading a Docker Image to Docker Hub.md",
     "Docker/Dockerfile.md",
     "Docker/Docker Volumes.md",
     "HTTP/HTTP Protocol.md",
     "HTTP/Presentation HTTP.md",
-    "CI_CD Pipeline/CI-CD Pipeline.md",
     "HTTP",
     "CI_CD Pipeline",
     "Git/Git advanced Commands.md",
@@ -251,16 +280,9 @@
     "Git/Git Usual Commands.md",
     "Git/Git.md",
     "Git/Git log.md",
-    "Git/Git Push.md",
-    "Git/Git Rebase.md",
-    "Git/Git ignore.md",
-    "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
     "Docker",
     "Attachments/Pasted image 20240805225708.png",
-    "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
     "Container",
-    "Terraform/aws-k8s-terraform-automation",
-    "Python/Scripts/Send news with API",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
     "Attachments/Pasted image 20240802160920.png",
