@@ -8,66 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "77e7ed2633b31c21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/Docker Volumes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "764b42f2408cbcc9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/Dockerfile.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0fc0ef536d4e6ea8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Scripts/Send news with API/Get with API request the news.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2e1597423dc72c65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "11c0526815132b71",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "af95147638eca6bb",
             "type": "leaf",
             "state": {
@@ -109,14 +49,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
+                "file": "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "767c40cd84094dce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Guides/Trivy.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -182,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
+                "file": "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
+                "file": "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md"
+                "file": "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md"
               }
             }
           }
@@ -246,43 +198,43 @@
   },
   "active": "7a24c5a7fddf3d74",
   "lastOpenFiles": [
-    "CI_CD Pipeline/CI_CD_Weather_App/CI Pipeline.md",
-    "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
-    "CI_CD Pipeline/CI_CD_Weather_App/Project Overview.md",
+    "AWS/AWS CLI/AWS CLI Guide.md",
     "CI_CD Pipeline/CI-CD Pipeline.md",
+    "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
+    "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
+    "Python/Scripts/Send news with API/Get with API request the news.md",
+    "Docker/Dockerfile.md",
+    "Docker/Docker Volumes.md",
+    "Guides/Trivy.md",
+    "CI_CD Pipeline/GitHub Actions.md",
+    "CI_CD Pipeline/Guide to Using GitHub Actions Workflows.md",
+    "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
+    "Git/Git advanced Commands.md",
+    "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
+    "AWS/AWS CLI",
+    "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
+    "CI_CD Pipeline/CI_CD_Weather_App/CI Pipeline.md",
+    "CI_CD Pipeline/CI_CD_Weather_App/Project Overview.md",
     "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
     "CI_CD Pipeline/CI_CD_Weather_App",
     "Docker/docker-cheat-sheet.pdf",
     "Container/Containers and Microservices Architecture.md",
     "Docker/Uploading a Docker Image to Docker Hub.md",
     "Docker/Docker Commands.md",
-    "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
     "Python/Scripts/Flask Weather API APP/weather_app.py.md",
     "Python/Exercises/Implementing a Simple Library System.md",
     "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
-    "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
     "Python/Scripts/Flask Weather API APP",
-    "Python/Scripts/Send news with API/Get with API request the news.md",
     "Python/Scripts/Centralize Git Repository",
     "Python/Scripts/Send news with API/Send email notification.md",
     "Docker/docker-cheat-sheet (1).pdf",
-    "Docker/Dockerfile.md",
-    "Docker/Docker Volumes.md",
     "HTTP/HTTP Protocol.md",
     "HTTP/Presentation HTTP.md",
     "HTTP",
     "CI_CD Pipeline",
-    "Git/Git advanced Commands.md",
     "Git/How Git Works.md",
-    "Git/Git Merge.md",
-    "Git/Git Config.md",
-    "Git/Guide to Using GitHub Actions Workflows.md",
-    "Git/Git Usual Commands.md",
-    "Git/Git.md",
-    "Git/Git log.md",
     "Docker",
     "Attachments/Pasted image 20240805225708.png",
-    "Container",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
     "Attachments/Pasted image 20240802160920.png",
