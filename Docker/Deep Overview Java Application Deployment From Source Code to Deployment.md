@@ -1,5 +1,5 @@
 
-# Comprehensive Guide: Building, Running, and Pushing a Java Application with Docker
+# Guide: Building, Running, and Pushing a Java Application with Docker
 
 This guide will walk you through the entire process of building a Docker image for a simple Java application using Maven, running it in a Docker container, and pushing the image to Docker Hub.
 
@@ -158,15 +158,16 @@ This guide covers the entire process from building a Docker image for a Java app
 ---
 
 
-### Understanding Java Application Deployment: From Source Code to Deployment
+# Understanding Java Application Deployment: From Source Code to Containerized Deployment with Docker
 
-When you write a Java application, like the simple one you provided (`HelloWorld.java` and `Greeter.java`), the process of deploying this application involves several steps. These steps include compiling the source code, packaging it into a binary format (JAR file), and then deploying this binary to a server (e.g., Tomcat) where it can be executed. Let's break down each of these steps in detail.
+When you develop a Java application, the process of deploying it involves several critical steps: compiling the source code, packaging it into a JAR file, and then deploying this JAR file to a server (like Tomcat) for execution. This guide walks you through these steps using a Dockerfile that automates the build and deployment process. Additionally, we’ll explore how the `catalina.sh` script plays a role in running the Tomcat server.
 
-#### 1. **Understanding the Java Source Code**
+---
+## 1. **Understanding the Java Source Code**
 
 Your Java application consists of two main classes:
 
-- **HelloWorld.java**: This is the entry point of the application. It contains the `main` method, which is the starting point for any Java application.
+- **HelloWorld.java**: This is the entry point of the application, containing the `main` method, which is the starting point for any Java application.
 
 ```java
 package hello;
@@ -196,33 +197,38 @@ public class Greeter {
 }
 ```
 
-### 2. **Compiling Java Source Code to Bytecode**
+---
+## 2. **Compiling Java Source Code to Bytecode**
 
-Java source code (`.java` files) needs to be compiled into bytecode (`.class` files) that the Java Virtual Machine (JVM) can execute. This is where the Java Compiler (`javac`) comes into play.
+Java source code (`.java` files) needs to be compiled into bytecode (`.class` files) that the Java Virtual Machine (JVM) can execute. This compilation is done using the Java Compiler (`javac`).
 
-When you run a command like `javac HelloWorld.java`, it compiles the Java code into bytecode, which is stored in `.class` files. For example:
+For instance:
 
 - `HelloWorld.java` -> `HelloWorld.class`
 - `Greeter.java` -> `Greeter.class`
 
-### 3. **Packaging the Compiled Classes into a JAR File**
+---
+## 3. **Packaging the Compiled Classes into a JAR File**
 
-After compilation, you have multiple `.class` files. To make distribution and deployment easier, these files are typically packaged into a JAR (Java ARchive) file. A JAR file is essentially a compressed file that contains all the `.class` files and other resources (like configuration files) needed to run the application.
+Once the `.class` files are generated, they are typically packaged into a JAR (Java ARchive) file for distribution and deployment. A JAR file is essentially a compressed file containing all the `.class` files and other resources (like configuration files) needed to run the application.
 
 Maven, a build automation tool for Java, handles this process. When you run the Maven `package` command, it does the following:
 
-- **Compiles the Source Code:** Converts `.java` files into `.class` files.
-- **Packages the Bytecode:** Bundles the compiled `.class` files and other resources into a JAR file.
+- **Compiles the Source Code**: Converts `.java` files into `.class` files.
+- **Packages the Bytecode**: Bundles the compiled `.class` files and other resources into a JAR file.
 
 The output is typically a `your-app-name.jar` file located in the `target` directory.
 
-### 4. **Deploying the JAR File to a Web Server (Tomcat)**
+---
+
+## 4. **Deploying the JAR File to a Web Server (Tomcat)**
 
 Once you have the JAR file, it needs to be deployed to a web server like Tomcat to make the application accessible. Tomcat is a web server that runs Java Servlets and JSPs, but it can also serve regular Java applications packaged as WAR files (Web ARchive) or even as simple JAR files.
 
-### 5. **The Dockerfile Explained: Integrating Maven and Tomcat**
+---
+## 5. **The Dockerfile Explained: Integrating Maven and Tomcat**
 
-Let's revisit the Dockerfile and explain how it automates the build and deployment process:
+Let's dive into the Dockerfile that automates the build and deployment process:
 
 ```dockerfile
 # Stage 1: Build the application with Maven
@@ -233,32 +239,39 @@ WORKDIR /app
 COPY pom.xml ./
 RUN mvn dependency:go-offline
 
-# Copy the source code and package it into a JAR file
+# Copy the source code and compile, test, and package it into a JAR file
 COPY src ./src
+RUN mvn compile
+RUN mvn test
 RUN mvn package
+
+# List the contents of the target directory (for debugging)
+RUN ls -l /app/target
 ```
 
-- **FROM maven:3.8.6-openjdk-11 AS build:** This line uses a Docker image that contains both Maven and OpenJDK 11. Maven is needed to compile and package the Java application, while OpenJDK provides the Java Development Kit (JDK) necessary for compiling the Java code.
+- **FROM maven:3.8.6-openjdk-11 AS build**: This uses a Docker image containing Maven and OpenJDK 11. Maven compiles and packages the Java application, while OpenJDK provides the Java Development Kit (JDK).
 
-- **WORKDIR /app:** Sets the working directory inside the Docker container to `/app`.
+- **WORKDIR /app**: Sets the working directory inside the Docker container to `/app`.
 
-- **COPY pom.xml ./:** Copies the Maven project configuration file (`pom.xml`) into the container. This file defines the project structure, dependencies, and build instructions.
+- **COPY pom.xml ./**: Copies the Maven project configuration file (`pom.xml`) into the container. This file defines the project structure, dependencies, and build instructions.
 
-- **RUN mvn dependency:go-offline:** Downloads all dependencies required by the project. This step is performed to ensure that Maven has all the necessary libraries and tools to compile the code.
+- **RUN mvn dependency:go-offline**: Downloads all dependencies required by the project to ensure Maven has all the necessary libraries and tools to compile the code.
 
-- **COPY src ./src:** Copies the source code (everything under the `src` directory) into the container.
+- **COPY src ./src**: Copies the source code (everything under the `src` directory) into the container.
 
-- **RUN mvn package:** Executes Maven's `package` command, which compiles the Java source code and packages it into a JAR file. The resulting JAR file is placed in the `target` directory.
+- **RUN mvn compile && mvn test && mvn package**: These commands compile the Java source code, run tests, and package it into a JAR file. The resulting JAR file is placed in the `target` directory.
+
+- **RUN ls -l /app/target**: Lists the contents of the `target` directory to confirm that the JAR file is generated correctly.
 
 Next, the Dockerfile defines the runtime environment:
 
 ```dockerfile
 # Stage 2: Deploy the application to Tomcat
-FROM tomcat:9.0.76-jdk11-openjdk AS runtime
+FROM tomcat:10.1.28-jdk11-temurin AS runtime
 WORKDIR /usr/local/tomcat/webapps/
 
 # Copy the JAR file from the build stage to the Tomcat webapps directory
-COPY --from=build /app/target/your-app-name.jar ./ROOT.war
+COPY --from=build /app/target/*.jar ./ROOT.war
 
 # Expose the Tomcat port
 EXPOSE 8080
@@ -267,31 +280,44 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 ```
 
-- **FROM tomcat:9.0.76-jdk11-openjdk AS runtime:** This line uses a Docker image that contains the Tomcat web server and OpenJDK 11.
+- **FROM tomcat:10.1.28-jdk11-temurin AS runtime**: This uses a Docker image that contains the Tomcat web server and JDK 11.
 
-- **WORKDIR /usr/local/tomcat/webapps/:** Sets the working directory to Tomcat's `webapps` directory, where web applications are deployed.
+- **WORKDIR /usr/local/tomcat/webapps/**: Sets the working directory to Tomcat's `webapps` directory, where web applications are deployed.
 
-- **COPY --from=build /app/target/your-app-name.jar ./ROOT.war:** Copies the JAR file generated in the build stage and renames it to `ROOT.war`. In Tomcat, a `ROOT.war` file is deployed as the default web application.
+- **COPY --from=build /app/target/*.jar ./ROOT.war**: Copies the JAR file generated in the build stage and renames it to `ROOT.war`. In Tomcat, a `ROOT.war` file is deployed as the default web application.
 
-- **EXPOSE 8080:** Exposes port 8080, which is the default HTTP port for Tomcat.
+- **EXPOSE 8080**: Exposes port 8080, which is the default HTTP port for Tomcat.
 
-- **CMD ["catalina.sh", "run"]:** This command starts the Tomcat server.
+- **CMD ["catalina.sh", "run"]**: This command starts the Tomcat server using the `catalina.sh` script.
 
-### 6. **How the Java Application Runs**
+---
+## 6. **Understanding `catalina.sh`**
 
-Once the Docker container is started, Tomcat will automatically deploy the `ROOT.war` file. Here’s how the process works:
+The `catalina.sh` script is a key component of Apache Tomcat. It is used to start, stop, and manage the Tomcat server. When you run `catalina.sh run`, it starts Tomcat in the foreground, meaning the server will continue to run and log messages directly to the console. This is useful in Docker environments where the container needs to stay alive and provide logs for monitoring.
 
-1. **Tomcat Deployment:** Tomcat monitors its `webapps` directory for any WAR files. When it finds `ROOT.war`, it unpacks it and loads the application.
-2. **Execution:** Tomcat then executes the Java application. When a user accesses the Tomcat server (e.g., via `http://localhost:8080`), Tomcat runs the `main` method in `HelloWorld.java`.
-3. **Output:** The application prints the current local time and the greeting message to the console.
+- **Starting Tomcat (`run`)**: When you use `catalina.sh run`, it starts Tomcat in the foreground, making it suitable for Docker containers that need to keep running.
 
-### Summary
+- **Other Commands**:
+  - `start`: Starts Tomcat as a background process.
+  - `stop`: Stops the Tomcat server.
+  - `restart`: Restarts Tomcat.
 
-- **Source Code:** Your `.java` files define the logic of your application.
-- **Compilation:** Maven compiles these files into `.class` files (bytecode).
-- **Packaging:** Maven then packages these `.class` files into a JAR file.
-- **Deployment:** The Dockerfile builds this JAR file and deploys it to Tomcat, which serves the application.
+---
+## 7. **How the Java Application Runs**
 
-This process transforms your human-readable Java source code into a binary JAR file, which is then deployed on a server to be executed by the JVM.
+Once the Docker container is started, Tomcat automatically deploys the `ROOT.war` file. Here’s how the process works:
+
+1. **Tomcat Deployment**: Tomcat monitors its `webapps` directory for any WAR files. When it finds `ROOT.war`, it unpacks it and loads the application.
+2. **Execution**: Tomcat then executes the Java application. When a user accesses the Tomcat server (e.g., via `http://localhost:8080`), Tomcat runs the `main` method in `HelloWorld.java`.
+3. **Output**: The application prints the current local time and the greeting message to the console.
+
+---
+## Summary
+
+- **Source Code**: Your `.java` files define the logic of your application.
+- **Compilation**: Maven compiles these files into `.class` files (bytecode).
+- **Packaging**: Maven then packages these `.class` files into a JAR file.
+- **Deployment**: The Dockerfile builds this JAR file and deploys it to Tomcat, which serves the application.
+- **Tomcat and `catalina.sh`**: The `catalina.sh` script starts the Tomcat server and keeps it running in the foreground within the Docker container.
 
 
