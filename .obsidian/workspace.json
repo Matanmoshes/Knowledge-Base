@@ -8,48 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "af95147638eca6bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CI_CD Pipeline/CI-CD Pipeline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "60ac1b6e9b3571ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CI_CD Pipeline/CI_CD_Weather_App/Project Overview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ee61e2c753c2037",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CI_CD Pipeline/CI_CD_Weather_App/CI Pipeline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7a24c5a7fddf3d74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
+                "file": "Docker/Dockerfile.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,6 +26,30 @@
               "type": "markdown",
               "state": {
                 "file": "Guides/Trivy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "afc5138c38f56b8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/dotnet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0dc2890748a9340e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 451.5
+    "width": 200
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -134,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
+                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
+                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md"
+                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md"
               }
             }
           }
@@ -196,19 +184,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a24c5a7fddf3d74",
+  "active": "0dc2890748a9340e",
   "lastOpenFiles": [
+    "Docker/dotnet.md",
+    "Docker/Uploading a Docker Image to Docker Hub.md",
+    "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
+    "Guides/Trivy.md",
+    "Docker/Dockerfile.md",
     "AWS/AWS CLI/AWS CLI Guide.md",
+    "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
     "CI_CD Pipeline/CI-CD Pipeline.md",
     "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
     "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
     "Python/Scripts/Send news with API/Get with API request the news.md",
-    "Docker/Dockerfile.md",
     "Docker/Docker Volumes.md",
-    "Guides/Trivy.md",
     "CI_CD Pipeline/GitHub Actions.md",
     "CI_CD Pipeline/Guide to Using GitHub Actions Workflows.md",
-    "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
     "Git/Git advanced Commands.md",
     "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
     "AWS/AWS CLI",
@@ -219,7 +210,6 @@
     "CI_CD Pipeline/CI_CD_Weather_App",
     "Docker/docker-cheat-sheet.pdf",
     "Container/Containers and Microservices Architecture.md",
-    "Docker/Uploading a Docker Image to Docker Hub.md",
     "Docker/Docker Commands.md",
     "Python/Scripts/Flask Weather API APP/weather_app.py.md",
     "Python/Exercises/Implementing a Simple Library System.md",
@@ -229,10 +219,8 @@
     "Python/Scripts/Send news with API/Send email notification.md",
     "Docker/docker-cheat-sheet (1).pdf",
     "HTTP/HTTP Protocol.md",
-    "HTTP/Presentation HTTP.md",
     "HTTP",
     "CI_CD Pipeline",
-    "Git/How Git Works.md",
     "Docker",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",

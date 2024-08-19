@@ -1,4 +1,10 @@
+# AWS CLI
 
+>[!  AWS CLI Cheatsheet]
+>AWS CLI stands for Amazon Web Services Command Line Interface. When managing your AWS services there are a few options as far as tools go. Two of the most common options are using the AWS Console, or AWS CLI. The AWS Console is a web interface that you log into to manage your AWS services. In contrast to the AWS Console is AWS CLI. It is a great tool to manage AWS resources across different accounts, regions, and environments from the command line. It allows you to control services manually or create automation with scripts.
+>https://www.bluematador.com/learn/aws-cli-cheatsheet#What-is-the-AWS-CLI
+
+---
 ## Step 1: Install the AWS CLI
 
 ### For Windows
@@ -39,6 +45,8 @@
    aws --version
    ```
 
+
+---
 ## Step 2: Configure the AWS CLI
 
 1. **Open a Terminal or Command Prompt**: Open a terminal (macOS/Linux) or Command Prompt (Windows).
@@ -78,6 +86,8 @@ Default region name [None]: us-east-1
 Default output format [None]: json
 ```
 
+---
+
 ## Step 3: Verify Your Configuration
 
 1. **Test Your Configuration**: Run the following command to list all S3 buckets in your account. This verifies that the AWS CLI is correctly configured and can interact with your AWS account.
@@ -87,6 +97,8 @@ Default output format [None]: json
 
 If the command returns a list of your S3 buckets, the configuration is successful.
 
+
+---
 ## Troubleshooting
 
 - **Invalid Access Key or Secret Key**: If you encounter an error regarding invalid credentials, double-check your Access Key ID and Secret Access Key in the AWS Management Console.
