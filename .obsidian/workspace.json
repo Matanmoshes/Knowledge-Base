@@ -47,9 +47,11 @@
             "id": "0dc2890748a9340e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Docker/DevOps_Docker.pdf"
+                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -120,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/DevOps_Docker.pdf",
+                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/DevOps_Docker.pdf",
+                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/DevOps_Docker.pdf"
+                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md"
               }
             }
           }
@@ -182,10 +184,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "0dc2890748a9340e",
   "lastOpenFiles": [
-    "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
     "Docker/DevOps_Docker.pdf",
+    "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
     "Docker/dotnet.md",
     "Docker/Uploading a Docker Image to Docker Hub.md",
     "Guides/Trivy.md",
