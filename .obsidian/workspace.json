@@ -47,11 +47,9 @@
             "id": "0dc2890748a9340e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
-                "mode": "source",
-                "source": false
+                "file": "Docker/DevOps_Docker.pdf"
               }
             }
           }
@@ -106,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 485.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -122,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
+                "file": "Docker/DevOps_Docker.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
+                "file": "Docker/DevOps_Docker.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md"
+                "file": "Docker/DevOps_Docker.pdf"
               }
             }
           }
@@ -184,11 +182,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0dc2890748a9340e",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
+    "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
+    "Docker/DevOps_Docker.pdf",
     "Docker/dotnet.md",
     "Docker/Uploading a Docker Image to Docker Hub.md",
-    "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
     "Guides/Trivy.md",
     "Docker/Dockerfile.md",
     "AWS/AWS CLI/AWS CLI Guide.md",
@@ -218,10 +217,8 @@
     "Python/Scripts/Centralize Git Repository",
     "Python/Scripts/Send news with API/Send email notification.md",
     "Docker/docker-cheat-sheet (1).pdf",
-    "HTTP/HTTP Protocol.md",
     "HTTP",
     "CI_CD Pipeline",
-    "Docker",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
