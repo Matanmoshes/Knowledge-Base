@@ -54,9 +54,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ce9b8772f2e8ae9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Docker Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "640d6a6a612d9dfb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Docker Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7168e804cbb78126",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Docker Compose.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23444240a743b31d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/docker network command.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -122,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
+                "file": "Docker/Docker Compose.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
+                "file": "Docker/Docker Compose.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md"
+                "file": "Docker/Docker Compose.md"
               }
             }
           }
@@ -184,10 +232,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0dc2890748a9340e",
+  "active": "7168e804cbb78126",
   "lastOpenFiles": [
-    "Docker/DevOps_Docker.pdf",
+    "Docker/docker network command.md",
+    "Docker/docker compose advance example.md",
+    "Docker/Docker Compose.md",
+    "Docker/Docker Commands.md",
+    "Docker/Docker Networking.md",
     "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
+    "Docker/DevOps_Docker.pdf",
     "Docker/dotnet.md",
     "Docker/Uploading a Docker Image to Docker Hub.md",
     "Guides/Trivy.md",
@@ -211,13 +264,9 @@
     "CI_CD Pipeline/CI_CD_Weather_App",
     "Docker/docker-cheat-sheet.pdf",
     "Container/Containers and Microservices Architecture.md",
-    "Docker/Docker Commands.md",
     "Python/Scripts/Flask Weather API APP/weather_app.py.md",
-    "Python/Exercises/Implementing a Simple Library System.md",
-    "Python/Scripts/Flask Weather API APP/Code Breakdown.md",
     "Python/Scripts/Flask Weather API APP",
     "Python/Scripts/Centralize Git Repository",
-    "Python/Scripts/Send news with API/Send email notification.md",
     "Docker/docker-cheat-sheet (1).pdf",
     "HTTP",
     "CI_CD Pipeline",
