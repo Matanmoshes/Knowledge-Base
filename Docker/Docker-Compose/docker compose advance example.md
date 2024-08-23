@@ -32,56 +32,72 @@ Create a simple Flask application in the `app` directory.
 #### `app/requirements.txt`
 
 ```txt
-Flask==2.1.2
-redis==4.2.2
+Flask
+Werkzeug
+redis
 ```
 
 #### `app/app.py`
 
 ```python
 from flask import Flask
+
 import redis
 
 app = Flask(__name__)
+
 cache = redis.Redis(host='redis', port=6379)
 
-@app.route('/')
-def hello():
-    visits = cache.get('visits')
-    if visits is None:
-        visits = 0
-    else:
-        visits = int(visits)
 
-    visits += 1
-    cache.set('visits', visits)
-    return f'Hello from Flask! Number of visits: {visits}'
+@app.route('/')
+
+def hello():
+
+visits = cache.get('visits')
+
+if visits is None:
+
+visits = 0
+
+else:
+
+visits = int(visits)  
+
+visits += 1
+
+cache.set('visits', visits)
+
+return f'Hello from Flask! Number of visits: {visits}'
+
+  
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+
+app.run(host='0.0.0.0', port=5000)
 ```
 
 #### `app/Dockerfile`
 
 ```Dockerfile
-# Use the official Python image.
+# Dockerfile
+
 FROM python:3.9-slim
 
-# Set the working directory.
 WORKDIR /usr/src/app
 
-# Install app dependencies.
 COPY requirements.txt ./
+
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the application files.
+# Install curl
+
+RUN apt-get update && apt-get install -y curl
+
 COPY . .
 
-# Expose the Flask app's port.
 EXPOSE 5000
 
-# Command to run the app.
-CMD ["python", "app.py"]
+CMD ["flask", "run", "--host=0.0.0.0"]
 ```
 
 
@@ -135,11 +151,22 @@ services:
     build: ./app
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f","http://localhost:5000"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      
 
   app2:
     build: ./app
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 30s
+      timeout: 10s
+      retries: 5 
 
   nginx:
     image: nginx:alpine
@@ -148,8 +175,10 @@ services:
     ports:
       - "8080:80"
     depends_on:
-      - app1
-      - app2
+      app1:
+        condition: service_healthy
+      app2:
+        condition: service_healthy
     networks:
       - app-network
 
