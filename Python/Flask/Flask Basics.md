@@ -173,7 +173,7 @@ def greet(name):
 
 # **Advanced Flask Concepts**
 
-#### Blueprints for Modular Applications
+## Blueprints for Modular Applications
 
 As your Flask application grows, it’s best to split it into smaller, more manageable pieces. Flask provides **Blueprints**, a way to organize related routes and views.
 
@@ -211,7 +211,7 @@ if __name__ == '__main__':
 Blueprints help in keeping your application modular and maintainable, especially as it scales.
 
 ---
-### Flask Middleware and Hooks
+## Flask Middleware and Hooks
 
 Flask allows you to define functions that run before or after each request using middleware or hooks.
 
@@ -235,7 +235,7 @@ def after_request_func(response):
 This is useful for tasks like logging, modifying requests, or handling sessions.
 
 ---
-### Error Handling
+## Error Handling
 
 Flask provides a way to handle errors gracefully by defining custom error pages.
 
@@ -260,7 +260,7 @@ Custom error handling improves user experience by providing more informative and
 ---
 ## Flask with Databases
 
-#### SQLAlchemy Integration
+### SQLAlchemy Integration
 
 Flask can be easily integrated with SQL databases using SQLAlchemy, an Object-Relational Mapping (ORM) tool.
 
@@ -306,7 +306,7 @@ flask shell
 
 ---
 
-### Flask-Migrate for Database Migrations
+## Flask-Migrate for Database Migrations
 
 Flask-Migrate is an extension that handles SQLAlchemy database migrations for Flask applications.
 
@@ -346,7 +346,7 @@ Migrations are essential when making schema changes to a production database.
 
 Securing your Flask application often involves adding authentication and authorization mechanisms.
 
-#### Using Flask-Login for User Authentication
+### Using Flask-Login for User Authentication
 
 Flask-Login is an extension that provides user session management.
 
@@ -391,7 +391,7 @@ Flask-Login helps in managing user sessions and securing routes in your applicat
 
 Deploying Flask applications involves moving from a development environment to a production environment.
 
-#### Deploying with Gunicorn and Nginx
+### Deploying with Gunicorn and Nginx
 
 1. **Install Gunicorn**:
 
@@ -430,7 +430,7 @@ server {
 
 Using Gunicorn with Nginx is a common setup for deploying Flask applications in production.
 
-#### Deploying with Docker
+### Deploying with Docker
 
 Containerizing your Flask application with Docker ensures consistency across different environments.
 

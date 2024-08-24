@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Flask/Untitled.md",
+                "file": "Python/Flask/Flask Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Flask/Untitled.md",
+                "file": "Python/Flask/Flask Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Flask/Untitled.md",
+                "file": "Python/Flask/Flask Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Flask/Untitled.md"
+                "file": "Python/Flask/Flask Basics.md"
               }
             }
           }
@@ -163,7 +163,7 @@
   "active": "1ca7f14f8c6d2299",
   "lastOpenFiles": [
     "Python/Scripts/Flask Weather API APP/weather_app.py.md",
-    "Python/Flask/Untitled.md",
+    "Python/Flask/Flask Basics.md",
     "Python/Flask/HTTP FastAPI.md",
     "Python/Flask",
     "Docker/docker network command.md",
