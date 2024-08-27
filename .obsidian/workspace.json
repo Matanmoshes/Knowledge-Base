@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Flask/Flask Basics.md",
+                "file": "Python/Exercises/Bank Account.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78a76ddb11a6c514",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Exercises/Slack-Meetup-Scheduler/MeetupScheduler.py.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0de615d5a4232efd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTTP/HTTP Protocol.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Flask/Flask Basics.md",
+                "file": "HTTP/HTTP Protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Flask/Flask Basics.md",
+                "file": "HTTP/HTTP Protocol.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Flask/Flask Basics.md"
+                "file": "HTTP/HTTP Protocol.md"
               }
             }
           }
@@ -160,16 +184,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1ca7f14f8c6d2299",
+  "active": "0de615d5a4232efd",
   "lastOpenFiles": [
-    "Python/Scripts/Flask Weather API APP/weather_app.py.md",
+    "Python/Exercises/Slack-Meetup-Scheduler/Python Challenge.md",
+    "Python/Exercises/Slack-Meetup-Scheduler/MeetupScheduler.py.md",
+    "Python/Exercises/Slack-Meetup-Scheduler",
+    "Python/Exercises/Bank Account.md",
+    "Python/Exercises/Bank Guide.md",
+    "Python/Exercises/Implementing a Simple Library System.md",
+    "Python/Exercises/To Do list.md",
+    "Docker/Docker-Compose/docker compose advance example.md",
     "Python/Flask/Flask Basics.md",
+    "Python/Scripts/Flask Weather API APP/weather_app.py.md",
     "Python/Flask/HTTP FastAPI.md",
     "Python/Flask",
     "Docker/docker network command.md",
     "Docker/Docker-Compose/Docker Compose react java mysql.md",
     "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
-    "Docker/Docker-Compose/docker compose advance example.md",
     "Docker/Docker Commands.md",
     "Docker/Docker Networking.md",
     "Docker/dotnet.md",
@@ -185,19 +216,12 @@
     "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
     "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
     "Python/Scripts/Send news with API/Get with API request the news.md",
-    "Docker/Docker Volumes.md",
-    "CI_CD Pipeline/GitHub Actions.md",
-    "CI_CD Pipeline/Guide to Using GitHub Actions Workflows.md",
-    "Git/Git advanced Commands.md",
-    "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
     "AWS/AWS CLI",
-    "CI_CD Pipeline/CI_CD_Weather_App/CD Pipeline.md",
     "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
     "CI_CD Pipeline/CI_CD_Weather_App",
     "Docker/docker-cheat-sheet.pdf",
     "Python/Scripts/Flask Weather API APP",
     "Python/Scripts/Centralize Git Repository",
-    "Docker/docker-cheat-sheet (1).pdf",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",

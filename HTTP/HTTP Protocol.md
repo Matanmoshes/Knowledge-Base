@@ -1,6 +1,6 @@
-## HTTP Protocol Summary
+# HTTP Protocol Summary
 
-### HTTP Status Codes
+## HTTP Status Codes
 
 HTTP status codes are three-digit numbers sent by the server in response to a client's request. They indicate the result of the request and help in identifying issues or confirming successful operations.
 
@@ -29,7 +29,9 @@ HTTP status codes are three-digit numbers sent by the server in response to a cl
   - `502 Bad Gateway`: The server received an invalid response from an upstream server.
   - `503 Service Unavailable`: The server is currently unable to handle the request, often due to temporary overloading or maintenance.
 
-### HTTP Layers
+---
+
+## HTTP Layers
 
 HTTP operates at the application layer of the OSI model, which is the topmost layer responsible for providing network services directly to the user's applications. The OSI model consists of seven layers:
 
@@ -40,6 +42,8 @@ HTTP operates at the application layer of the OSI model, which is the topmost la
 5. **Session Layer**: Manages sessions between applications.
 6. **Presentation Layer**: Translates data between the application and network formats.
 7. **Application Layer**: Interfaces directly with applications (e.g., HTTP, FTP).
+
+---
 
 ### How HTTP Works
 
@@ -52,6 +56,8 @@ HTTP works based on a simple request-response cycle:
 3. **Server Sends Response**: The server sends back an HTTP response, which includes a status code, headers, and often a body (e.g., HTML content).
    
 4. **Client Receives Response**: The client processes the response and renders the content (e.g., displays the web page).
+
+---
 
 ### HTTP Requests
 
@@ -69,11 +75,155 @@ HTTP requests are structured into several components:
 ![Http Request and Response. An HTTP (Hypertext Transfer Protocol)… | by Raza  | Medium](https://miro.medium.com/v2/resize:fit:1400/0*oy4-WDRk2mYmbNv7.jpg)
 
 
-### HTTP API
+---
+
+## HTTP API
 
 An HTTP API (Application Programming Interface) allows two systems to communicate over the web using HTTP. It typically involves sending HTTP requests to a server and receiving responses. HTTP APIs are commonly used for web services, where clients (e.g., web apps, mobile apps) interact with backend services.
 
 **APIs Use HTTP as a Transport Protocol**: Many web APIs use HTTP as the underlying protocol to communicate between clients and servers. These are often called **HTTP APIs**. When you interact with a web service (e.g., REST API), you typically send HTTP requests to the API server and receive HTTP responses in return.
+
+
+Here are examples of how each type of API request looks:
+
+### 1. **GET: Retrieve data from the server (read-only)**
+```bash
+GET /api/users/123
+```
+- **Description:** Retrieves the data of the user with the ID `123`.
+- **Example Request:**
+  ```bash
+  curl -X GET "https://example.com/api/users/123"
+  ```
+- **Example Response:**
+  ```json
+  {
+      "id": 123,
+      "name": "John Doe",
+      "email": "johndoe@example.com"
+  }
+  ```
+
+---
+
+### 2. **POST: Send data to the server to create a resource**
+```bash
+POST /api/users
+```
+- **Description:** Creates a new user.
+- **Example Request:**
+  ```bash
+  curl -X POST "https://example.com/api/users" \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Jane Doe", "email": "janedoe@example.com"}'
+  ```
+- **Example Response:**
+  ```json
+  {
+      "id": 124,
+      "name": "Jane Doe",
+      "email": "janedoe@example.com"
+  }
+  ```
+
+
+---
+### 3. **PUT: Update a resource on the server**
+```bash
+PUT /api/users/123
+```
+- **Description:** Updates the data of the user with the ID `123`.
+- **Example Request:**
+  ```bash
+  curl -X PUT "https://example.com/api/users/123" \
+  -H "Content-Type: application/json" \
+  -d '{"name": "John Smith", "email": "johnsmith@example.com"}'
+  ```
+- **Example Response:**
+  ```json
+  {
+      "id": 123,
+      "name": "John Smith",
+      "email": "johnsmith@example.com"
+  }
+  ```
+
+---
+
+### 4. **DELETE: Remove a resource from the server**
+```bash
+DELETE /api/users/123
+```
+- **Description:** Deletes the user with the ID `123`.
+- **Example Request:**
+  ```bash
+  curl -X DELETE "https://example.com/api/users/123"
+  ```
+- **Example Response:**
+  ```json
+  {
+      "message": "User deleted successfully."
+  }
+  ```
+
+---
+
+### 5. **HEAD: Similar to GET, but only retrieves headers**
+```bash
+HEAD /api/users/123
+```
+- **Description:** Retrieves headers for the user resource with ID `123`.
+
+- **Example Request:**
+  ```bash
+  curl -I "https://example.com/api/users/123"
+  ```
+
+- **Example Response:**
+  ```http
+  HTTP/1.1 200 OK
+  Content-Type: application/json
+  Content-Length: 85
+  ```
+
+### 6. **OPTIONS: Describes the communication options for the target resource**
+```bash
+OPTIONS /api/users
+```
+- **Description:** Retrieves the communication options available for the `/api/users` resource.
+
+- **Example Request:**
+  ```bash
+  curl -X OPTIONS "https://example.com/api/users"
+  ```
+
+- **Example Response:**
+  ```http
+  HTTP/1.1 204 No Content
+  Allow: GET, POST, PUT, DELETE, OPTIONS
+  ```
+
+### 7. **PATCH: Apply partial modifications to a resource**
+```bash
+PATCH /api/users/123
+```
+- **Description:** Partially updates the data of the user with the ID `123`.
+
+- **Example Request:**
+  ```bash
+  curl -X PATCH "https://example.com/api/users/123" \
+  -H "Content-Type: application/json" \
+  -d '{"email": "john.newemail@example.com"}'
+  ```
+
+- **Example Response:**
+  ```json
+  {
+      "id": 123,
+      "name": "John Doe",
+      "email": "john.newemail@example.com"
+  }
+  ```
 
 
 >[! http / api]
@@ -91,6 +241,7 @@ An HTTP API (Application Programming Interface) allows two systems to communicat
 > **Explanation:** This is an HTTP request to the `/weather/New%20York` endpoint
 > This is an API request made to the `/weather/<city>` endpoint
  
+---
 
 #### RESTful APIs
 
@@ -108,6 +259,7 @@ REST (Representational State Transfer) is an architectural style for designing n
 - `PUT /users/1`: Update the user with ID 1.
 - `DELETE /users/1`: Delete the user with ID 1.
 
+---
 
 ### HTTP API Development with FastAPI
 
