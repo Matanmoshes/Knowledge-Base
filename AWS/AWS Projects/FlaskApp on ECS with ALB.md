@@ -13,7 +13,7 @@ This guide will walk you through the steps to deploy a simple Flask application 
 3. **Docker Installed**: Install Docker on your local machine to build and push Docker images.
 
 ## **Infrastructure Architecture:**
-
+![image](https://github.com/user-attachments/assets/eb52d225-0b8f-4ba8-ab4c-4797b90d1c6a)
 
 ---
 
