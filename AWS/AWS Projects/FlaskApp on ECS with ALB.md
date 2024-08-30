@@ -190,6 +190,24 @@ This guide will walk you through the steps to deploy a simple Flask application 
 
 # **Part 2: Setting Up ECS**
 
+### **Visual ECS Cluster:**
+```mathematica
++----------------------------------------+
+|        Cluster: weather-app-cluster    |
+|                                        |
+|   +--------------------------------+   |
+|   |  Service: weather-app-service  |   |
+|   |                                |   |
+|   |  +--------------------------+  |   |
+|   |  |    Task: weather-app-task | |   |
+|   |  | Container: flask_app      | |   |
+|   |  +--------------------------+  |   |
+|   +--------------------------------+   |
++----------------------------------------+
+
+```
+
+
 ## **Step 1: Create an ECS Cluster**
 
 1. **Go to the ECS Dashboard** in the AWS Management Console.

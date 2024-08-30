@@ -196,10 +196,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "0e8cef6292fb8d80",
   "lastOpenFiles": [
-    "HTTP/HTTP Protocol.md",
+    "Git/Git advanced Commands.md",
     "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+    "HTTP/HTTP Protocol.md",
     "AWS/AWS Projects",
     "Python/Manipulate_API/API_With_Python.md",
     "Python/Manipulate_API",
@@ -229,7 +230,6 @@
     "Docker/Dockerfile.md",
     "AWS/AWS CLI/AWS CLI Guide.md",
     "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
-    "CI_CD Pipeline/CI-CD Pipeline.md",
     "AWS/AWS CLI",
     "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
     "CI_CD Pipeline/CI_CD_Weather_App",
