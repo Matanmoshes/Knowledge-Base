@@ -6,11 +6,14 @@ This guide will walk you through the steps to deploy a simple Flask application 
 
 # **Project Overview**
 
-### **Prerequisites**
+## **Prerequisites**
 
 1. **AWS Account**: Ensure you have an AWS account.
 2. **AWS CLI Installed**: Install the AWS CLI and configure it with your credentials.
 3. **Docker Installed**: Install Docker on your local machine to build and push Docker images.
+
+## **Infrastructure Architecture:**
+
 
 ---
 
