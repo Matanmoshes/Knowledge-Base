@@ -1,5 +1,6 @@
 # HTTP Protocol Summary
 
+---
 ## HTTP Status Codes
 
 HTTP status codes are three-digit numbers sent by the server in response to a client's request. They indicate the result of the request and help in identifying issues or confirming successful operations.
@@ -243,7 +244,38 @@ PATCH /api/users/123
  
 ---
 
-#### RESTful APIs
+## Types of Stateful APIs
+
+A **stateful API** is an API that maintains the state of a client's interaction with the server across multiple requests. This means that the server remembers previous requests made by the client and can use that information to influence subsequent responses. Stateful APIs are typically used in situations where the client and server need to maintain a long-term connection or where the server needs to remember information about the client's session or progress.
+
+In a stateful API, the state is often maintained through sessions, where each session is uniquely identified and tied to a specific client. The state could include information like user authentication, shopping cart contents, or a series of actions that need to be processed in a particular order.
+ 
+### **Common types:**
+
+#### 1. **Session-based APIs**
+
+- **How it works:** The server creates a session when a client logs in or initiates a connection. A session ID is then passed back and forth between the client and server on subsequent requests. The session ID can be stored in cookies, URL parameters, or HTTP headers.
+- **Example:** A user logs into a web application, and a session ID is stored in a cookie. This session ID is sent with each subsequent request to the server, allowing the server to remember the user's login status.
+
+#### 2. **Token-based APIs**
+
+- **How it works:** The server issues a token (often a JSON Web Token or JWT) after the client successfully authenticates. The client includes this token in the Authorization header of each subsequent request, allowing the server to recognize the client and maintain state.
+- **Example:** A mobile app user logs in, receives a JWT token, and then uses this token for all further API requests to access user-specific data.
+
+#### 3. **Cookie-based APIs**
+
+- **How it works:** The server sends a cookie to the client after a session is established. The client stores this cookie and sends it back to the server with each request. The server uses the cookie to identify the session and maintain state.
+- **Example:** An e-commerce website uses cookies to remember items added to the shopping cart across different pages or visits.
+
+#### 4. **WebSocket APIs**
+
+- **How it works:** WebSocket APIs provide a full-duplex communication channel over a single, long-lived connection. The server and client can maintain stateful communication, where the state is maintained across the entire connection.
+- **Example:** A real-time chat application where messages, user status, and other data persist across the duration of the WebSocket connection.
+
+
+---
+
+## RESTful APIs
 
 REST (Representational State Transfer) is an architectural style for designing networked applications. RESTful APIs adhere to these principles:
 

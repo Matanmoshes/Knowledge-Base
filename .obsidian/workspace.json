@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0e8cef6292fb8d80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FlaskApp on ECS with ALB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTTP/HTTP Protocol.md",
+                "file": "FlaskApp on ECS with ALB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTTP/HTTP Protocol.md",
+                "file": "FlaskApp on ECS with ALB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTTP/HTTP Protocol.md"
+                "file": "FlaskApp on ECS with ALB.md"
               }
             }
           }
@@ -184,8 +196,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0de615d5a4232efd",
+  "active": "0e8cef6292fb8d80",
   "lastOpenFiles": [
+    "HTTP/HTTP Protocol.md",
+    "FlaskApp on ECS with ALB.md",
+    "AWS Projects",
+    "Python/Manipulate_API/API_With_Python.md",
+    "Python/Manipulate_API",
     "Python/Exercises/Slack-Meetup-Scheduler/Python Challenge.md",
     "Python/Exercises/Slack-Meetup-Scheduler/MeetupScheduler.py.md",
     "Python/Exercises/Slack-Meetup-Scheduler",
@@ -213,15 +230,10 @@
     "AWS/AWS CLI/AWS CLI Guide.md",
     "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
     "CI_CD Pipeline/CI-CD Pipeline.md",
-    "Python/Scripts/Centralize Git Repository/Code Breakdown.md",
-    "Python/Scripts/Centralize Git Repository/centralize_git_repos.py.md",
-    "Python/Scripts/Send news with API/Get with API request the news.md",
     "AWS/AWS CLI",
     "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
     "CI_CD Pipeline/CI_CD_Weather_App",
     "Docker/docker-cheat-sheet.pdf",
-    "Python/Scripts/Flask Weather API APP",
-    "Python/Scripts/Centralize Git Repository",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
