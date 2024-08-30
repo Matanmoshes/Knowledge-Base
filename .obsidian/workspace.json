@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FlaskApp on ECS with ALB.md",
+                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FlaskApp on ECS with ALB.md",
+                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FlaskApp on ECS with ALB.md",
+                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FlaskApp on ECS with ALB.md"
+                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md"
               }
             }
           }
@@ -196,11 +196,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e8cef6292fb8d80",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
     "HTTP/HTTP Protocol.md",
-    "FlaskApp on ECS with ALB.md",
-    "AWS Projects",
+    "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+    "AWS/AWS Projects",
     "Python/Manipulate_API/API_With_Python.md",
     "Python/Manipulate_API",
     "Python/Exercises/Slack-Meetup-Scheduler/Python Challenge.md",
