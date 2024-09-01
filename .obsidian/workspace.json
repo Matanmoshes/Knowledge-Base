@@ -66,9 +66,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "03ce6ba4e8ad5242",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+                "file": "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+                "file": "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md"
+                "file": "Guides/Setup Jenkins Server on Amazon Linux EC2.md"
               }
             }
           }
@@ -196,10 +208,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e8cef6292fb8d80",
+  "active": "03ce6ba4e8ad5242",
   "lastOpenFiles": [
-    "Git/Git advanced Commands.md",
     "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+    "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
+    "Git/Git advanced Commands.md",
     "HTTP/HTTP Protocol.md",
     "AWS/AWS Projects",
     "Python/Manipulate_API/API_With_Python.md",
@@ -229,7 +242,6 @@
     "Docker/Uploading a Docker Image to Docker Hub.md",
     "Docker/Dockerfile.md",
     "AWS/AWS CLI/AWS CLI Guide.md",
-    "AWS/AWS CLI/Manual Setup of AWS VPC and Kubernetes Cluster using AWS CLI commands.md",
     "AWS/AWS CLI",
     "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
     "CI_CD Pipeline/CI_CD_Weather_App",
