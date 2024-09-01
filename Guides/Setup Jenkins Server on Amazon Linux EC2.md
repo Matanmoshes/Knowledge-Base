@@ -83,7 +83,8 @@ This guide will walk you through the complete process of setting up Jenkins on a
 
 1. **Add the Jenkins YUM Repository:**
    - Create a repository configuration file for Jenkins:
-     ```bash
+
+```bash
      sudo tee /etc/yum.repos.d/jenkins.repo <<EOF
      [jenkins]
      name=Jenkins-stable
@@ -94,19 +95,22 @@ This guide will walk you through the complete process of setting up Jenkins on a
 ```
 
 
+
 2. **Import the GPG Key:**
    - Import the Jenkins GPG key to verify packages:
-     ```bash
+
+```bash
      sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-     ```
+```
 
 ### **Install Jenkins**
 
 1. **Install Jenkins:**
    - With the repository added, install Jenkins:
-     ```bash
+
+```bash
      sudo dnf install -y jenkins
-     ```
+```
 
 
 ---
@@ -116,21 +120,24 @@ This guide will walk you through the complete process of setting up Jenkins on a
 
 1. **Start Jenkins Service:**
    - Start Jenkins so it runs immediately:
-     ```bash
+
+```bash
      sudo systemctl start jenkins
-     ```
+```
 
 2. **Enable Jenkins on Boot:**
    - Ensure Jenkins starts automatically on reboot:
-     ```bash
+
+```bash
      sudo systemctl enable jenkins
-     ```
+```
 
 3. **Verify Jenkins is Running:**
    - Check the status to confirm Jenkins is active:
-     ```bash
+
+```bash
      sudo systemctl status jenkins
-     ```
+```
 
 
 ---
@@ -139,10 +146,11 @@ This guide will walk you through the complete process of setting up Jenkins on a
 
 1. **Allow Port 8080:**
    - If you have a firewall enabled, allow traffic on Jenkins' default port:
-     ```bash
+
+```bash
      sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
      sudo firewall-cmd --reload
-     ```
+```
 
 ---
 
@@ -150,16 +158,19 @@ This guide will walk you through the complete process of setting up Jenkins on a
 
 1. **Open Jenkins in Your Browser:**
    - Visit Jenkins by navigating to:
-     ```
+
+```
      http://<public-ip>:8080
-     ```
+```
    - Replace `<public-ip>` with your EC2 instance’s public IP address.
 
 2. **Unlock Jenkins:**
    - When prompted, retrieve the initial admin password:
-     ```bash
+
+```bash
      sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-     ```
+```
+
    - Copy the password and paste it into the Jenkins setup screen in your browser.
 
 ---
