@@ -78,9 +78,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4910f617b0b22b0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux Command Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
+                "file": "Linux Command Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
+                "file": "Linux Command Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Guides/Setup Jenkins Server on Amazon Linux EC2.md"
+                "file": "Linux Command Cheatsheet.md"
               }
             }
           }
@@ -208,10 +220,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03ce6ba4e8ad5242",
+  "active": "4910f617b0b22b0c",
   "lastOpenFiles": [
-    "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+    "AWS/AWS CLI/AWS CLI Guide.md",
+    "Linux Command Cheatsheet.md",
     "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
+    "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
     "Git/Git advanced Commands.md",
     "HTTP/HTTP Protocol.md",
     "AWS/AWS Projects",
@@ -240,8 +254,6 @@
     "Docker/Docker-Compose",
     "Docker/DevOps_Docker.pdf",
     "Docker/Uploading a Docker Image to Docker Hub.md",
-    "Docker/Dockerfile.md",
-    "AWS/AWS CLI/AWS CLI Guide.md",
     "AWS/AWS CLI",
     "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
     "CI_CD Pipeline/CI_CD_Weather_App",
