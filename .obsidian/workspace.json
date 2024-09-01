@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux Command Cheatsheet.md",
+                "file": "Linux/Linux Command Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux Command Cheatsheet.md",
+                "file": "Linux/Linux Command Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux Command Cheatsheet.md",
+                "file": "Linux/Linux Command Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux Command Cheatsheet.md"
+                "file": "Linux/Linux Command Cheatsheet.md"
               }
             }
           }
@@ -220,10 +220,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4910f617b0b22b0c",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
     "AWS/AWS CLI/AWS CLI Guide.md",
-    "Linux Command Cheatsheet.md",
+    "Linux/Linux Command Cheatsheet.md",
     "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
     "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
     "Git/Git advanced Commands.md",
