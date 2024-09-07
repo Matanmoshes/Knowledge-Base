@@ -4,95 +4,95 @@
     "type": "split",
     "children": [
       {
-        "id": "7aa1117e8e75282c",
+        "id": "9acd66cbbed53310",
         "type": "tabs",
         "children": [
           {
-            "id": "83fb8f942c4e2e81",
+            "id": "ecdb2be9b2f3894a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Scripts/Flask Weather API APP/weather_app.py.md",
+                "file": "Linux/User and Group Managment/Guide for creating a new user.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1ca7f14f8c6d2299",
+            "id": "919915514a39fc87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Exercises/Bank Account.md",
+                "file": "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "78a76ddb11a6c514",
+            "id": "4478d2614158d23f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Exercises/Slack-Meetup-Scheduler/MeetupScheduler.py.md",
+                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/ENA, EFA, ENI, EN.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0de615d5a4232efd",
+            "id": "050fd7ca5f8551ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTTP/HTTP Protocol.md",
+                "file": "Terraform/Terraform Workspaces.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0e8cef6292fb8d80",
+            "id": "1c3b17db521a10aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "03ce6ba4e8ad5242",
+            "id": "27d43487f7c4dd90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
+                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4910f617b0b22b0c",
+            "id": "ac0f5060d7a5c0b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux Command Cheatsheet.md",
+                "file": "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux Command Cheatsheet.md",
+                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux Command Cheatsheet.md",
+                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux Command Cheatsheet.md"
+                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md"
               }
             }
           }
@@ -220,11 +220,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "27d43487f7c4dd90",
   "lastOpenFiles": [
-    "AWS/AWS CLI/AWS CLI Guide.md",
-    "Linux/Linux Command Cheatsheet.md",
+    "Terraform/Setting Up an AWS Web Server with Terraform.md",
+    "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
+    "Terraform/Terraform Overview.md",
+    "Terraform/Terraform Workspaces.md",
+    "Certification & Encryption/Self-Signed SSL Certificates.md",
+    "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
+    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/ENA, EFA, ENI, EN.md",
+    "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
+    "Linux/net-tools Commands.md",
+    "Linux/User and Group Managment/Guide for creating a new user.md",
+    "Linux/User and Group Managment/Create, delete, and modify local groups and group memberships.md",
+    "Linux/User and Group Managment/Create, delete, and modify local user accounts.md",
+    "Linux/Linux Commands/pipe and tee.md",
     "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
+    "Linux/Linux Commands/mount.md",
+    "Linux/Linux Commands/find.md",
+    "Linux/Linux Command Cheatsheet.md",
+    "AWS/AWS CLI/AWS CLI Guide.md",
     "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
     "Git/Git advanced Commands.md",
     "HTTP/HTTP Protocol.md",
@@ -236,24 +251,9 @@
     "Python/Exercises/Slack-Meetup-Scheduler",
     "Python/Exercises/Bank Account.md",
     "Python/Exercises/Bank Guide.md",
-    "Python/Exercises/Implementing a Simple Library System.md",
-    "Python/Exercises/To Do list.md",
-    "Docker/Docker-Compose/docker compose advance example.md",
-    "Python/Flask/Flask Basics.md",
-    "Python/Scripts/Flask Weather API APP/weather_app.py.md",
-    "Python/Flask/HTTP FastAPI.md",
     "Python/Flask",
-    "Docker/docker network command.md",
-    "Docker/Docker-Compose/Docker Compose react java mysql.md",
-    "Docker/Deep Overview Java Application Deployment From Source Code to Deployment.md",
-    "Docker/Docker Commands.md",
-    "Docker/Docker Networking.md",
-    "Docker/dotnet.md",
-    "Guides/Trivy.md",
-    "Docker/Docker-Compose/Docker Compose.md",
     "Docker/Docker-Compose",
     "Docker/DevOps_Docker.pdf",
-    "Docker/Uploading a Docker Image to Docker Hub.md",
     "AWS/AWS CLI",
     "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
     "CI_CD Pipeline/CI_CD_Weather_App",
