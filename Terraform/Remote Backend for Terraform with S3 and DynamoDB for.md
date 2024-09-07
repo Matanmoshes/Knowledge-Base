@@ -1,4 +1,4 @@
-# Guide: Using Remote Backend for Terraform with S3 and DynamoDB for State Locking (with Terraform and AWS CLI options)
+# Guide: Using Remote Backend for Terraform with S3 and DynamoDB for State Locking
 
 ### Introduction
 
