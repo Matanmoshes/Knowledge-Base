@@ -20,42 +20,6 @@
             }
           },
           {
-            "id": "919915514a39fc87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4478d2614158d23f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/ENA, EFA, ENI, EN.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "050fd7ca5f8551ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terraform/Terraform Workspaces.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1c3b17db521a10aa",
             "type": "leaf",
             "state": {
@@ -73,7 +37,103 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
+                "file": "Terraform/Terraform Workspaces.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "199627b805c0fdd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/UFW Firewall.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c73239a27c73db78",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/iptables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f81caa4da02270d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Linux Commands/ps.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "045daf10fffe9b5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Managing Processes in Linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e100d726f767177e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Load Average.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6896e16a668775c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e305df17d52b074",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Certification & Encryption/Certbot for using alb.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "abf943213d7793f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -158,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
+                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
+                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md"
+                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md"
               }
             }
           }
@@ -220,14 +280,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "27d43487f7c4dd90",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
+    "Certification & Encryption/Certbot for using alb.md",
+    "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
+    "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
+    "Linux/Load Average.md",
+    "Linux/Managing Processes in Linux.md",
+    "Linux/Linux Commands/ps.md",
+    "Linux/Enable or Disable IPv6 on Ubuntu Linux.md",
+    "Linux/iptables.md",
+    "Linux/UFW Firewall.md",
+    "Terraform/Terraform Workspaces.md",
+    "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
     "Terraform/Setting Up an AWS Web Server with Terraform.md",
     "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
     "Terraform/Terraform Overview.md",
-    "Terraform/Terraform Workspaces.md",
     "Certification & Encryption/Self-Signed SSL Certificates.md",
-    "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/ENA, EFA, ENI, EN.md",
     "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
     "Linux/net-tools Commands.md",
@@ -239,18 +308,9 @@
     "Linux/Linux Commands/mount.md",
     "Linux/Linux Commands/find.md",
     "Linux/Linux Command Cheatsheet.md",
-    "AWS/AWS CLI/AWS CLI Guide.md",
-    "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
-    "Git/Git advanced Commands.md",
-    "HTTP/HTTP Protocol.md",
     "AWS/AWS Projects",
-    "Python/Manipulate_API/API_With_Python.md",
     "Python/Manipulate_API",
-    "Python/Exercises/Slack-Meetup-Scheduler/Python Challenge.md",
-    "Python/Exercises/Slack-Meetup-Scheduler/MeetupScheduler.py.md",
     "Python/Exercises/Slack-Meetup-Scheduler",
-    "Python/Exercises/Bank Account.md",
-    "Python/Exercises/Bank Guide.md",
     "Python/Flask",
     "Docker/Docker-Compose",
     "Docker/DevOps_Docker.pdf",
