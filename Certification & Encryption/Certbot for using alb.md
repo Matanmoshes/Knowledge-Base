@@ -167,6 +167,9 @@ Now, import the SSL certificate and private key into **AWS Certificate Manager (
 
 3. Review the details and click **Import**.
 
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/4722ff16-f08d-4315-a706-b0f6f1507230">
+
+
 ---
 
 ### Step 9: **Attach the Certificate to Your ALB**
