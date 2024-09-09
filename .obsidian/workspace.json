@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
+                "file": "Certification & Encryption/Certbot for using alb.md",
                 "mode": "source",
                 "source": false
               }
@@ -218,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
+                "file": "Certification & Encryption/Certbot for using alb.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
+                "file": "Certification & Encryption/Certbot for using alb.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md"
+                "file": "Certification & Encryption/Certbot for using alb.md"
               }
             }
           }
@@ -280,10 +280,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "abf943213d7793f9",
   "lastOpenFiles": [
-    "Certification & Encryption/Certbot for using alb.md",
     "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
+    "Certification & Encryption/Certbot for using alb.md",
     "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
     "Linux/Load Average.md",
     "Linux/Managing Processes in Linux.md",
