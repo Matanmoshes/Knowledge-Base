@@ -17,6 +17,7 @@ This means:
 - Over the last **5 minutes**, it was **0.80**.
 - Over the last **15 minutes**, it was **0.60**.
 
+---
 ### How is Load Average Calculated?
 
 The load average metric is derived from the number of **processes** that are in either a **running state** or waiting for CPU execution over a period of time. It doesn't just measure CPU usage, but also considers the number of processes waiting on disk I/O or network operations.
@@ -28,6 +29,7 @@ The load average metric is derived from the number of **processes** that are in 
   - Processes waiting to use the CPU (in the run queue).
   - Processes waiting for disk I/O, network, or other resources.
 
+---
 ### Understanding "Tasks"
 
 A **task** in Linux is essentially a process or thread that the operating system is managing. When a program runs, it spawns a process, which becomes a **task** handled by the CPU.
@@ -41,6 +43,7 @@ Tasks can be in various states:
 
 When we talk about **load average**, we mainly refer to the tasks that are either **running** or **waiting** for the CPU.
 
+---
 ### Interpreting Load Average
 
 The load average value tells you how many processes are competing for CPU time. However, to understand the significance of the load average, you need to know the number of CPU cores on the system:
@@ -59,6 +62,8 @@ The load average value tells you how many processes are competing for CPU time. 
 - If the load average is **equal to or lower than the number of CPU cores**, your system is running efficiently.
 - If the load average is **higher than the number of cores**, processes are waiting for CPU time, indicating that your system may be overloaded.
 
+---
+
 ### Real-World Example of Load Average
 
 Let’s say we have a **4-core** CPU system and the load average is displayed as:
@@ -76,6 +81,8 @@ This means:
 - Since the **1-minute load average (3.50)** is less than the total number of CPU cores (**4 cores**), the system is **slightly loaded** but still performing efficiently.
 - The **5-minute and 15-minute averages** are even lower, indicating that the system has been under less load over time and may have spiked recently.
 
+---
+
 ### What Causes High Load Average?
 
 A high load average can be caused by:
@@ -83,6 +90,8 @@ A high load average can be caused by:
 - **Disk I/O bottlenecks**: Processes waiting for disk read/write operations.
 - **Memory bottlenecks**: When a system runs out of memory and starts swapping.
 - **Network I/O bottlenecks**: Processes waiting for network data.
+
+---
 
 ### How to Check Load Average?
 
@@ -126,6 +135,8 @@ Example output:
 
 Here, the first three numbers are the load averages for the past **1, 5, and 15 minutes**.
 
+---
+
 ### Tasks in Load Average
 
 Each process or task that is waiting for CPU time contributes to the load average. A **task** can either be:
@@ -139,6 +150,7 @@ The more tasks that are **waiting** or **blocked**, the higher the load average.
 #### Example:
 If you have a load average of `6.00` on a **4-core system**, this means at least 2 processes are **waiting** at any given time, as the system only has 4 cores available for execution.
 
+---
 ### Key Takeaways:
 
 - **Load average** measures the **system load** in terms of the number of tasks either actively running or waiting for CPU time.

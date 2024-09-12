@@ -4,47 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9acd66cbbed53310",
+        "id": "35743922cbda3edd",
         "type": "tabs",
         "children": [
           {
-            "id": "ecdb2be9b2f3894a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/User and Group Managment/Guide for creating a new user.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1c3b17db521a10aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "27d43487f7c4dd90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terraform/Terraform Workspaces.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "199627b805c0fdd5",
+            "id": "9f7b8328ab1c4be5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,103 +20,19 @@
             }
           },
           {
-            "id": "c73239a27c73db78",
+            "id": "4e27f5c7ba6a0621",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/iptables.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f81caa4da02270d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux Commands/ps.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "045daf10fffe9b5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Managing Processes in Linux.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e100d726f767177e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Load Average.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6896e16a668775c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e305df17d52b074",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Certification & Encryption/Certbot for using alb.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abf943213d7793f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Certification & Encryption/Certbot for using alb.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ac0f5060d7a5c0b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
+                "file": "Linux/Adding and Managing LVM Volumes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -218,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Certification & Encryption/Certbot for using alb.md",
+                "file": "Linux/Adding and Managing LVM Volumes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Certification & Encryption/Certbot for using alb.md",
+                "file": "Linux/Adding and Managing LVM Volumes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Certification & Encryption/Certbot for using alb.md"
+                "file": "Linux/Adding and Managing LVM Volumes.md"
               }
             }
           }
@@ -280,17 +160,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "abf943213d7793f9",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
-    "Certification & Encryption/Certbot for using alb.md",
-    "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
-    "Linux/Load Average.md",
-    "Linux/Managing Processes in Linux.md",
-    "Linux/Linux Commands/ps.md",
-    "Linux/Enable or Disable IPv6 on Ubuntu Linux.md",
-    "Linux/iptables.md",
     "Linux/UFW Firewall.md",
+    "Linux/Adding and Managing LVM Volumes.md",
+    "Linux/net-tools Commands.md",
+    "Linux/Managing Processes in Linux.md",
+    "Linux/File System and Volumes.md",
+    "Linux/Operation Deployment/Create systemd Services.md",
+    "Linux/Storage Management/Configure and manage swap space.md",
+    "Jenkins/Jenkins Overview.md",
+    "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
+    "Linux/Load Average.md",
+    "Linux/iptables.md",
+    "Linux/Enable or Disable IPv6 on Ubuntu Linux.md",
+    "Linux/Linux Command Cheatsheet.md",
+    "CI_CD Pipeline/GitHub Action/GitHub Actions.md",
+    "Jenkins",
+    "CI_CD Pipeline/GitHub Action",
+    "Certification & Encryption/Certbot for using alb.md",
+    "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
+    "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
+    "Linux/Linux Commands/ps.md",
     "Terraform/Terraform Workspaces.md",
     "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
     "Terraform/Setting Up an AWS Web Server with Terraform.md",
@@ -298,16 +189,7 @@
     "Terraform/Terraform Overview.md",
     "Certification & Encryption/Self-Signed SSL Certificates.md",
     "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/ENA, EFA, ENI, EN.md",
-    "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
-    "Linux/net-tools Commands.md",
     "Linux/User and Group Managment/Guide for creating a new user.md",
-    "Linux/User and Group Managment/Create, delete, and modify local groups and group memberships.md",
-    "Linux/User and Group Managment/Create, delete, and modify local user accounts.md",
-    "Linux/Linux Commands/pipe and tee.md",
-    "Guides/Setup Jenkins Server on Amazon Linux EC2.md",
-    "Linux/Linux Commands/mount.md",
-    "Linux/Linux Commands/find.md",
-    "Linux/Linux Command Cheatsheet.md",
     "AWS/AWS Projects",
     "Python/Manipulate_API",
     "Python/Exercises/Slack-Meetup-Scheduler",
@@ -316,8 +198,6 @@
     "Docker/DevOps_Docker.pdf",
     "AWS/AWS CLI",
     "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
-    "CI_CD Pipeline/CI_CD_Weather_App",
-    "Docker/docker-cheat-sheet.pdf",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
