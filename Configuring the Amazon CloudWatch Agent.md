@@ -39,12 +39,25 @@ AmazonSSMManagedInstanceCore Role ARN:
 
 #### 1b: Walkthrough for Creating EC2 Role
 1. **Navigate to IAM** and create a new role.
+![image](https://github.com/user-attachments/assets/01a7fe0c-a700-4bbb-9c2c-6b18274741ec)
+
 2. **Select AWS service** as the trusted entity type.
+![image](https://github.com/user-attachments/assets/3e43b63b-e250-4780-9185-de7c9db4c0af)
+
 3. Choose **EC2** for the service and **EC2 Role for AWS Systems Manager** as the use case.
+![image](https://github.com/user-attachments/assets/a683af8c-c2f1-4d55-a5f2-33ed62947988)
+
 4. **Name the role** and click **Create**.
+![image](https://github.com/user-attachments/assets/df3fe305-452d-4063-bd4c-0ac1dc5d2ac3)
+
 5. Once the role is created, **Add permissions** and choose **Create inline policy**.
+![image](https://github.com/user-attachments/assets/cb7aae26-3790-4e8d-9aba-730883dad0e9)
+
 6. Select **JSON** editor and **paste the inline policy** content from above.
+![image](https://github.com/user-attachments/assets/88656bdc-a3a1-4e81-98e6-ea82e3327fa2)
+
 7. **Name your policy** and click **Create**.
+![image](https://github.com/user-attachments/assets/2aac685e-3723-460a-87a3-28097ab5c544)
 
 ---
 
@@ -189,7 +202,9 @@ If you didn’t use the user data script to start the agent, follow these steps:
 2. Click on **Logs** in the left-hand menu.
 3. Find your **Log Groups**, which should display log groups corresponding to your instance.
 4. Drill down into the log streams (e.g., `messages`, `secure`) to view the log entries sent from your EC2 instance.
+![image](https://github.com/user-attachments/assets/b2e9c7ee-1bcd-46e7-b4a1-2016452223f6)
 
+![image](https://github.com/user-attachments/assets/691472a4-2212-4ff2-bb15-8909c13987be)
 
 
 ---
