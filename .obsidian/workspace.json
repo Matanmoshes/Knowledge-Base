@@ -61,26 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Solution Archtect/CloudWatch Logs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2e8ebb11db4205e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
+                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md"
               }
             }
           }
@@ -208,8 +196,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e8ebb11db4205e7",
+  "active": "96c92d7b5d0d0b7b",
   "lastOpenFiles": [
+    "AWS/AWS Projects/Configuring the Amazon CloudWatch Agent.md",
     "AWS/AWS Solution Archtect/CloudWatch Logs.md",
     "Untitled.md",
     "AWS/AWS Solution Archtect/Amazon CloudWatch.md",
@@ -237,7 +226,6 @@
     "Certification & Encryption/Certbot for using alb.md",
     "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
     "Linux/Linux Commands/ps.md",
-    "Terraform/Terraform Workspaces.md",
     "AWS/AWS Projects",
     "Python/Manipulate_API",
     "Python/Exercises/Slack-Meetup-Scheduler",

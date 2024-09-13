@@ -1,10 +1,10 @@
-## Guide for Installing and Configuring the Amazon CloudWatch Agent (Linux)
+# Guide for Installing and Configuring the Amazon CloudWatch Agent (Linux)
 
 This guide will walk you through setting up the Amazon CloudWatch Agent on a Linux instance to send custom logs to CloudWatch Logs. We'll cover creating the necessary IAM role, installing the CloudWatch agent, preparing the configuration file, starting the agent service manually, and finally, monitoring the logs using the CloudWatch console.
 
 ---
 
-### Step 1: Create an IAM Role for EC2
+## Step 1: Create an IAM Role for EC2
 
 First, you need to create an IAM role with the permissions necessary to send logs to CloudWatch Logs.
 
@@ -37,7 +37,8 @@ AmazonSSMManagedInstanceCore Role ARN:
 }
 ```
 
-#### 1b: Walkthrough for Creating EC2 Role
+## 1b: Walkthrough for Creating EC2 Role
+
 1. **Navigate to IAM** and create a new role.
 ![image](https://github.com/user-attachments/assets/01a7fe0c-a700-4bbb-9c2c-6b18274741ec)
 
@@ -61,11 +62,11 @@ AmazonSSMManagedInstanceCore Role ARN:
 
 ---
 
-### Step 2: Install CloudWatch Agent
+## Step 2: Install CloudWatch Agent
 
 Once the IAM role is attached to your EC2 instance, you'll need to install the CloudWatch Agent.
 
-#### 2a: User Data Script (Optional)
+### 2a: User Data Script (Optional)
 If you prefer to automate the installation during instance launch, use this user data script:
 
 ```bash
@@ -116,7 +117,8 @@ EOF
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
 ```
 
-#### 2b: Manual Installation
+### 2b: Manual Installation
+
 If not using the user data script, manually install the agent:
 
 1. **Update and install the CloudWatch agent**:
@@ -133,7 +135,7 @@ If not using the user data script, manually install the agent:
 
 ---
 
-### Step 3: Prepare the Configuration File (Manual Option)
+## Step 3: Prepare the Configuration File (Manual Option)
 
 If you didn’t use the user data script, you’ll need to manually create the CloudWatch agent configuration file.
 
@@ -180,7 +182,7 @@ Paste the configuration JSON content, save and exit the editor.
 
 ---
 
-### Step 4: Start the CloudWatch Agent (Manually)
+## Step 4: Start the CloudWatch Agent (Manually)
 
 If you didn’t use the user data script to start the agent, follow these steps:
 
@@ -196,12 +198,14 @@ If you didn’t use the user data script to start the agent, follow these steps:
 
 ---
 
-### Step 5: Monitor Logs Using CloudWatch Web Console
+## Step 5: Monitor Logs Using CloudWatch Web Console
 
 1. Go to the **AWS Management Console** and navigate to **CloudWatch**.
 2. Click on **Logs** in the left-hand menu.
 3. Find your **Log Groups**, which should display log groups corresponding to your instance.
 4. Drill down into the log streams (e.g., `messages`, `secure`) to view the log entries sent from your EC2 instance.
+   
+   
 ![image](https://github.com/user-attachments/assets/b2e9c7ee-1bcd-46e7-b4a1-2016452223f6)
 
 ![image](https://github.com/user-attachments/assets/691472a4-2212-4ff2-bb15-8909c13987be)
@@ -209,6 +213,7 @@ If you didn’t use the user data script to start the agent, follow these steps:
 
 ---
 
-### Conclusion
 
-By following this guide, you’ve successfully installed and configured the Amazon CloudWatch agent on a Linux instance, set up log monitoring for custom files, and can now monitor logs in the CloudWatch console.
+## Reference:
+- https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-cloudwatch-agent-configuration-file-wizard.html
+- https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html
