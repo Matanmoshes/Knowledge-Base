@@ -1,8 +1,8 @@
-### Task Set 1: HEAD, Remote, Revision, and Tag
+# Task Set 1: HEAD, Remote, Revision, and Tag
 
-#### Task: Setting Up and Managing a Remote Repository
+### Task: Setting Up and Managing a Remote Repository
 
-1. **Initialize a New Repository:**
+#### 1. **Initialize a New Repository:**
    - Create a new local Git repository and make three initial commits with meaningful changes.
    - Use `git show HEAD`, `git show HEAD~1`, and `git show HEAD~2` to display the commit details.
 
@@ -47,7 +47,8 @@
    A---B---C (main)
    ```
 
-2. **Add and Push to a Remote Repository:**
+
+#### 2. **Add and Push to a Remote Repository:**
    - Create a new repository on GitHub.
    - Add the remote repository using `git remote add origin <url>`.
    - Push the local commits to the remote repository.
@@ -66,7 +67,7 @@
    A---B---C (main, origin/main)
    ```
 
-3. **Tagging Commits:**
+#### 3. **Tagging Commits:**
    - Create two tags in your local repository: one lightweight tag and one annotated tag.
    - Push the tags to the remote repository.
    - Verify the tags on GitHub and read about the differences between lightweight and annotated tags.
@@ -95,11 +96,15 @@
        v1.0  v1.1
    ```
 
-### Task Set 2: gitignore, Log, Reset, and Restore
 
-#### Task: Managing Ignored Files and Undoing Changes
+---
 
-1. **Create and Use .gitignore:**
+# Task Set 2: gitignore, Log, Reset, and Restore
+
+### Task: Managing Ignored Files and Undoing Changes
+
+#### 1. **Create and Use .gitignore:**
+
    - Create a project with a few directories and files, including some log files and temporary files.
    - Create a `.gitignore` file to ignore all log files and temporary files.
    - Commit the changes and verify that the ignored files are not tracked.
@@ -141,7 +146,9 @@
    A (main, origin/main)
    ```
 
-2. **Analyze Commit History:**
+
+#### 2. **Analyze Commit History:**
+
    - Make a series of five more commits to your project.
    - Use `git log --oneline`, `git log --graph`, and `git log -p` to explore the commit history.
 
@@ -193,7 +200,9 @@
    A---B---C---D---E---F (main, origin/main)
    ```
 
-3. **Undo Changes with Reset and Restore:**
+
+#### 3. **Undo Changes with Reset and Restore:**
+
    - Make a few additional commits to the project.
    - Use `git reset --soft HEAD~1` to reset the last commit but keep the changes staged.
    - Use `git reset --hard HEAD~1` to reset the last commit and discard the changes.
@@ -283,9 +292,12 @@
                          I'' (staged changes for other files)
    ```
 
-### Task Set 3: Revert, Stash, Switch, and Rebase
 
-#### Task: Managing Changes and Branches
+---
+
+# Task Set 3: Revert, Stash, Switch, and Rebase
+
+### Task: Managing Changes and Branches
 
 1. **Undo Changes with Revert:**
    - Make a few more commits in your project.

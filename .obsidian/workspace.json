@@ -25,14 +25,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Adding and Managing LVM Volumes.md",
+                "file": "Git/Git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "54f02ca2e4829d15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1e2b49e72b2cf054",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/Amazon CloudWatch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96c92d7b5d0d0b7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Solution Archtect/CloudWatch Logs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2e8ebb11db4205e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -82,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 485.5
+    "width": 200
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -98,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Adding and Managing LVM Volumes.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Adding and Managing LVM Volumes.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Adding and Managing LVM Volumes.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -160,10 +208,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "2e8ebb11db4205e7",
   "lastOpenFiles": [
-    "Linux/UFW Firewall.md",
+    "AWS/AWS Solution Archtect/CloudWatch Logs.md",
+    "Untitled.md",
+    "AWS/AWS Solution Archtect/Amazon CloudWatch.md",
+    "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
+    "Git/Git advanced Commands.md",
+    "Git/Git Usual Commands.md",
+    "Git/Guide Set Up a git repo.md",
+    "Git/Git.md",
     "Linux/Adding and Managing LVM Volumes.md",
+    "Linux/UFW Firewall.md",
     "Linux/net-tools Commands.md",
     "Linux/Managing Processes in Linux.md",
     "Linux/File System and Volumes.md",
@@ -179,17 +235,9 @@
     "Jenkins",
     "CI_CD Pipeline/GitHub Action",
     "Certification & Encryption/Certbot for using alb.md",
-    "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
     "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
     "Linux/Linux Commands/ps.md",
     "Terraform/Terraform Workspaces.md",
-    "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
-    "Terraform/Setting Up an AWS Web Server with Terraform.md",
-    "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
-    "Terraform/Terraform Overview.md",
-    "Certification & Encryption/Self-Signed SSL Certificates.md",
-    "AWS/AWS Solution Archtect/Elastic Compute Cloud (EC2)/ENA, EFA, ENI, EN.md",
-    "Linux/User and Group Managment/Guide for creating a new user.md",
     "AWS/AWS Projects",
     "Python/Manipulate_API",
     "Python/Exercises/Slack-Meetup-Scheduler",
