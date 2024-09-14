@@ -66,9 +66,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a03ce4d283d68ca1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+                "file": "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+                "file": "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md"
+                "file": "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md"
               }
             }
           }
@@ -196,11 +208,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96c92d7b5d0d0b7b",
+  "active": "a03ce4d283d68ca1",
   "lastOpenFiles": [
+    "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+    "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
     "AWS/AWS Projects/Configuring the Amazon CloudWatch Agent.md",
     "AWS/AWS Solution Archtect/CloudWatch Logs.md",
-    "Untitled.md",
     "AWS/AWS Solution Archtect/Amazon CloudWatch.md",
     "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
     "Git/Git advanced Commands.md",
@@ -225,7 +238,6 @@
     "CI_CD Pipeline/GitHub Action",
     "Certification & Encryption/Certbot for using alb.md",
     "Certification & Encryption/Certbot and Let's Encrypt for Nginx Website.md",
-    "Linux/Linux Commands/ps.md",
     "AWS/AWS Projects",
     "Python/Manipulate_API",
     "Python/Exercises/Slack-Meetup-Scheduler",
