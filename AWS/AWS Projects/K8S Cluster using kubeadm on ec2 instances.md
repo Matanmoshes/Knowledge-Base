@@ -101,10 +101,16 @@
            <img width="1392" alt="image" src="https://github.com/user-attachments/assets/13f0413e-95f1-418e-be51-1d22681d7fba">
 
 
-     - Launch the instance.
-     - SSH into this instance from the bastion:
+- Launch the instance.
+- Transfer the pem file to the bastion host from your local device:
+       
+```bash
+scp -i ~/Downloads/k8s-14-09-2024.pem ~/Downloads/k8s-14-09-2024.pem ec2-user@100.24.8.132:/home/ec2-user/
+```
+    
+ - SSH into this instance from the bastion:
      ```bash
-     ssh -i your-key.pem ec2-user@<control-plane-private-ip>
+ssh -i k8s-14-09-2024.pem ec2-user@10.0.2.197
      ```
 
 ### **3. Create Data Plane Nodes (2) in the Private Subnet:**
