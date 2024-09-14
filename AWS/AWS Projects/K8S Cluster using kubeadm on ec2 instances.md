@@ -97,6 +97,10 @@
          - Name: `kubernetes-sg`
          - Allow inbound SSH (port 22) from the bastion.
          - Allow inbound on port `6443` for Kubernetes API server (from the `kubernetes-sg`).
+
+           <img width="991" alt="image" src="https://github.com/user-attachments/assets/d14f828c-b2ae-4de4-ac15-7417287c967a">
+
+
      - Launch the instance.
      - SSH into this instance from the bastion:
      ```bash
