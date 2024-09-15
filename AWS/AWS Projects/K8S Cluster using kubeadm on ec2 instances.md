@@ -126,7 +126,7 @@ ssh -i k8s-14-09-2024.pem ec2-user@10.0.2.197
        - Security Group: Use the `kubernetes-sg` created earlier.
    - SSH into these instances from the bastion:
      ```bash
-     ssh -i your-key.pem ec2-user@<data-plane-private-ip>
+     ssh -i k8s-14-09-2024.pem ec2-user@10.0.2.190
      ```
 
 ---
