@@ -56,43 +56,55 @@
             }
           },
           {
-            "id": "96c92d7b5d0d0b7b",
+            "id": "e51f08432220e515",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
+                "file": "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a03ce4d283d68ca1",
+            "id": "73b801801b48e2ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
+                "file": "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cc05eb72bbe17295",
+            "id": "399b98d42d297ea0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
+                "file": "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "725673627d9ad1f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -142,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 434.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
+                "file": "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
+                "file": "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md"
+                "file": "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md"
               }
             }
           }
@@ -220,10 +232,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cc05eb72bbe17295",
+  "active": "725673627d9ad1f0",
   "lastOpenFiles": [
+    "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
+    "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
+    "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+    "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
+    "Jenkins/Jenkins Installation",
+    "Attachments/Pasted image 20240916204944.png",
+    "Attachments/Pasted image 20240916205641.png",
     "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
-    "Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
     "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
     "AWS/AWS Projects/Configuring the Amazon CloudWatch Agent.md",
     "AWS/AWS Solution Archtect/CloudWatch Logs.md",
@@ -245,11 +263,8 @@
     "Linux/Load Average.md",
     "Linux/iptables.md",
     "Linux/Enable or Disable IPv6 on Ubuntu Linux.md",
-    "Linux/Linux Command Cheatsheet.md",
-    "CI_CD Pipeline/GitHub Action/GitHub Actions.md",
     "Jenkins",
     "CI_CD Pipeline/GitHub Action",
-    "Certification & Encryption/Certbot for using alb.md",
     "AWS/AWS Projects",
     "Python/Manipulate_API",
     "Python/Exercises/Slack-Meetup-Scheduler",
@@ -257,7 +272,6 @@
     "Docker/Docker-Compose",
     "Docker/DevOps_Docker.pdf",
     "AWS/AWS CLI",
-    "CI_CD Pipeline/CI_CD_Weather_App/Untitled",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
@@ -266,8 +280,6 @@
     "Attachments/Pasted image 20240801155322.png",
     "Untitled.canvas",
     "Attachments/Pasted image 20240614160100.png",
-    "Attachments/Pasted image 20240612140057.png",
-    "Attachments/Pasted image 20240611173018.png",
-    "Attachments/Pasted image 20240608142351.png"
+    "Attachments/Pasted image 20240612140057.png"
   ]
 }

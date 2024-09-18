@@ -241,6 +241,10 @@ Access Jenkins via `http://<server-ip>:8080/jenkins`.
 
 ## Step 10: Retrieve Initial Admin Password
 
+![[Pasted image 20240916204944.png]]
+
+![[Pasted image 20240916205641.png]]
+
 Retrieve the initial admin password for Jenkins:
 
 ```bash
@@ -248,3 +252,15 @@ sudo cat /opt/tomcat/.jenkins/secrets/initialAdminPassword
 ```
 
 Use this password to complete the Jenkins setup via the web interface.
+
+
+---
+
+### Reference:
+
+https://cloudinfrastructureservices.co.uk/how-to-install-apache-tomcat-server-on-ubuntu-22-04/
+
+
+
+
+
