@@ -8,103 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9f7b8328ab1c4be5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/UFW Firewall.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4e27f5c7ba6a0621",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/Git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "54f02ca2e4829d15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e2b49e72b2cf054",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWS/AWS Solution Archtect/Amazon CloudWatch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e51f08432220e515",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "73b801801b48e2ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "399b98d42d297ea0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "725673627d9ad1f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
+                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07c8e80138a04bb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Backup Jenkins.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4a93b50d0a3a3d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Monitor Jenkins With Prometheus.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97a917504524a4af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -170,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
+                "file": "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
+                "file": "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md"
+                "file": "Jenkins/Monitoring Jenkins with Prometheus as Containers.md"
               }
             }
           }
@@ -232,11 +184,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "725673627d9ad1f0",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
-    "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
+    "Untitled.md",
+    "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
+    "Jenkins/Monitor Jenkins With Prometheus.md",
+    "Jenkins/Backup Jenkins.md",
     "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+    "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
+    "Linux/Operation Deployment/Create systemd Services.md",
+    "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
+    "Azure",
     "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
     "Jenkins/Jenkins Installation",
     "Attachments/Pasted image 20240916204944.png",
@@ -251,18 +209,13 @@
     "Git/Git Usual Commands.md",
     "Git/Guide Set Up a git repo.md",
     "Git/Git.md",
-    "Linux/Adding and Managing LVM Volumes.md",
+    "Linux/Storage Management/Adding and Managing LVM Volumes.md",
     "Linux/UFW Firewall.md",
     "Linux/net-tools Commands.md",
     "Linux/Managing Processes in Linux.md",
     "Linux/File System and Volumes.md",
-    "Linux/Operation Deployment/Create systemd Services.md",
     "Linux/Storage Management/Configure and manage swap space.md",
     "Jenkins/Jenkins Overview.md",
-    "Linux/Creating and Using SSH Keys on macOS to Access an Ubuntu Server.md",
-    "Linux/Load Average.md",
-    "Linux/iptables.md",
-    "Linux/Enable or Disable IPv6 on Ubuntu Linux.md",
     "Jenkins",
     "CI_CD Pipeline/GitHub Action",
     "AWS/AWS Projects",
@@ -271,7 +224,6 @@
     "Python/Flask",
     "Docker/Docker-Compose",
     "Docker/DevOps_Docker.pdf",
-    "AWS/AWS CLI",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
