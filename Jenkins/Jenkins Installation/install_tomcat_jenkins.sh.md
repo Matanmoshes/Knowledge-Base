@@ -12,9 +12,6 @@ sudo apt update -y
 echo "Installing OpenJDK 11..."
 sudo apt install -y openjdk-11-jdk
 
-# Verify Java installation
-java --version
-
 # Step 2: Create Tomcat User
 echo "Creating Tomcat user..."
 sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
@@ -40,11 +37,31 @@ sudo chmod +x /opt/tomcat/bin/*.sh
 echo "Setting permissions for Tomcat user..."
 sudo chown -R tomcat:tomcat /opt/tomcat
 
-# Step 5: Configure Tomcat as a Service
+# Step 5: Modify permissions for /opt/tomcat/conf/ to allow script access
+echo "Modifying permissions for /opt/tomcat/conf/..."
+sudo chmod 755 /opt/tomcat/conf/
+
+# Step 6: Configure Tomcat Users
+echo "Configuring Tomcat users..."
+sudo bash -c 'cat <<EOF > /opt/tomcat/conf/tomcat-users.xml
+<tomcat-users>
+    <role rolename="admin-gui"/>
+    <role rolename="manager-gui"/>
+    <user username="admin" password="a1a1a1" roles="admin-gui,manager-gui"/>
+</tomcat-users>
+EOF'
+
+# Step 7: Allow Manager and Host-Manager Access
+echo "Configuring access to Manager and Host-Manager..."
+sudo sed -i 's/<Valve className="org.apache.catalina.valves.RemoteAddrValve".*/<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\\.\d+\\.\d+\\.\d+|::1|0:0:0:0:0:0:0:1" \/> -->/' /opt/tomcat/webapps/manager/META-INF/context.xml
+
+sudo sed -i 's/<Valve className="org.apache.catalina.valves.RemoteAddrValve".*/<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\\.\d+\\.\d+\\.\d+|::1|0:0:0:0:0:0:0:1" \/> -->/' /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+# Step 8: Configure Tomcat as a Service
 echo "Creating systemd service for Tomcat..."
 sudo bash -c 'cat <<EOF > /etc/systemd/system/tomcat.service
 [Unit]
-Description=Apache Tomcat
+Description=Apache Tomcat Web Application Container
 After=network.target
 
 [Service]
@@ -69,39 +86,21 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 EOF'
 
-# Reload systemd and enable the Tomcat service
+# Step 9: Reload systemd, enable and start Tomcat service
 echo "Reloading systemd and enabling Tomcat service..."
 sudo systemctl daemon-reload
 sudo systemctl enable tomcat
 sudo systemctl start tomcat
 
-# Check Tomcat status
-sudo systemctl status tomcat
-
-# Step 6: Configure Tomcat Users
-echo "Configuring Tomcat users..."
-if [ ! -f /opt/tomcat/conf/tomcat-users.xml ]; then
-    echo "Tomcat configuration file not found! Creating the configuration."
-    sudo bash -c 'cat <<EOF > /opt/tomcat/conf/tomcat-users.xml
-<tomcat-users>
-    <role rolename="admin-gui"/>
-    <role rolename="manager-gui"/>
-    <user username="admin" password="a1a1a1" roles="admin-gui,manager-gui"/>
-</tomcat-users>
-EOF'
+# Verify if the service started correctly
+if sudo systemctl status tomcat | grep -q "active (running)"; then
+    echo "Tomcat started successfully."
+else
+    echo "Tomcat failed to start. Please check the logs."
+    sudo journalctl -u tomcat
 fi
 
-# Step 7: Allow Manager and Host-Manager Access
-echo "Configuring access to Manager and Host-Manager..."
-sudo sed -i 's/<Valve className="org.apache.catalina.valves.RemoteAddrValve".*/<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\\.\d+\\.\d+\\.\d+|::1|0:0:0:0:0:0:0:1" \/> -->/' /opt/tomcat/webapps/manager/META-INF/context.xml
-
-sudo sed -i 's/<Valve className="org.apache.catalina.valves.RemoteAddrValve".*/<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\\.\d+\\.\d+\\.\d+|::1|0:0:0:0:0:0:0:1" \/> -->/' /opt/tomcat/webapps/host-manager/META-INF/context.xml
-
-# Restart Tomcat to apply the changes
-echo "Restarting Tomcat..."
-sudo systemctl restart tomcat
-
-# Step 8: Install Jenkins
+# Step 10: Install Jenkins
 echo "Downloading Jenkins WAR file..."
 wget https://get.jenkins.io/war-stable/2.462.2/jenkins.war -P /opt/tomcat/webapps/
 
@@ -109,7 +108,7 @@ wget https://get.jenkins.io/war-stable/2.462.2/jenkins.war -P /opt/tomcat/webapp
 echo "Restarting Tomcat to load Jenkins..."
 sudo systemctl restart tomcat
 
-# Step 9: Retrieve Jenkins initial admin password
+# Step 11: Retrieve Jenkins initial admin password
 echo "Jenkins setup completed. Retrieving initial admin password..."
 if [ -f /opt/tomcat/.jenkins/secrets/initialAdminPassword ]; then
     sudo cat /opt/tomcat/.jenkins/secrets/initialAdminPassword
@@ -118,6 +117,7 @@ else
 fi
 
 echo "Visit Jenkins at http://<your-server-ip>:8080/jenkins"
+
 
 ```
 

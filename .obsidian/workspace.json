@@ -49,14 +49,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
+                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c99c341f8689cad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Jenkinsfile.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e28d5c14ecd863be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/CI-CD Pipeline/Jenkins CI Pipeline.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "216817ff70971338",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Triggers and SCM Polling to Jenkinsfile.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6cae4d66c63df118",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87b74aec5968c48f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -122,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
+                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
+                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jenkins/Monitoring Jenkins with Prometheus as Containers.md"
+                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md"
               }
             }
           }
@@ -184,18 +244,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "87b74aec5968c48f",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Jenkins/Jenkins build agent setup.md",
+    "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+    "Jenkins/Jenkinsfile.md",
+    "Jenkins/CI-CD Pipeline/Jenkins CI Pipeline.md",
+    "Jenkins/CI-CD Pipeline/Jenkins CD Pipeline.md",
+    "Jenkins/Triggers and SCM Polling to Jenkinsfile.md",
+    "Jenkins/CI-CD Pipeline",
+    "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
     "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
     "Jenkins/Monitor Jenkins With Prometheus.md",
     "Jenkins/Backup Jenkins.md",
-    "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
     "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
     "Linux/Operation Deployment/Create systemd Services.md",
     "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
     "Azure",
-    "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
     "Jenkins/Jenkins Installation",
     "Attachments/Pasted image 20240916204944.png",
     "Attachments/Pasted image 20240916205641.png",
@@ -212,10 +277,6 @@
     "Linux/Storage Management/Adding and Managing LVM Volumes.md",
     "Linux/UFW Firewall.md",
     "Linux/net-tools Commands.md",
-    "Linux/Managing Processes in Linux.md",
-    "Linux/File System and Volumes.md",
-    "Linux/Storage Management/Configure and manage swap space.md",
-    "Jenkins/Jenkins Overview.md",
     "Jenkins",
     "CI_CD Pipeline/GitHub Action",
     "AWS/AWS Projects",
@@ -223,7 +284,6 @@
     "Python/Exercises/Slack-Meetup-Scheduler",
     "Python/Flask",
     "Docker/Docker-Compose",
-    "Docker/DevOps_Docker.pdf",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
