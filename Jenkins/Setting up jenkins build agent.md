@@ -137,6 +137,12 @@ Once you save the node configuration, Jenkins will attempt to connect to the bui
 
 If the connection is successful, the new build agent will appear online, and you can begin assigning jobs to it.
 
+![image](https://github.com/user-attachments/assets/0efc7e02-9991-4dab-9cf1-a19531b1fcf7)
+
+![image](https://github.com/user-attachments/assets/5f06efc8-c4d0-44fd-b3c2-cd73145ee986)
+
+
+
 ---
 
 ### **Summary**
