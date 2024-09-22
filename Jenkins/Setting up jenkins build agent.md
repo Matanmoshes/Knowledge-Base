@@ -1,4 +1,5 @@
-Here’s a detailed guide for setting up a Jenkins build agent (slave) on a second machine, with SSH authentication and node configuration.
+# **Setting up jenkins build agent**
+
 
 ### **Step 1: Generate SSH Key Pair on the Jenkins Master**
 
@@ -91,6 +92,9 @@ Here’s a detailed guide for setting up a Jenkins build agent (slave) on a seco
 2. **Click Add to save the credentials.**
 
 
+![image](https://github.com/user-attachments/assets/81f9e9c3-8673-4690-9b0a-d1e50ccd646b)
+
+
 ---
 
 ### **Step 6: Create a New Jenkins Node**
@@ -117,6 +121,13 @@ Here’s a detailed guide for setting up a Jenkins build agent (slave) on a seco
    - Set **Availability** to `Keep this agent online as much as possible`.
 
 5. **Click Save.**
+
+---
+
+![image](https://github.com/user-attachments/assets/a5d56b73-0a69-4ab5-93f6-683458f587df)
+
+![image](https://github.com/user-attachments/assets/709d7e0c-f263-4ac4-90a9-f5f752ed720e)
+
 
 ---
 
