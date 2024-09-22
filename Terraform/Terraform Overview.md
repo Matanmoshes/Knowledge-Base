@@ -169,7 +169,7 @@ region              = "us-east-1"
 
 ### Steps to Deploy
 
-1. **Initialize Terraform**: Run `terraform init`.
+1. **Initialize Terraform**: Run `terraform init` or `terraform init -reconfigure`.
 2. **Create Execution Plan**: Run `terraform plan`.
 3. **Apply Configuration**: Run `terraform apply`.
 4. **Inspect Outputs**: After the apply is complete, inspect the output values.

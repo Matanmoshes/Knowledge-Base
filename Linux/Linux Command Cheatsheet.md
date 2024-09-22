@@ -357,3 +357,59 @@ chmod +x deploy.sh
 ---
 
 
+## 11. 
+
+sudo scp -i ~/Downloads/jenkins-22-09-24.pem ~/Downloads/jenkins-22-09-24.pem ubuntu@3.236.191.238:/home/ubuntu/.ssh/
+
+### **SCP Guide for Securely Copying Files to a Remote Server**
+
+#### **Step 1: Set Correct Permissions for the PEM File**
+Before using SCP with a PEM file, ensure the correct file permissions:
+
+```bash
+chmod 400 ~/Downloads/your-key.pem
+```
+
+This ensures only the file owner can read the key.
+
+#### **Step 2: Use SCP to Copy Files to the Remote Server**
+To securely copy a file to a remote server using a PEM file for authentication, use the following command:
+
+```bash
+scp -i ~/Downloads/your-key.pem /path/to/local/file ubuntu@<server-ip>:/path/to/remote/directory
+```
+
+- `-i ~/Downloads/your-key.pem`: Specifies the private key for authentication.
+- `/path/to/local/file`: The file you want to copy.
+- `ubuntu@<server-ip>`: The username and IP of the remote server.
+- `/path/to/remote/directory`: The target directory on the remote server.
+
+#### **Example**
+Copying `jenkins-22-09-24.pem` to the `.ssh` directory on the remote server:
+
+```bash
+scp -i ~/Downloads/jenkins-22-09-24.pem ~/Downloads/jenkins-22-09-24.pem ubuntu@34.201.26.53:/home/ubuntu/.ssh/
+```
+
+#### **Step 3: Verify Directory Permissions on the Remote Server**
+If you encounter permission errors, ensure the `.ssh` directory exists and has the correct permissions:
+
+1. SSH into the remote server:
+
+   ```bash
+   ssh -i ~/Downloads/jenkins-22-09-24.pem ubuntu@34.201.26.53
+   ```
+
+2. Create the `.ssh` directory if it doesn't exist:
+
+   ```bash
+   mkdir -p /home/ubuntu/.ssh
+   ```
+
+3. Set the correct permissions for the `.ssh` directory:
+
+   ```bash
+   chmod 700 /home/ubuntu/.ssh
+   ```
+
+After setting the correct permissions, retry the SCP command.

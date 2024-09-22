@@ -97,26 +97,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+                "file": "Linux/Linux Command Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "87b74aec5968c48f",
+            "id": "37c62b139437f65f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+                "file": "Certification & Encryption/Generate an SSH Key Pair.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bbca22ad0bf752a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Setting up jenkins build agent.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -145,7 +157,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "scp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+                "file": "Jenkins/Setting up jenkins build agent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+                "file": "Jenkins/Setting up jenkins build agent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md"
+                "file": "Jenkins/Setting up jenkins build agent.md"
               }
             }
           }
@@ -244,10 +256,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87b74aec5968c48f",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Jenkins/Jenkins build agent setup.md",
+    "Certification & Encryption/Generate an SSH Key Pair.md",
+    "Jenkins/Setting up jenkins build agent.md",
+    "Terraform/Terraform Overview.md",
+    "Linux/Linux Command Cheatsheet.md",
     "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+    "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
+    "Terraform/aws-k8s-terraform-automation/Description.md",
+    "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
+    "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
+    "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
+    "Terraform/Setting Up an AWS Web Server with Terraform.md",
+    "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
+    "Terraform/Terraform Workspaces.md",
+    "Jenkins/Jenkins build agent setup.md",
     "Jenkins/Jenkinsfile.md",
     "Jenkins/CI-CD Pipeline/Jenkins CI Pipeline.md",
     "Jenkins/CI-CD Pipeline/Jenkins CD Pipeline.md",
@@ -264,19 +288,7 @@
     "Jenkins/Jenkins Installation",
     "Attachments/Pasted image 20240916204944.png",
     "Attachments/Pasted image 20240916205641.png",
-    "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
     "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
-    "AWS/AWS Projects/Configuring the Amazon CloudWatch Agent.md",
-    "AWS/AWS Solution Archtect/CloudWatch Logs.md",
-    "AWS/AWS Solution Archtect/Amazon CloudWatch.md",
-    "AWS/AWS Solution Archtect/Private Networking and Internet Access.md",
-    "Git/Git advanced Commands.md",
-    "Git/Git Usual Commands.md",
-    "Git/Guide Set Up a git repo.md",
-    "Git/Git.md",
-    "Linux/Storage Management/Adding and Managing LVM Volumes.md",
-    "Linux/UFW Firewall.md",
-    "Linux/net-tools Commands.md",
     "Jenkins",
     "CI_CD Pipeline/GitHub Action",
     "AWS/AWS Projects",
