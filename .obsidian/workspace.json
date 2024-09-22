@@ -121,14 +121,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/Setting up jenkins build agent.md",
+                "file": "Jenkins/Build Agent/Setting up jenkins build agent.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c12bc31c045ebefb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Jenkins Overview.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -194,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jenkins/Setting up jenkins build agent.md",
+                "file": "Jenkins/Jenkins Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jenkins/Setting up jenkins build agent.md",
+                "file": "Jenkins/Jenkins Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jenkins/Setting up jenkins build agent.md"
+                "file": "Jenkins/Jenkins Overview.md"
               }
             }
           }
@@ -256,10 +268,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "c12bc31c045ebefb",
   "lastOpenFiles": [
+    "Jenkins/Jenkins build agent setup.md",
+    "Jenkins/Jenkins Overview.md",
+    "Jenkins/Jenkinsfile.md",
+    "Jenkins/Monitor Jenkins With Prometheus.md",
+    "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
+    "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
+    "Jenkins/Build Agent/Running the Jenkins Pipeline on a build agent.md",
+    "Jenkins/Build Agent/Setting up jenkins build agent.md",
+    "Jenkins/Build Agent",
     "Certification & Encryption/Generate an SSH Key Pair.md",
-    "Jenkins/Setting up jenkins build agent.md",
     "Terraform/Terraform Overview.md",
     "Linux/Linux Command Cheatsheet.md",
     "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
@@ -271,31 +291,23 @@
     "Terraform/Setting Up an AWS Web Server with Terraform.md",
     "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
     "Terraform/Terraform Workspaces.md",
-    "Jenkins/Jenkins build agent setup.md",
-    "Jenkins/Jenkinsfile.md",
     "Jenkins/CI-CD Pipeline/Jenkins CI Pipeline.md",
     "Jenkins/CI-CD Pipeline/Jenkins CD Pipeline.md",
     "Jenkins/Triggers and SCM Polling to Jenkinsfile.md",
     "Jenkins/CI-CD Pipeline",
-    "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
-    "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
-    "Jenkins/Monitor Jenkins With Prometheus.md",
     "Jenkins/Backup Jenkins.md",
     "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
     "Linux/Operation Deployment/Create systemd Services.md",
-    "Jenkins/Jenkins Installation/Docker and Jenkins Setup on Amazon Linux 2.md",
     "Azure",
     "Jenkins/Jenkins Installation",
     "Attachments/Pasted image 20240916204944.png",
     "Attachments/Pasted image 20240916205641.png",
-    "AWS/AWS Projects/FlaskApp on ECS with ALB.md",
     "Jenkins",
     "CI_CD Pipeline/GitHub Action",
     "AWS/AWS Projects",
     "Python/Manipulate_API",
     "Python/Exercises/Slack-Meetup-Scheduler",
     "Python/Flask",
-    "Docker/Docker-Compose",
     "Attachments/Pasted image 20240805225708.png",
     "Attachments/Pasted image 20240802160845.png",
     "Attachments/Pasted image 20240802160933.png",
