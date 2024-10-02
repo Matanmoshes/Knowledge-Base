@@ -8,139 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "725673627d9ad1f0",
+            "id": "8ec86f89bfb50cff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
+                "file": "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "07c8e80138a04bb4",
+            "id": "5db77f5b728b1e21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/Backup Jenkins.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4a93b50d0a3a3d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Monitor Jenkins With Prometheus.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97a917504524a4af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5c99c341f8689cad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Jenkinsfile.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e28d5c14ecd863be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/CI-CD Pipeline/Jenkins CI Pipeline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "216817ff70971338",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Triggers and SCM Polling to Jenkinsfile.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6cae4d66c63df118",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux Command Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "37c62b139437f65f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Certification & Encryption/Generate an SSH Key Pair.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bbca22ad0bf752a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Build Agent/Setting up jenkins build agent.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c12bc31c045ebefb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jenkins/Jenkins Overview.md",
+                "file": "Artifacts/Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jenkins/Jenkins Overview.md",
+                "file": "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jenkins/Jenkins Overview.md",
+                "file": "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jenkins/Jenkins Overview.md"
+                "file": "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md"
               }
             }
           }
@@ -268,10 +160,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c12bc31c045ebefb",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Jenkins/Jenkins build agent setup.md",
+    "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
+    "Artifacts/Untitled.md",
+    "Artifacts",
+    "Interview Questions/sre-monitoring-setup/SRE Monitoring Setup.md",
+    "Interview Questions/sre-monitoring-setup/alerts.md",
+    "Interview Questions/sre-monitoring-setup/overview.md",
+    "Interview Questions/sre-monitoring-setup/Screen Shots.md",
+    "![[Pasted.md",
+    "Pasted image 20240927192036.png",
+    "Pasted image 20240927193514.png",
+    "Pasted image 20240927191944.png",
+    "Pasted image 20240927191956.png",
+    "Pasted image 20240927191932.png",
+    "Pasted image 20240927213525.png",
+    "Pasted image 20240927213445.png",
+    "Pasted image 20240927213424.png",
+    "Pasted image 20240927205607.png",
+    "Pasted image 20240927205002.png",
+    "Interview Questions/sre-monitoring-setup",
+    "Interview Questions/Untitled",
     "Jenkins/Jenkins Overview.md",
+    "Interview Questions",
+    "Jenkins/Jenkins build agent setup.md",
     "Jenkins/Jenkinsfile.md",
     "Jenkins/Monitor Jenkins With Prometheus.md",
     "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
@@ -290,32 +203,11 @@
     "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
     "Terraform/Setting Up an AWS Web Server with Terraform.md",
     "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
-    "Terraform/Terraform Workspaces.md",
-    "Jenkins/CI-CD Pipeline/Jenkins CI Pipeline.md",
-    "Jenkins/CI-CD Pipeline/Jenkins CD Pipeline.md",
-    "Jenkins/Triggers and SCM Polling to Jenkinsfile.md",
     "Jenkins/CI-CD Pipeline",
-    "Jenkins/Backup Jenkins.md",
-    "Jenkins/Jenkins Installation/Installing Apache Tomcat on Ubuntu 22.04 and setting up Jenkins.md",
-    "Linux/Operation Deployment/Create systemd Services.md",
     "Azure",
     "Jenkins/Jenkins Installation",
-    "Attachments/Pasted image 20240916204944.png",
-    "Attachments/Pasted image 20240916205641.png",
     "Jenkins",
     "CI_CD Pipeline/GitHub Action",
-    "AWS/AWS Projects",
-    "Python/Manipulate_API",
-    "Python/Exercises/Slack-Meetup-Scheduler",
-    "Python/Flask",
-    "Attachments/Pasted image 20240805225708.png",
-    "Attachments/Pasted image 20240802160845.png",
-    "Attachments/Pasted image 20240802160933.png",
-    "Attachments/Pasted image 20240802160920.png",
-    "Attachments/Pasted image 20240801155351.png",
-    "Attachments/Pasted image 20240801155322.png",
-    "Untitled.canvas",
-    "Attachments/Pasted image 20240614160100.png",
-    "Attachments/Pasted image 20240612140057.png"
+    "Untitled.canvas"
   ]
 }
