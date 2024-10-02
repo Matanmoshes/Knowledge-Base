@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "35743922cbda3edd",
+        "id": "ddb825111123fcc5",
         "type": "tabs",
         "children": [
           {
-            "id": "8ec86f89bfb50cff",
+            "id": "6fb081d09db7b129",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
+                "file": "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5db77f5b728b1e21",
+            "id": "4a41aa8690d83206",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artifacts/Untitled.md",
+                "file": "Azure/Deploying a Kubernetes Cluster on Azure.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 290.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
+                "file": "Azure/Deploying a Kubernetes Cluster on Azure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
+                "file": "Azure/Deploying a Kubernetes Cluster on Azure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md"
+                "file": "Azure/Deploying a Kubernetes Cluster on Azure.md"
               }
             }
           }
@@ -160,10 +160,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "4a41aa8690d83206",
   "lastOpenFiles": [
+    "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
+    "Azure/Deploying a Kubernetes Cluster on Azure.md",
+    "Untitled",
     "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
-    "Artifacts/Untitled.md",
+    "Artifacts/Artifacts Overview.md",
     "Artifacts",
     "Interview Questions/sre-monitoring-setup/SRE Monitoring Setup.md",
     "Interview Questions/sre-monitoring-setup/alerts.md",
@@ -196,18 +199,15 @@
     "Terraform/Terraform Overview.md",
     "Linux/Linux Command Cheatsheet.md",
     "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
-    "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
     "Terraform/aws-k8s-terraform-automation/Description.md",
     "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
     "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
     "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
     "Terraform/Setting Up an AWS Web Server with Terraform.md",
-    "Terraform/Setting Up the AWS Infrastructure with Terraform.md",
     "Jenkins/CI-CD Pipeline",
     "Azure",
     "Jenkins/Jenkins Installation",
     "Jenkins",
-    "CI_CD Pipeline/GitHub Action",
     "Untitled.canvas"
   ]
 }
