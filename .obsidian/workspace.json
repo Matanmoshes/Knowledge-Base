@@ -4,35 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "ddb825111123fcc5",
+        "id": "c8253030b9b06301",
         "type": "tabs",
         "children": [
           {
-            "id": "6fb081d09db7b129",
+            "id": "f018ef789c506fd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
+                "file": "Ansible/Deploying a Kubernetes Cluster on Azure VMs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4a41aa8690d83206",
+            "id": "6ecf9fdc05758e63",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Azure/Deploying a Kubernetes Cluster on Azure.md",
+                "file": "Ansible/Install kubeadm with ansible.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d065e89c3a290101",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ansible/kubeadm Join a New Worker Node.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0495d713642f1259",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ansible/Ansible Overview.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -82,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 423.5
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Azure/Deploying a Kubernetes Cluster on Azure.md",
+                "file": "Ansible/Ansible Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Azure/Deploying a Kubernetes Cluster on Azure.md",
+                "file": "Ansible/Ansible Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Azure/Deploying a Kubernetes Cluster on Azure.md"
+                "file": "Ansible/Ansible Overview.md"
               }
             }
           }
@@ -160,13 +184,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a41aa8690d83206",
+  "active": "0495d713642f1259",
   "lastOpenFiles": [
+    "Ansible/kubeadm Join a New Worker Node.md",
+    "Ansible/Ansible Overview.md",
+    "Ansible/Ansible Overview.md",
+    "Ansible/Install kubeadm with ansible.md",
+    "Kubernetes",
+    "Artifacts/Artifacts Overview.md",
+    "Ansible/Deploying a Kubernetes Cluster on Azure VMs.md",
+    "Ansible/Deploying a Kubernetes Cluster on AWS EC2 Instances.md",
+    "Jenkins/Build Agent/Setting up jenkins build agent.md",
+    "Ansible",
     "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
     "Azure/Deploying a Kubernetes Cluster on Azure.md",
-    "Untitled",
     "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
-    "Artifacts/Artifacts Overview.md",
     "Artifacts",
     "Interview Questions/sre-monitoring-setup/SRE Monitoring Setup.md",
     "Interview Questions/sre-monitoring-setup/alerts.md",
@@ -193,21 +225,13 @@
     "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
     "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
     "Jenkins/Build Agent/Running the Jenkins Pipeline on a build agent.md",
-    "Jenkins/Build Agent/Setting up jenkins build agent.md",
     "Jenkins/Build Agent",
     "Certification & Encryption/Generate an SSH Key Pair.md",
     "Terraform/Terraform Overview.md",
     "Linux/Linux Command Cheatsheet.md",
-    "Jenkins/Jenkins Installation/install_tomcat_jenkins.sh.md",
-    "Terraform/aws-k8s-terraform-automation/Description.md",
-    "Terraform/aws-k8s-terraform-automation/AWS VPC Structure.md",
-    "Terraform/aws-k8s-terraform-automation/dynamodb.tf.md",
-    "Terraform/Remote Backend for Terraform with S3 and DynamoDB for.md",
-    "Terraform/Setting Up an AWS Web Server with Terraform.md",
     "Jenkins/CI-CD Pipeline",
     "Azure",
     "Jenkins/Jenkins Installation",
-    "Jenkins",
     "Untitled.canvas"
   ]
 }
