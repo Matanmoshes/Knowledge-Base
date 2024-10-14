@@ -54,9 +54,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "36ff797ab90450db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ansible/kubeadm Join a New Worker Node.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "83864ad83cedc783",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bb9ea2f5c03fde30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d4659fcf0be92f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -122,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ansible/Ansible Overview.md",
+                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ansible/Ansible Overview.md",
+                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ansible/Ansible Overview.md"
+                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md"
               }
             }
           }
@@ -184,10 +232,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0495d713642f1259",
+  "active": "2d4659fcf0be92f0",
   "lastOpenFiles": [
+    "Kubernetes/CKA/ETCD in Kubernetes.md",
+    "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+    "Kubernetes/CKA/Containerd.md",
     "Ansible/kubeadm Join a New Worker Node.md",
-    "Ansible/Ansible Overview.md",
+    "Ansible/Jinja2 Templating in Ansible.md",
+    "Kubernetes/CKA",
     "Ansible/Ansible Overview.md",
     "Ansible/Install kubeadm with ansible.md",
     "Kubernetes",
@@ -226,12 +278,8 @@
     "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
     "Jenkins/Build Agent/Running the Jenkins Pipeline on a build agent.md",
     "Jenkins/Build Agent",
-    "Certification & Encryption/Generate an SSH Key Pair.md",
-    "Terraform/Terraform Overview.md",
-    "Linux/Linux Command Cheatsheet.md",
     "Jenkins/CI-CD Pipeline",
     "Azure",
-    "Jenkins/Jenkins Installation",
     "Untitled.canvas"
   ]
 }
