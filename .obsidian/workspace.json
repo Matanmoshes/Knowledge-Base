@@ -8,103 +8,67 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f018ef789c506fd6",
+            "id": "5308efb88482ab6a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ansible/Deploying a Kubernetes Cluster on Azure VMs.md",
+                "file": "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6ecf9fdc05758e63",
+            "id": "d2a8109a7b51e760",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ansible/Install kubeadm with ansible.md",
+                "file": "Kubernetes/kubectl Shortcuts.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d065e89c3a290101",
+            "id": "ae4ceaaadb1cb5b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ansible/kubeadm Join a New Worker Node.md",
+                "file": "Splunk/Splunk Overview.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0495d713642f1259",
+            "id": "4045aa2a87f373c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ansible/Ansible Overview.md",
+                "file": "Splunk/SPL2 Documentation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "36ff797ab90450db",
+            "id": "2e058c414469e533",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ansible/kubeadm Join a New Worker Node.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83864ad83cedc783",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb9ea2f5c03fde30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2d4659fcf0be92f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+                "file": "Kubernetes/Guide Upgrading Kubernetes Cluster.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -170,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+                "file": "Kubernetes/Guide Upgrading Kubernetes Cluster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+                "file": "Kubernetes/Guide Upgrading Kubernetes Cluster.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kubernetes/CKA/Kubernetes Architectural Overview.md"
+                "file": "Kubernetes/Guide Upgrading Kubernetes Cluster.md"
               }
             }
           }
@@ -232,10 +196,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2d4659fcf0be92f0",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Kubernetes/CKA/ETCD in Kubernetes.md",
+    "Splunk/SPL2 Documentation.md",
+    "Kubernetes/Guide Upgrading Kubernetes Cluster.md",
+    "Splunk/Splunk Overview.md",
+    "Kubernetes/kubectl Shortcuts.md",
+    "Splunk",
+    "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
     "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+    "Kubernetes/CKA/ETCD in Kubernetes.md",
     "Kubernetes/CKA/Containerd.md",
     "Ansible/kubeadm Join a New Worker Node.md",
     "Ansible/Jinja2 Templating in Ansible.md",
@@ -272,14 +242,8 @@
     "Jenkins/Jenkins Overview.md",
     "Interview Questions",
     "Jenkins/Jenkins build agent setup.md",
-    "Jenkins/Jenkinsfile.md",
-    "Jenkins/Monitor Jenkins With Prometheus.md",
-    "Jenkins/Monitoring Jenkins with Prometheus as Containers.md",
-    "Jenkins/Setting up a Jenkins Pipeline for a Maven Project.md",
-    "Jenkins/Build Agent/Running the Jenkins Pipeline on a build agent.md",
     "Jenkins/Build Agent",
     "Jenkins/CI-CD Pipeline",
-    "Azure",
     "Untitled.canvas"
   ]
 }
