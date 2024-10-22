@@ -61,14 +61,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kubernetes/Guide Upgrading Kubernetes Cluster.md",
+                "file": "Kubernetes/CKA/Cluster Management/Guide Upgrading Kubernetes Cluster.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "119343451ee71bda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Cluster Management/High Availability in Kubernetes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "585631da8c7c4c61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Cluster Management/Draining a Kubernetes Node.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7537f05de0aadf6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "685ab8f44c852125",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -134,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kubernetes/Guide Upgrading Kubernetes Cluster.md",
+                "file": "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kubernetes/Guide Upgrading Kubernetes Cluster.md",
+                "file": "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kubernetes/Guide Upgrading Kubernetes Cluster.md"
+                "file": "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md"
               }
             }
           }
@@ -198,15 +246,23 @@
   },
   "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Splunk/SPL2 Documentation.md",
-    "Kubernetes/Guide Upgrading Kubernetes Cluster.md",
-    "Splunk/Splunk Overview.md",
-    "Kubernetes/kubectl Shortcuts.md",
-    "Splunk",
     "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
-    "Kubernetes/CKA/Kubernetes Architectural Overview.md",
-    "Kubernetes/CKA/ETCD in Kubernetes.md",
+    "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
+    "Kubernetes/kubectl Shortcuts.md",
     "Kubernetes/CKA/Containerd.md",
+    "Kubernetes/CKA/Kubernetes Architectural Overview.md",
+    "Kubernetes/CKA/Kubernetes Manifest Files.md",
+    "Kubernetes/CKA/Cluster Management/Draining a Kubernetes Node.md",
+    "Kubernetes/CKA/ETCD in Kubernetes.md",
+    "Kubernetes/CKA/Cluster Management/Guide Upgrading Kubernetes Cluster.md",
+    "Kubernetes/CKA/Cluster Management",
+    "Kubernetes/CKA/Cluster Management/High Availability in Kubernetes.md",
+    "Attachments/Pasted image 20241018184701.png",
+    "Attachments/Pasted image 20241018184634.png",
+    "Attachments/Pasted image 20241018184557.png",
+    "Splunk/SPL2 Documentation.md",
+    "Splunk/Splunk Overview.md",
+    "Splunk",
     "Ansible/kubeadm Join a New Worker Node.md",
     "Ansible/Jinja2 Templating in Ansible.md",
     "Kubernetes/CKA",
@@ -225,8 +281,6 @@
     "Interview Questions/sre-monitoring-setup/SRE Monitoring Setup.md",
     "Interview Questions/sre-monitoring-setup/alerts.md",
     "Interview Questions/sre-monitoring-setup/overview.md",
-    "Interview Questions/sre-monitoring-setup/Screen Shots.md",
-    "![[Pasted.md",
     "Pasted image 20240927192036.png",
     "Pasted image 20240927193514.png",
     "Pasted image 20240927191944.png",
@@ -234,16 +288,10 @@
     "Pasted image 20240927191932.png",
     "Pasted image 20240927213525.png",
     "Pasted image 20240927213445.png",
-    "Pasted image 20240927213424.png",
-    "Pasted image 20240927205607.png",
-    "Pasted image 20240927205002.png",
     "Interview Questions/sre-monitoring-setup",
     "Interview Questions/Untitled",
-    "Jenkins/Jenkins Overview.md",
     "Interview Questions",
-    "Jenkins/Jenkins build agent setup.md",
     "Jenkins/Build Agent",
-    "Jenkins/CI-CD Pipeline",
     "Untitled.canvas"
   ]
 }
