@@ -8,115 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5308efb88482ab6a",
+            "id": "416ad96b3b28efb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
+                "file": "Kubernetes/CKA/Kubernetes Object Management/ConfigMaps and Secret.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d2a8109a7b51e760",
+            "id": "5af3ff97922b3e51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kubernetes/kubectl Shortcuts.md",
+                "file": "Kubernetes/CKA/Kubernetes Object Management/ConfigMaps and Secret.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ae4ceaaadb1cb5b7",
+            "id": "9fd1520f7bfb91c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Splunk/Splunk Overview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4045aa2a87f373c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Splunk/SPL2 Documentation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2e058c414469e533",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/CKA/Cluster Management/Guide Upgrading Kubernetes Cluster.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "119343451ee71bda",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/CKA/Cluster Management/High Availability in Kubernetes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "585631da8c7c4c61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/CKA/Cluster Management/Draining a Kubernetes Node.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7537f05de0aadf6e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "685ab8f44c852125",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
+                "file": "Kubernetes/minikube/ConfigMaps and Secrets in a Kubernetes Deployment.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -182,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
+                "file": "Kubernetes/minikube/ConfigMaps and Secrets in a Kubernetes Deployment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
+                "file": "Kubernetes/minikube/ConfigMaps and Secrets in a Kubernetes Deployment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md"
+                "file": "Kubernetes/minikube/ConfigMaps and Secrets in a Kubernetes Deployment.md"
               }
             }
           }
@@ -246,9 +174,16 @@
   },
   "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
-    "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
+    "Kubernetes/CKA/Kubernetes Object Management/ConfigMaps and Secret.md",
+    "Kubernetes/minikube/ConfigMaps and Secrets in a Kubernetes Deployment.md",
     "Kubernetes/kubectl Shortcuts.md",
+    "Kubernetes/minikube/Accessing Deployment in Minikube.md",
+    "Kubernetes/minikube",
+    "Kubernetes/CKA/Kubernetes Object Management/Monitoring a Kubernetes Cluster.md",
+    "Kubernetes/CKA/Kubernetes Object Management/RBAC Kubernetes.md",
+    "Kubernetes/CKA/Kubernetes Object Management",
+    "Kubernetes/CKA/Cluster Management/Backing Up and Restoring Kubernetes Data in etcd.md",
+    "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
     "Kubernetes/CKA/Containerd.md",
     "Kubernetes/CKA/Kubernetes Architectural Overview.md",
     "Kubernetes/CKA/Kubernetes Manifest Files.md",
@@ -275,12 +210,7 @@
     "Jenkins/Build Agent/Setting up jenkins build agent.md",
     "Ansible",
     "AWS/AWS Projects/K8S Cluster using kubeadm on ec2 instances.md",
-    "Azure/Deploying a Kubernetes Cluster on Azure.md",
-    "Interview Questions/sre-monitoring-setup/Exercise Automated Monitoring and Alerting Setup.md",
     "Artifacts",
-    "Interview Questions/sre-monitoring-setup/SRE Monitoring Setup.md",
-    "Interview Questions/sre-monitoring-setup/alerts.md",
-    "Interview Questions/sre-monitoring-setup/overview.md",
     "Pasted image 20240927192036.png",
     "Pasted image 20240927193514.png",
     "Pasted image 20240927191944.png",
@@ -290,8 +220,6 @@
     "Pasted image 20240927213445.png",
     "Interview Questions/sre-monitoring-setup",
     "Interview Questions/Untitled",
-    "Interview Questions",
-    "Jenkins/Build Agent",
     "Untitled.canvas"
   ]
 }
