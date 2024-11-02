@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8673363dff2d4d1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kubernetes/CKA/primary kubeadm commands.md",
+                "file": "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kubernetes/CKA/primary kubeadm commands.md",
+                "file": "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kubernetes/CKA/primary kubeadm commands.md"
+                "file": "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md"
               }
             }
           }
@@ -186,8 +198,9 @@
   },
   "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
-    "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
     "Kubernetes/CKA/primary kubeadm commands.md",
+    "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md",
+    "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
     "Kubernetes/minikube/ConfigMaps and Secrets in a Kubernetes Deployment.md",
     "Kubernetes/CKA/Kubernetes Object Management/ConfigMaps and Secret.md",
     "Kubernetes/kubectl Shortcuts.md",
@@ -220,7 +233,6 @@
     "Artifacts/Artifacts Overview.md",
     "Ansible/Deploying a Kubernetes Cluster on Azure VMs.md",
     "Ansible/Deploying a Kubernetes Cluster on AWS EC2 Instances.md",
-    "Jenkins/Build Agent/Setting up jenkins build agent.md",
     "Ansible",
     "Artifacts",
     "Pasted image 20240927192036.png",
