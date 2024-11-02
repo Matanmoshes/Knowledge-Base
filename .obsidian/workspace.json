@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Highly Available Kubernetes Cluster on AWS.md",
+                "file": "Kubernetes/Highly Available Kubernetes Cluster on AWS.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Highly Available Kubernetes Cluster on AWS.md",
+                "file": "Kubernetes/Highly Available Kubernetes Cluster on AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Highly Available Kubernetes Cluster on AWS.md",
+                "file": "Kubernetes/Highly Available Kubernetes Cluster on AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Highly Available Kubernetes Cluster on AWS.md"
+                "file": "Kubernetes/Highly Available Kubernetes Cluster on AWS.md"
               }
             }
           }
@@ -208,10 +208,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a7e735a3a937234",
+  "active": "190e6d07ac302e9a",
   "lastOpenFiles": [
     "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md",
-    "Highly Available Kubernetes Cluster on AWS.md",
+    "Kubernetes/Highly Available Kubernetes Cluster on AWS.md",
     "Kubernetes/primary kubeadm commands.md",
     "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
     "Kubernetes/minikube/ConfigMaps and Secrets in a Kubernetes Deployment.md",
