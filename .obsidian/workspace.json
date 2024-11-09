@@ -16,7 +16,9 @@
                 "file": "Kubernetes/CKA/Kubernetes Object Management/ConfigMaps and Secret.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "ConfigMaps and Secret"
             }
           },
           {
@@ -28,7 +30,9 @@
                 "file": "Kubernetes/CKA/Kubernetes Object Management/ConfigMaps and Secret.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "ConfigMaps and Secret"
             }
           },
           {
@@ -40,7 +44,9 @@
                 "file": "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Guide install kubernetes cluster with kubeadm"
             }
           },
           {
@@ -52,7 +58,9 @@
                 "file": "Kubernetes/primary kubeadm commands.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "primary kubeadm commands"
             }
           },
           {
@@ -64,7 +72,9 @@
                 "file": "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2"
             }
           },
           {
@@ -76,7 +86,9 @@
                 "file": "Kubernetes/Highly Available Kubernetes Cluster on AWS.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Highly Available Kubernetes Cluster on AWS"
             }
           }
         ],
@@ -100,7 +112,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -115,7 +129,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -123,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -154,7 +172,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Highly Available Kubernetes Cluster on AWS"
             }
           },
           {
@@ -166,7 +186,9 @@
                 "file": "Kubernetes/Highly Available Kubernetes Cluster on AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Highly Available Kubernetes Cluster on AWS"
             }
           },
           {
@@ -177,7 +199,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -187,7 +211,9 @@
               "type": "outline",
               "state": {
                 "file": "Kubernetes/Highly Available Kubernetes Cluster on AWS.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Highly Available Kubernetes Cluster on AWS"
             }
           }
         ],
@@ -208,7 +234,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "190e6d07ac302e9a",
+  "active": "4a7e735a3a937234",
   "lastOpenFiles": [
     "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md",
     "Kubernetes/Highly Available Kubernetes Cluster on AWS.md",
