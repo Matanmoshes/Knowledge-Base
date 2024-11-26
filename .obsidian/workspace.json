@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kubernetes/MetalLB and Istio.md",
+                "file": "Kubernetes/OpenEBS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MetalLB and Istio"
+              "title": "OpenEBS"
             }
           }
         ],
@@ -208,12 +208,13 @@
   },
   "active": "b7c3ae56adfa00a7",
   "lastOpenFiles": [
+    "Ansible/kubeadm Join a New Worker Node.md",
+    "Kubernetes/primary kubeadm commands.md",
     "Kubernetes/OpenEBS.md",
-    "Kubernetes/K8S Horizontal Pod Autoscaler.md",
     "Kubernetes/MetalLB and Istio.md",
+    "Kubernetes/K8S Horizontal Pod Autoscaler.md",
     "Kubernetes/Kubernetes Dashboard.md",
     "Guides/Practicing LVM on AWS ec2.md",
-    "Kubernetes/primary kubeadm commands.md",
     "Kubernetes/Highly Available Kubernetes Cluster on AWS.md",
     "Kubernetes/CKA/Cluster Management/High Availability in Kubernetes.md",
     "Linux/Storage Management/Creating Physical Volumes and Volume Groups in LVM.md",
@@ -235,7 +236,6 @@
     "Kubernetes/CKA/Kubernetes Architectural Overview.md",
     "Kubernetes/CKA/Cluster Management/Draining a Kubernetes Node.md",
     "Kubernetes/CKA/ETCD in Kubernetes.md",
-    "Kubernetes/CKA/Cluster Management/Guide Upgrading Kubernetes Cluster.md",
     "Kubernetes/CKA/Cluster Management",
     "Attachments/Pasted image 20241018184701.png",
     "Attachments/Pasted image 20241018184634.png",
