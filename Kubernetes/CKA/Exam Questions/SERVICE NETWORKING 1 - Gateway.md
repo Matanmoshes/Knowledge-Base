@@ -7,7 +7,7 @@ For this question, please set the context to cluster3 by running:
 kubectl config use-context cluster3
 ```
 
-Modify the existing web-gateway on the `cka5673` namespace to handle HTTPS traffic on port 443 for kodekloud.com, using a TLS certificate stored in a secret named kodekloud-tls.
+Modify the existing web-gateway on the `cka5673` namespace to handle HTTPS traffic on port 443 for `kodekloud.com`, using a TLS certificate stored in a secret named kodekloud-tls.
 
 
 ---
