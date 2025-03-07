@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 1 - Gateway.md",
+                "file": "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 4 - ingress.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SERVICE NETWORKING 1 - Gateway"
+              "title": "SERVICE NETWORKING 4 - ingress"
             }
           },
           {
@@ -209,12 +209,17 @@
   },
   "active": "0c18cf075ab6afd7",
   "lastOpenFiles": [
+    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - secret.md",
+    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 4 - ingress.md",
+    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - HTTPRoute.md",
     "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 2 - HTTPRoute.md",
+    "Kubernetes/CKA/Exam Questions/SCHEDULING 1 - VPA.md",
+    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 3 - Fixing a Crashing Pod.md",
+    "Kubernetes/CKA/Exam Questions/APPLICATION DEPLOYMENT -Helm Upgrade and Scaling.md",
+    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 1 - Gateway.md",
     "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 1 - controller-manager.md",
     "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 2 - ETCD.md",
     "Kubernetes/CKA/Exam Questions/cka exam questions.md",
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - secret.md",
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 1 - Gateway.md",
     "Kubernetes/Helm/Helm 101 A Beginner’s Guide.md",
     "Kubernetes/Helm",
     "Kubernetes/primary kubeadm commands.md",
@@ -234,11 +239,6 @@
     "Kubernetes/CKA/Kubernetes Horizontal Pod Autoscale.md",
     "Kubernetes/CKA/Kubernetes Volumes.md",
     "Kubernetes/CKA/Kubernetes Manifest Files.md",
-    "Kubernetes/Setting Up kubectl on MacBook to Access a Remote Kubernetes Cluster on AWS EC2.md",
-    "Kubernetes/Guide install kubernetes cluster with kubeadm.md",
-    "Kubernetes/CKA/Kubernetes Object Management/ConfigMaps and Secret.md",
-    "Kubernetes/minikube/ConfigMaps and Secrets in a Kubernetes Deployment.md",
-    "Kubernetes/kubectl Shortcuts.md",
     "Kubernetes/minikube",
     "Kubernetes/CKA/Kubernetes Object Management",
     "Kubernetes/CKA/Cluster Management",
