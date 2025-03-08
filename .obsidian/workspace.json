@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 4 - ingress.md",
+                "file": "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 4 -  Failed Deployment.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SERVICE NETWORKING 4 - ingress"
+              "title": "TROUBLESHOOTING 4 -  Failed Deployment"
             }
           },
           {
@@ -209,16 +209,18 @@
   },
   "active": "0c18cf075ab6afd7",
   "lastOpenFiles": [
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - secret.md",
+    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 3 - Fixing a Crashing Pod.md",
+    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 4 -  Failed Deployment.md",
+    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 5 - HPA.md",
+    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 2 - ETCD.md",
     "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 4 - ingress.md",
+    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - secret.md",
     "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - HTTPRoute.md",
     "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 2 - HTTPRoute.md",
     "Kubernetes/CKA/Exam Questions/SCHEDULING 1 - VPA.md",
-    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 3 - Fixing a Crashing Pod.md",
     "Kubernetes/CKA/Exam Questions/APPLICATION DEPLOYMENT -Helm Upgrade and Scaling.md",
     "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 1 - Gateway.md",
     "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 1 - controller-manager.md",
-    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 2 - ETCD.md",
     "Kubernetes/CKA/Exam Questions/cka exam questions.md",
     "Kubernetes/Helm/Helm 101 A Beginner’s Guide.md",
     "Kubernetes/Helm",
@@ -237,8 +239,6 @@
     "Kubernetes/CKA/Cluster Management/High Availability in Kubernetes.md",
     "Linux/Storage Management/Creating Physical Volumes and Volume Groups in LVM.md",
     "Kubernetes/CKA/Kubernetes Horizontal Pod Autoscale.md",
-    "Kubernetes/CKA/Kubernetes Volumes.md",
-    "Kubernetes/CKA/Kubernetes Manifest Files.md",
     "Kubernetes/minikube",
     "Kubernetes/CKA/Kubernetes Object Management",
     "Kubernetes/CKA/Cluster Management",
