@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kubernetes/CKA/killershell exam/Question 7.md",
+                "file": "Kubernetes/CKA/killershell exam/Question 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Question 7"
+              "title": "Question 10"
             }
           },
           {
@@ -180,13 +180,22 @@
   },
   "active": "6114dd5b899577e8",
   "lastOpenFiles": [
-    "Kubernetes/CKA/killershell exam/Question 6.md",
+    "Kubernetes/CKA/killershell exam/Question 9.md",
+    "Kubernetes/CKA/killershell exam/Question 15.md",
+    "Kubernetes/CKA/killershell exam/Question 16.md",
+    "Kubernetes/CKA/killershell exam/Question 13.md",
+    "Screenshot 2025-03-17 at 21.30.39.png",
+    "Kubernetes/CKA/killershell exam/Question 17.md",
+    "Kubernetes/CKA/killershell exam/Question 14.md",
+    "Kubernetes/CKA/killershell exam/Question 12.md",
+    "Kubernetes/CKA/killershell exam/Question 11.md",
+    "Kubernetes/CKA/killershell exam/Question 10.md",
+    "Kubernetes/CKA/killershell exam/Question 8.md",
     "Kubernetes/CKA/killershell exam/Question 7.md",
+    "Kubernetes/CKA/killershell exam/Question 6.md",
     "Kubernetes/CKA/killershell exam/Question 5.md",
     "Kubernetes/CKA/killershell exam/Question 3.md",
     "Kubernetes/CKA/killershell exam/Question 2.md",
-    "Kubernetes/CKA/killershell exam/Question 9.md",
-    "Kubernetes/CKA/killershell exam/Question 8.md",
     "Kubernetes/CKA/killershell exam/Question 1.md",
     "Kubernetes/CKA/Exam Questions/Kustomize.md",
     "Kubernetes/CKA/killershell exam",
@@ -198,16 +207,7 @@
     "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - secret.md",
     "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - HTTPRoute.md",
     "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 2 - HTTPRoute.md",
-    "Kubernetes/CKA/Exam Questions/SCHEDULING 1 - VPA.md",
-    "Kubernetes/CKA/Exam Questions/APPLICATION DEPLOYMENT -Helm Upgrade and Scaling.md",
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 1 - Gateway.md",
-    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 1 - controller-manager.md",
-    "Kubernetes/CKA/Exam Questions/cka exam questions.md",
-    "Kubernetes/Helm/Helm 101 A Beginner’s Guide.md",
     "Kubernetes/Helm",
-    "Kubernetes/primary kubeadm commands.md",
-    "Kubernetes/OpenEBS.md",
-    "Kubernetes/MetalLB and Istio.md",
     "Untitled 1",
     "Kubernetes/CKA/Exam Questions",
     "Notes",
@@ -225,7 +225,6 @@
     "Pasted image 20240927191956.png",
     "Pasted image 20240927191932.png",
     "Pasted image 20240927213525.png",
-    "Pasted image 20240927213445.png",
     "Untitled.canvas"
   ]
 }
