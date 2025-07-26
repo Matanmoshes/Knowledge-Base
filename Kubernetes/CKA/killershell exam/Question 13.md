@@ -1,4 +1,4 @@
-ÍSolve this question on: `ssh cka7968`
+Solve this question on: `ssh cka7968`
 
 The team from Project r500 wants to replace their Ingress (networking.k8s.io) with a Gateway Api (gateway.networking.k8s.io) solution. The old Ingress is available at `/opt/course/13/ingress.yaml`.
 

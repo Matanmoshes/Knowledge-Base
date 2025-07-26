@@ -13,12 +13,68 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kubernetes/CKA/killershell exam/Question 10.md",
+                "file": "Kubernetes/CKA/killershell exam/Question 13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Question 10"
+              "title": "Question 13"
+            }
+          },
+          {
+            "id": "3c5f10457925b89e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Exam Questions/Kustomize.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Kustomize"
+            }
+          },
+          {
+            "id": "8ba3146370982e62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Exam Questions/Questions/APPLICATION DEPLOYMENT -Helm Upgrade and Scaling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "APPLICATION DEPLOYMENT -Helm Upgrade and Scaling"
+            }
+          },
+          {
+            "id": "471beda5481468db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Exam Questions/Questions/cka exam questions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cka exam questions"
+            }
+          },
+          {
+            "id": "04b44891a29f6479",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kubernetes/CKA/Exam Questions/helm questions/Helm Practice Set — 10 Exam-style Tasks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Helm Practice Set — 10 Exam-style Tasks"
             }
           },
           {
@@ -35,7 +91,8 @@
               "title": "Helm 101 A Beginner’s Guide"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -92,7 +149,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 423.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "660230cd73fd2ca6",
@@ -178,18 +236,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6114dd5b899577e8",
+  "active": "04b44891a29f6479",
   "lastOpenFiles": [
-    "Kubernetes/CKA/killershell exam/Question 9.md",
-    "Kubernetes/CKA/killershell exam/Question 15.md",
-    "Kubernetes/CKA/killershell exam/Question 16.md",
+    "Kubernetes/CKA/Exam Questions/Questions/cka exam questions.md",
+    "Kubernetes/CKA/Exam Questions/helm questions/Helm Practice Set — 10 Exam-style Tasks.md",
+    "Kubernetes/Helm/Helm 101 A Beginner’s Guide.md",
+    "Kubernetes/CKA/Exam Questions/Questions/APPLICATION DEPLOYMENT -Helm Upgrade and Scaling.md",
+    "Kubernetes/CKA/Exam Questions/helm questions",
+    "Kubernetes/CKA/Exam Questions/Questions",
+    "Kubernetes/K8S Horizontal Pod Autoscaler.md",
+    "Kubernetes/jsonpath and custom-columns in kubectl.md",
     "Kubernetes/CKA/killershell exam/Question 13.md",
-    "Screenshot 2025-03-17 at 21.30.39.png",
-    "Kubernetes/CKA/killershell exam/Question 17.md",
-    "Kubernetes/CKA/killershell exam/Question 14.md",
     "Kubernetes/CKA/killershell exam/Question 12.md",
     "Kubernetes/CKA/killershell exam/Question 11.md",
     "Kubernetes/CKA/killershell exam/Question 10.md",
+    "Kubernetes/CKA/killershell exam/Question 9.md",
     "Kubernetes/CKA/killershell exam/Question 8.md",
     "Kubernetes/CKA/killershell exam/Question 7.md",
     "Kubernetes/CKA/killershell exam/Question 6.md",
@@ -197,16 +258,16 @@
     "Kubernetes/CKA/killershell exam/Question 3.md",
     "Kubernetes/CKA/killershell exam/Question 2.md",
     "Kubernetes/CKA/killershell exam/Question 1.md",
-    "Kubernetes/CKA/Exam Questions/Kustomize.md",
+    "Kubernetes/CKA/killershell exam/Question 17.md",
+    "Kubernetes/CKA/killershell exam/Question 15.md",
+    "Kubernetes/CKA/killershell exam/Question 16.md",
+    "Screenshot 2025-03-17 at 21.30.39.png",
+    "Kubernetes/CKA/killershell exam/Question 14.md",
+    "Kubernetes/CKA/Exam Questions/Questions/Kustomize.md",
     "Kubernetes/CKA/killershell exam",
-    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 4 -  Failed Deployment.md",
-    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 3 - Fixing a Crashing Pod.md",
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 5 - HPA.md",
-    "Kubernetes/CKA/Exam Questions/TROUBLESHOOTING 2 - ETCD.md",
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 4 - ingress.md",
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - secret.md",
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 3 - HTTPRoute.md",
-    "Kubernetes/CKA/Exam Questions/SERVICE NETWORKING 2 - HTTPRoute.md",
+    "Kubernetes/CKA/Exam Questions/Questions/TROUBLESHOOTING 4 -  Failed Deployment.md",
+    "Kubernetes/CKA/Exam Questions/Questions/TROUBLESHOOTING 3 - Fixing a Crashing Pod.md",
+    "Kubernetes/CKA/Exam Questions/Questions/SERVICE NETWORKING 5 - HPA.md",
     "Kubernetes/Helm",
     "Untitled 1",
     "Kubernetes/CKA/Exam Questions",
@@ -217,8 +278,6 @@
     "Attachments/Pasted image 20241018184701.png",
     "Attachments/Pasted image 20241018184634.png",
     "Attachments/Pasted image 20241018184557.png",
-    "Splunk",
-    "Kubernetes/CKA",
     "Pasted image 20240927192036.png",
     "Pasted image 20240927193514.png",
     "Pasted image 20240927191944.png",
